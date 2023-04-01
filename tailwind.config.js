@@ -23,6 +23,9 @@ module.exports = {
       // ),
     },
     extend: {
+      padding: {
+        safe: "env(safe-area-inset-top)",
+      },
       colors: {
         // Primary
         orange: "hsl(26, 100%, 55%)",
