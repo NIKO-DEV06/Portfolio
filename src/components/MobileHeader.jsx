@@ -1,15 +1,31 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { motion } from "framer-motion";
 
 import myLogo from "../images/IMG_5969.jpeg";
 import hamburgerSvg from "../images/hamburger.svg";
+import SideBar from "./SideBar";
 
 const MobileHeader = () => {
+  const [isMobileNav, setIsMobileNav] = useState(false);
+
+  const toggleNavBar = () => {
+    setIsMobileNav(!isMobileNav);
+  };
+
+  const closeNav = () => {
+    setIsMobileNav(false);
+  };
+
   return (
     <Fragment>
-      <div className="md:hidden bg-[#1c1c1c] cursor-pointer">
-        <div className="flex mx-6 py-4">
-          <div className="flex w-full gap-2 h-auto">
+      {isMobileNav ? (
+        <SideBar isNav={isMobileNav} backdropClose={closeNav} />
+      ) : (
+        ""
+      )}
+      <div className="md:hidden bg-[#1c1c1c] fixed cursor-pointer w-full border-b border-[#424242]">
+        <div className="flex mx-7 py-5">
+          <div className="flex w-full gap-3 h-auto">
             <img
               src={myLogo}
               alt=""
@@ -25,7 +41,8 @@ const MobileHeader = () => {
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="grid cursor-pointer bg-[#414040] h-[2.4rem] w-[2.4rem] rounded-lg"
+              onClick={toggleNavBar}
+              className="grid cursor-pointer bg-[#414040] h-[2.5rem] w-[2.5rem] rounded-lg"
             >
               <img
                 src={hamburgerSvg}
