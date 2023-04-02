@@ -8,22 +8,21 @@ import SideBar from "./SideBar";
 const MobileHeader = () => {
   const [isMobileNav, setIsMobileNav] = useState(false);
 
-  const toggleNavBar = () => {
-    setIsMobileNav(!isMobileNav);
+  const open = () => {
+    setIsMobileNav(true);
   };
 
-  const closeNav = () => {
+  const close = () => {
     setIsMobileNav(false);
   };
 
   return (
     <Fragment>
-      {isMobileNav ? (
-        <SideBar isNav={isMobileNav} backdropClose={closeNav} />
-      ) : (
-        ""
+      {isMobileNav && (
+        <SideBar isNav={isMobileNav} backdropClose={close} onExit={close} />
       )}
-      <div className="md:hidden bg-[#1c1c1c] fixed cursor-pointer w-full border-b border-[#424242]">
+
+      <div className="md:hidden bg-[#1c1c1c] fixed w-full border-b border-[#424242] z-20">
         <div className="flex mx-7 py-5">
           <div className="flex w-full gap-3 h-auto">
             <img
@@ -37,7 +36,7 @@ const MobileHeader = () => {
               <span className="text-white opacity-50">Software Engineer</span>
             </p>
           </div>
-          <div onClick={toggleNavBar}>
+          <div onClick={open}>
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

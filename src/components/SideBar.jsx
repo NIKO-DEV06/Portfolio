@@ -14,27 +14,29 @@ import femSvg from "../images/frontendmentor.svg";
 
 const SideBar = ({ isNav, backdropClose }) => {
   return (
-    <Fragment>
-      <AnimatePresence>
+    <AnimatePresence onExitComplete={backdropClose} mode="wait">
+      <Fragment>
         {isNav && (
           <motion.div
+            key="bd"
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.8 }}
-            transition={{ ease: "easeOut", duration: 0.2 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: "easeOut", duration: 0.25 }}
             onClick={backdropClose}
-            className="top-0 bottom-0 right-0 left-0 absolute z-10 bg-[#1c1c1c]  md:hidden"
+            className="top-0 bottom-0 right-0 left-0 fixed z-30 bg-[#1c1c1c] md:hidden"
           ></motion.div>
         )}
 
         <motion.div
-          key={"sdb"}
+          key="sdb"
           initial={{ x: !isNav ? "0%" : "-100%" }}
           animate={{ x: 0 }}
           exit={{ x: "-100%" }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.25 }}
           className={`${
             !isNav && "hidden"
-          } z-30 fixed top-0 bottom-0 left-0 w-[260px] overflow-y-auto text-center bg-[#1c1c1c] border-r-[1.5px] border-[#282828] md:flex flex-col text-white`}
+          } z-40 fixed top-0 bottom-0 left-0 w-[260px] overflow-y-auto text-center bg-[#1c1c1c] border-r-[1.5px] border-[#282828] md:flex flex-col text-white`}
         >
           <div className="w-full cursor-pointer">
             <img
@@ -129,8 +131,8 @@ const SideBar = ({ isNav, backdropClose }) => {
             </p>
           </motion.div>
         </motion.div>
-      </AnimatePresence>
-    </Fragment>
+      </Fragment>
+    </AnimatePresence>
   );
 };
 

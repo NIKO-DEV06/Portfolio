@@ -1,7 +1,9 @@
 import React, { Fragment } from "react";
+
 import SideBar from "./components/SideBar";
-import Home from "./components/Home";
 import MobileHeader from "./components/MobileHeader";
+import Home from "./components/Home";
+import About from "./components/About";
 
 const App = () => {
   return (
@@ -10,6 +12,7 @@ const App = () => {
         <SideBar />
         <MobileHeader />
         <Home />
+        <About />
       </main>
     </Fragment>
   );
