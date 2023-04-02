@@ -7,8 +7,8 @@ import contactSvg from "../images/mailbox.svg";
 
 const Home = () => {
   return (
-    <section className="text-white h-screen bg-black-gradient">
-      <h1 className="pt-[280px] text-[1.5rem] font-[600] leading-[2.5rem] text-center tracking-wider md:text-[2rem] md:leading-[2.5rem] md:ml-[15rem] lg:pt-[270px] lg:text-[3.5rem] lg:leading-[4rem] lg:ml-[16rem] lg:font-[500]">
+    <section className="text-white bg-black-gradient pb-[280px]">
+      <h1 className="pt-[255px] text-[1.5rem] font-[600] leading-[2.5rem] text-center tracking-wider md:text-[2rem] md:leading-[2.5rem] md:ml-[15rem] lg:pt-[270px] lg:text-[3.5rem] lg:leading-[4rem] lg:ml-[16rem] lg:font-[500]">
         Welcome, I'm Emmanuel.
         <br />
         <div className="text-[1.3rem] font-[500] lg:text-[3.2rem] lg:font-[300]">
@@ -26,7 +26,7 @@ const Home = () => {
           </h2>
         </div>
       </h1>
-      <div className="flex justify-center translate-y-[-1.5rem] gap-[1.5rem] md:ml-[15rem] ">
+      <div className="flex justify-center translate-y-[-1.5rem] gap-[1.5rem] md:ml-[15rem]">
         <motion.div
           className="flex border-2 mt-[3rem] rounded-lg scale-75 cursor-pointer duration-150 mr-[-1.5rem]"
           initial={{ scale: 0.75 }}
