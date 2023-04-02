@@ -6,7 +6,7 @@ import MobileHeader from "./components/MobileHeader";
 const App = () => {
   return (
     <Fragment>
-      <main className="bg-white-gradient h-full">
+      <main className="h-full">
         <SideBar />
         <MobileHeader />
         <Home />

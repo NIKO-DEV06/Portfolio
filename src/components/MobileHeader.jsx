@@ -37,11 +37,10 @@ const MobileHeader = () => {
               <span className="text-white opacity-50">Software Engineer</span>
             </p>
           </div>
-          <div>
+          <div onClick={toggleNavBar}>
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              onClick={toggleNavBar}
               className="grid cursor-pointer bg-[#414040] h-[2.5rem] w-[2.5rem] rounded-lg"
             >
               <img

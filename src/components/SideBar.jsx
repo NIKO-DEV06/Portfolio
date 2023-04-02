@@ -27,6 +27,7 @@ const SideBar = ({ isNav, backdropClose }) => {
         )}
 
         <motion.div
+          key={"sdb"}
           initial={{ x: !isNav ? "0%" : "-100%" }}
           animate={{ x: 0 }}
           exit={{ x: "-100%" }}
@@ -79,7 +80,7 @@ const SideBar = ({ isNav, backdropClose }) => {
               <img
                 src={contactSvg}
                 alt=""
-                className="h-[1.7rem] my-auto ml-2"
+                className="h-[1.7rem] my-auto ml-2 scale-90"
               />
               <p className="p-[6px]">Contact</p>
             </div>
