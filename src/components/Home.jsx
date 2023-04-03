@@ -8,6 +8,9 @@ import contactSvg from "../images/mailbox.svg";
 const Home = () => {
   return (
     <section className="text-white bg-black-gradient pb-[280px]">
+      <h1 className="absolute text-yellow-200 top-[10rem] right-0 text-2xl">
+        Site still Cooking(Under Construction)🥘
+      </h1>
       <h1 className="pt-[280px] text-[1.6rem] font-[600] leading-[2.5rem] text-center md:text-[2rem] md:leading-[2.5rem] md:ml-[15rem] lg:pt-[270px] lg:text-[3.7rem] lg:leading-[4.5rem] lg:ml-[16rem] lg:font-[500] uppercase">
         Welcome, I'm Emmanuel.
         <br />
@@ -42,7 +45,8 @@ const Home = () => {
             CONTACT
           </p>
         </motion.div>
-        <motion.div
+        <motion.a
+          href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing"
           className="flex border-2  mt-[3rem] rounded-lg scale-75 cursor-pointer bg-white duration-150 ml-[-1.5rem]"
           initial={{ scale: 0.75 }}
           whileHover={{ scale: 0.77 }}
@@ -52,7 +56,7 @@ const Home = () => {
           <p className="p-3 font-semibold tracking-[0.25em] duration-150 text-black">
             RESUME
           </p>
-        </motion.div>
+        </motion.a>
       </div>
     </section>
   );

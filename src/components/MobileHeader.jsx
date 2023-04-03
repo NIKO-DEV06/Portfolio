@@ -22,7 +22,7 @@ const MobileHeader = () => {
         <SideBar isNav={isMobileNav} backdropClose={close} onExit={close} />
       )}
 
-      <div className="md:hidden bg-[#1c1c1c] fixed w-full border-b border-[#424242] z-20">
+      <div className="md:hidden bg-[#1c1c1cf4] md:bg-[#1c1c1c] fixed w-full border-b border-[#424242] z-20">
         <div className="flex mx-7 py-5">
           <div className="flex w-full gap-3 h-auto">
             <img

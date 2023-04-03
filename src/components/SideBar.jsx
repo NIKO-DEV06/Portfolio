@@ -120,7 +120,8 @@ const SideBar = ({ isNav, backdropClose }) => {
               </a>
             </div>
           </div>
-          <motion.div
+          <motion.a
+            href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing"
             className="border-2 mx-[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group hover:bg-white duration-150"
             initial={{ scale: 0.75 }}
             whileHover={{ scale: 0.8 }}
@@ -129,7 +130,7 @@ const SideBar = ({ isNav, backdropClose }) => {
             <p className="p-3 font-semibold tracking-[0.25em] group-hover:text-black duration-150">
               RESUME
             </p>
-          </motion.div>
+          </motion.a>
         </motion.div>
       </Fragment>
     </AnimatePresence>
