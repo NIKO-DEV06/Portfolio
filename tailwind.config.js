@@ -31,8 +31,8 @@ module.exports = {
       },
       backgroundImage: {
         "black-gradient": "linear-gradient(to right, #161616 40%, black 190%)",
-        "white-gradient":
-          "linear-gradient(to bottom, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%)",
+        "image-gradient":
+          "linear-gradient(to top, #000000, rgba(255, 255, 255, 0.5))",
       },
       fontFamily: {
         sans: ["Raleway", "sans-serif"],

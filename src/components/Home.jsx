@@ -8,10 +8,10 @@ import contactSvg from "../images/mailbox.svg";
 const Home = () => {
   return (
     <section className="text-white bg-black-gradient pb-[280px]">
-      <h1 className="pt-[280px] text-[1.6rem] font-[600] leading-[2.5rem] text-center tracking-wider md:text-[2rem] md:leading-[2.5rem] md:ml-[15rem] lg:pt-[270px] lg:text-[3.5rem] lg:leading-[4rem] lg:ml-[16rem] lg:font-[500]">
+      <h1 className="pt-[280px] text-[1.6rem] font-[600] leading-[2.5rem] text-center md:text-[2rem] md:leading-[2.5rem] md:ml-[15rem] lg:pt-[270px] lg:text-[3.7rem] lg:leading-[4.5rem] lg:ml-[16rem] lg:font-[500] uppercase">
         Welcome, I'm Emmanuel.
         <br />
-        <div className="text-[1.3rem] font-[500] lg:text-[3.2rem] lg:font-[300]">
+        <div className="text-[1.3rem] font-[500] lg:text-[2.7rem] lg:font-[300]">
           <h2 className="flex gap-3 justify-center">
             <span>I am a</span>
             <span className="opacity-50">

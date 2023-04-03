@@ -51,7 +51,7 @@ const SideBar = ({ isNav, backdropClose }) => {
               alt=""
               className="rounded-full w-[2.7rem] cursor-pointer border-[1px]"
             />
-            <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px]">
+            <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px] ">
               Emmanuel Ayeniko
               <br />
               <span className="text-white opacity-50">Software Engineer</span>

@@ -14,7 +14,7 @@ const App = () => {
         <MobileHeader />
         <Home />
         <About />
-        {/* <Projects /> */}
+        <Projects />
       </main>
     </Fragment>
   );
