@@ -40,7 +40,7 @@ const Projects = () => {
     {
       name: "Todo App",
       desc: "A very interactive todo appliction which can add and delete todos with drag and drop functionality to reorder the list. Todos are stored to local storage and has beautiful light and dark theme modes",
-      tools: ["React.Js", "Tailwind", "React Beautiful DND"],
+      tools: ["React.Js", "TailwindCSS", "React Beautiful DND"],
       img: todo,
       github: "https://github.com/NIKO-DEV06/Todo-App",
       live: "https://todo-app-niko.netlify.app/",
@@ -68,10 +68,10 @@ const Projects = () => {
         {/* projects list */}
 
         <div className="overflo-x-hidden w-full flex flex-col justify-center scale-[0.86] translate-y-[-10rem]">
-          <div className="w-[25rem] mx-auto flex flex-col gap-10">
+          <div className="w-[25rem] mx-auto flex flex-col gap-3">
             {/* // */}
             {projects.map((project) => (
-              <div className="flex flex-col">
+              <div className="flex flex-col pb-8 md:translate-x-[9.5rem] lg:flex-row">
                 <img
                   src={project.img}
                   alt={project.name}
