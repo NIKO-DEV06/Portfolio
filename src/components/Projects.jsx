@@ -67,19 +67,19 @@ const Projects = () => {
         </div>
         {/* projects list */}
 
-        <div className="overflo-x-hidden w-full flex flex-col justify-center scale-[0.86] translate-y-[-10rem]">
-          <div className="w-[25rem] mx-auto flex flex-col gap-3">
+        <div className="overflo-x-hidden w-full flex flex-col justify-center scale-[0.86] translate-y-[-10rem] lg:mt-[7rem]">
+          <div className="w-[25rem] mx-auto flex flex-col gap-3 lg:w-[60rem]">
             {/* // */}
             {projects.map((project) => (
               <div className="flex flex-col pb-8 md:translate-x-[9.5rem] lg:flex-row">
                 <img
                   src={project.img}
                   alt={project.name}
-                  className=" w-[30rem] h-[16rem] mx-auto object-cover object-top"
+                  className=" w-[30rem] h-[16rem] mx-auto object-cover object-top lg:h-auto"
                 />
                 <div className="border-[#8b8b8b] border-2">
-                  <div className="ml-4">
-                    <h2 className="my-5 font-bold text-[1.45rem]">
+                  <div className="ml-4 lg:mr-5">
+                    <h2 className="my-5 font-bold text-[1.45rem] underline">
                       {project.name}
                     </h2>
                     <p className="font-[400]">{project.desc}</p>
