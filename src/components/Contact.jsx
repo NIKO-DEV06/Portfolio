@@ -35,14 +35,14 @@ const Contact = () => {
           CONTACT-ME
         </h1>
       </div>
-      <h2 className=" font-[500] text-center text-[1rem] mx-4 scale-90 leading-[1.2rem] pt-1">
+      <h2 className=" font-[500] text-center text-[1rem] mx-4 scale-90 leading-[1.2rem] pt-1 md:text-[1.1rem] md:ml-[18rem] lg:mt-8 lg:text-[1.4rem] lg:leading-[1.7rem]  lg:font-[300]">
         Feel free to reach out to me via email or through the contact form below
         to discuss potential collaborations or opportunities.
       </h2>
 
       <form
         action=""
-        className="flex flex-col gap-5 py-6"
+        className="flex flex-col gap-5 py-6 md:translate-x-[7rem]"
         onSubmit={handleSubmit(formSubmitHandler)}
       >
         <div className="flex flex-col justify-center gap-3">
@@ -52,7 +52,7 @@ const Contact = () => {
               placeholder="Name"
               name="name"
               {...register("name")}
-              className="w-[22rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-md"
+              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-md"
             />
             <p className="text-[#ff0000] font-[500] text-sm text-left">
               {errors.name?.message}
@@ -65,7 +65,7 @@ const Contact = () => {
               type="text"
               name="email"
               {...register("email")}
-              className="w-[22rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-md"
+              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-md"
             />
             <p className="text-[#ff0000] font-[500] text-sm text-left">
               {errors.email?.message}
@@ -79,7 +79,7 @@ const Contact = () => {
             {...register("message")}
             cols="30"
             rows="10"
-            className="w-[22rem] h-[15rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white p-3 rounded-md resize-none"
+            className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[15rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white p-3 rounded-md resize-none"
           />
           <p className="text-[#ff0000] font-[500] text-sm text-center">
             {errors.message?.message}

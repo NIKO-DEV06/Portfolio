@@ -6,7 +6,7 @@ import { stack1, stack2 } from "../helpers/stacks";
 const TechStack = () => {
   return (
     <section
-      className="text-white mt-[2000px] md:mt-[2350px] lg:mt-[1150px] pb-6"
+      className="text-white mt-[2050px] md:mt-[2350px] lg:mt-[1150px] pb-6"
       id="tech-stack"
     >
       <div className="relative md:ml-[13rem]">
@@ -43,7 +43,7 @@ const TechStack = () => {
                 <h1 className="lg:text-[1.1rem] text-[0.9rem] font-[800] undeline tracking-[.09em] uppercase ">
                   .{stack.name}.
                 </h1>
-                <p className="lg:text-[0.8rem] text-[0.65rem] font-[500] pr-2 opacity-75">
+                <p className="lg:text-[0.8rem] text-[0.65rem] font-[500] pr-2 lg:opacity-75">
                   {stack.desc}
                 </p>
               </div>
