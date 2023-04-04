@@ -12,7 +12,7 @@ import gitSvg from "../tech-stack-images/git.svg";
 import githubSvg from "../tech-stack-images/github.svg";
 import jestSvg from "../tech-stack-images/jest.svg";
 import reactrouterSvg from "../tech-stack-images/react-router.svg";
-import framerSvg from "../tech-stack-images/framer.png";
+import framerSvg from "../tech-stack-images/framer-motion.svg";
 import npmSvg from "../tech-stack-images/npm.svg";
 import reduxSvg from "../tech-stack-images/redux.svg";
 import viteSvg from "../tech-stack-images/vite.svg";
@@ -34,7 +34,7 @@ export const stack1 = [
     desc: "JavaScript is a programming language that drives the web",
   },
   {
-    name: "react",
+    name: "react.js",
     img: reactSvg,
     desc: "React is a JavaScript library for building user interfaces.",
   },
