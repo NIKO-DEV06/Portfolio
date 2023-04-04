@@ -30,10 +30,11 @@ const SideBar = ({ isNav, backdropClose }) => {
 
         <motion.div
           key="sdb"
-          initial={{ x: !isNav ? "0%" : "-100%" }}
+          initial={{ x: "-100%" }}
+          // initial={{ x: !isNav ? "0%" : "-100%" }}
           animate={{ x: 0 }}
           exit={{ x: "-100%" }}
-          transition={{ duration: 0.25 }}
+          transition={{ duration: 0.3 }}
           className={`${
             !isNav && "hidden"
           } z-40 fixed top-0 bottom-0 left-0 w-[260px] overflow-y-auto text-center bg-[#1c1c1c] border-r-[1.5px] border-[#282828] md:flex flex-col text-white`}
@@ -60,11 +61,15 @@ const SideBar = ({ isNav, backdropClose }) => {
           <div className="text-[14px] flex flex-col gap-3 mt-3">
             <div className="flex mx-6 text-left bg-[#2b2b2b] hover:opacity-100 cursor-pointer rounded-md border-[1px] border-[#393939]">
               <img src={homeSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
-              <p className="p-[6px]">Home</p>
+              <a href="#home" className="p-[6px]">
+                Home
+              </a>
             </div>
             <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
               <img src={aboutSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
-              <p className="p-[6px]">About</p>
+              <a href="#about" className="p-[6px]">
+                About
+              </a>
             </div>
             <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
               <img
@@ -72,11 +77,15 @@ const SideBar = ({ isNav, backdropClose }) => {
                 alt=""
                 className="h-[1.7rem] my-auto ml-2"
               />
-              <p className="p-[6px]">Projects</p>
+              <a href="#projects" className="p-[6px] active:text-green-500">
+                Projects
+              </a>
             </div>
             <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
               <img src={stackSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
-              <p className="p-[6px]">Tech Stack</p>
+              <a href="#tech-stack" className="p-[6px]">
+                Tech Stack
+              </a>
             </div>
             <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
               <img
@@ -84,7 +93,9 @@ const SideBar = ({ isNav, backdropClose }) => {
                 alt=""
                 className="h-[1.7rem] my-auto ml-2 scale-90"
               />
-              <p className="p-[6px]">Contact</p>
+              <a href="#contact" className="p-[6px]">
+                Contact
+              </a>
             </div>
           </div>
           <p className="mx-6 pl-2 text-[13px] opacity-80 mt-[3rem] font-light text-left tracking-[0.2em]">

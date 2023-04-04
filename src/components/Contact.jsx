@@ -1,9 +1,103 @@
 import React from "react";
 
+import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+import sendSvg from "../images/send.svg";
+
+const schema = yup.object().shape({
+  name: yup.string().trim().required("Name field is required"),
+  email: yup.string().email().required("Please enter a valid email address"),
+  message: yup.string().trim().required("Please enter enter a message"),
+});
+
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+
+  const formSubmitHandler = (data) => {
+    console.log(data);
+  };
+
   return (
-    <section>
-      {/* <h1 className="text-center text-white">Contact-Me</h1> */}
+    <section className="text-white lg:mt-[3rem]" id="contact">
+      <div className="relative md:ml-[13rem]">
+        <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
+        <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
+        <h1 className=" uppercase text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500]">
+          CONTACT-ME
+        </h1>
+      </div>
+      <h2 className=" font-[500] text-center text-[14px] mx-6 scale-90 leading-[1.2rem] pt-1">
+        Feel free to reach out to me via email or through the contact form below
+        to discuss potential collaborations or opportunities.
+      </h2>
+
+      <form
+        action=""
+        className="flex flex-col gap-5 py-6"
+        onSubmit={handleSubmit(formSubmitHandler)}
+      >
+        <div className="flex flex-col justify-center gap-3">
+          <div className="mx-auto">
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              {...register("name")}
+              className="w-[22rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-md"
+            />
+            <p className="text-[#ff0000] font-[500] text-sm text-left">
+              {errors.name?.message}
+            </p>
+          </div>
+
+          <div className="mx-auto">
+            <input
+              placeholder="Email"
+              type="text"
+              name="email"
+              {...register("email")}
+              className="w-[22rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-md"
+            />
+            <p className="text-[#ff0000] font-[500] text-sm text-left">
+              {errors.email?.message}
+            </p>
+          </div>
+        </div>
+        <div className="mx-auto">
+          <textarea
+            placeholder="Message"
+            name="message"
+            {...register("message")}
+            cols="30"
+            rows="10"
+            className="w-[22rem] h-[15rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white p-3 rounded-md resize-none"
+          />
+          <p className="text-[#ff0000] font-[500] text-sm text-center">
+            {errors.message?.message}
+          </p>
+        </div>
+
+        <motion.button
+          className="flex border-2 rounded-lg cursor-pointer bg-white duration-150  justify-center w-[22rem] mx-auto"
+          initial={{ scale: 0.8 }}
+          whileHover={{ scale: 0.83 }}
+          whileTap={{ scale: 0.65 }}
+        >
+          <img src={sendSvg} alt="" className="h-[1.9rem] my-auto ml-2" />
+          <p className="p-3 font-semibold tracking-[0.25em] duration-150 text-black">
+            SEND MESSAGE
+          </p>
+        </motion.button>
+      </form>
     </section>
   );
 };

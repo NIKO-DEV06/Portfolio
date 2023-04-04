@@ -31,7 +31,7 @@ const Projects = () => {
     },
     {
       name: "Forkify",
-      desc: "A Food recipe web application with consumes data from an API to display large numbers of delicious recipes. Users can add recipes with a form which sends post requests to the API",
+      desc: "A Food recipe web application with consumes data from an API to display large numbers of delicious recipes. Users can add recipes with a form which sends post requests to the API.",
       tools: ["HTML", "SCSS/SASS", "Javascript"],
       img: forkify,
       github: "https://github.com/NIKO-DEV06/forkify-project",
@@ -39,7 +39,7 @@ const Projects = () => {
     },
     {
       name: "Todo App",
-      desc: "A very interactive todo appliction which can add and delete todos with drag and drop functionality to reorder the list. Todos are stored to local storage and has beautiful light and dark theme modes",
+      desc: "A very interactive todo appliction which can add and delete todos with drag and drop functionality to reorder the list. Todos are stored to local storage and has beautiful light and dark theme modes.",
       tools: ["React.Js", "TailwindCSS", "React Beautiful DND"],
       img: todo,
       github: "https://github.com/NIKO-DEV06/Todo-App",
@@ -57,11 +57,14 @@ const Projects = () => {
 
   return (
     <Fragment>
-      <section className="text-white mt-[5rem] lg:mt-[4rem] h-screen">
+      <section
+        className="text-white mt-[5rem] lg:mt-[4rem] h-screen"
+        id="projects"
+      >
         <div className="relative md:ml-[13rem]">
           <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
           <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
-          <h1 className="text-[1.5rem] font-[600] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500]">
+          <h1 className="text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500]">
             PROJECTS
           </h1>
         </div>
@@ -79,10 +82,10 @@ const Projects = () => {
                 />
                 <div className="border-[#8b8b8b] border-2">
                   <div className="ml-4 lg:mr-5">
-                    <h2 className="my-5 font-bold text-[1.45rem] underline">
+                    <h2 className="my-5 font-[700] text-[1.55rem] underline">
                       {project.name}
                     </h2>
-                    <p className="font-[400]">{project.desc}</p>
+                    <p className="font-[500] pr-3">{project.desc}</p>
                     <div className="mt-5 flex text-[0.9rem] gap-2">
                       {project.tools.map((tool) => (
                         <div className="border-2 p-1">{tool}</div>

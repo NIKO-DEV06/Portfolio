@@ -29,7 +29,7 @@ export const stack1 = [
     desc: "CSS is a styling language used to control the layout and appearance of HTML documents.",
   },
   {
-    name: "Javascript",
+    name: "Javascript (ES6+)",
     img: jsSvg,
     desc: "JavaScript is a programming language that drives the web",
   },
@@ -94,7 +94,7 @@ export const stack2 = [
   {
     name: "npm",
     img: npmSvg,
-    desc: "npm is a package manager for JavaScript.",
+    desc: "NPM is a package manager for JavaScript.",
   },
   {
     name: "redux",

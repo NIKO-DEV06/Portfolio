@@ -7,7 +7,7 @@ import contactSvg from "../images/mailbox.svg";
 
 const Home = () => {
   return (
-    <section className="text-white bg-black-gradient pb-[280px]">
+    <section className="text-white bg-black-gradient pb-[280px]" id="home">
       <h1 className="absolute text-yellow-200 top-[10rem] right-0 text-2xl">
         Site still Cooking(Under Construction)🥘
       </h1>
