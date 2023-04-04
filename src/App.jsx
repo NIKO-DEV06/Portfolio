@@ -5,6 +5,7 @@ import MobileHeader from "./components/MobileHeader";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import TechStack from "./components/TechStack";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Home />
         <About />
         <Projects />
+        <TechStack />
       </main>
     </Fragment>
   );
