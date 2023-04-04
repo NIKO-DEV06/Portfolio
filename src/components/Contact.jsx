@@ -35,7 +35,7 @@ const Contact = () => {
           CONTACT-ME
         </h1>
       </div>
-      <h2 className=" font-[500] text-center text-[14px] mx-6 scale-90 leading-[1.2rem] pt-1">
+      <h2 className=" font-[500] text-center text-[1rem] mx-4 scale-90 leading-[1.2rem] pt-1">
         Feel free to reach out to me via email or through the contact form below
         to discuss potential collaborations or opportunities.
       </h2>
