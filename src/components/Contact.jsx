@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import sendSvg from "../images/send.svg";
 
@@ -18,16 +21,42 @@ const Contact = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({
     resolver: yupResolver(schema),
   });
 
-  const formSubmitHandler = (data) => {
+  const formSubmitHandler = async (data) => {
     console.log(data);
+    try {
+      const response = await emailjs.sendForm(
+        "service_8luawmu",
+        "template_tdbeii7",
+        "#contact-form",
+        "eCJX0n4ScdUABumdq"
+      );
+      reset();
+      toast.success("Message sent sucessfully!");
+    } catch (error) {
+      toast.error("Message failed to send!!.");
+    }
   };
 
   return (
-    <section className="text-white lg:mt-[3rem]" id="contact">
+    <section className="text-white lg:mt-[3rem] overflow-hidden" id="contact">
+      <ToastContainer
+        className="w-[17rem] h-[rem] text-sm mt-4 mx-auto translate-x-[3.7rem] md:translate-x-0"
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <div className="relative md:ml-[13rem]">
         <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
@@ -42,7 +71,8 @@ const Contact = () => {
 
       <form
         action=""
-        className="flex flex-col gap-5 py-6 md:translate-x-[7rem]"
+        id="contact-form"
+        className="flex flex-col gap-4 py-6 md:translate-x-[7rem]"
         onSubmit={handleSubmit(formSubmitHandler)}
       >
         <div className="flex flex-col justify-center gap-3">
@@ -52,9 +82,10 @@ const Contact = () => {
               placeholder="Name"
               name="name"
               {...register("name")}
-              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-md"
+              autoComplete="off"
+              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-[3px]"
             />
-            <p className="text-[#ff0000] font-[500] text-sm text-left">
+            <p className="text-[#ff0000] font-[500] text-sm text-left pt-1">
               {errors.name?.message}
             </p>
           </div>
@@ -65,9 +96,10 @@ const Contact = () => {
               type="text"
               name="email"
               {...register("email")}
-              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-md"
+              autoComplete="off"
+              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-[3px]"
             />
-            <p className="text-[#ff0000] font-[500] text-sm text-left">
+            <p className="text-[#ff0000] font-[500] text-sm text-left pt-1">
               {errors.email?.message}
             </p>
           </div>
@@ -79,7 +111,7 @@ const Contact = () => {
             {...register("message")}
             cols="30"
             rows="10"
-            className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[15rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white p-3 rounded-md resize-none"
+            className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[15rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white p-3 rounded-[3px] resize-none"
           />
           <p className="text-[#ff0000] font-[500] text-sm text-center">
             {errors.message?.message}
@@ -87,7 +119,7 @@ const Contact = () => {
         </div>
 
         <motion.button
-          className="flex border-2 rounded-lg cursor-pointer bg-white duration-150  justify-center w-[22rem] mx-auto"
+          className="flex border-2 rounded-[3px] cursor-pointer bg-white duration-150  justify-center w-[22rem] mx-auto"
           initial={{ scale: 0.8 }}
           whileHover={{ scale: 0.83 }}
           whileTap={{ scale: 0.65 }}

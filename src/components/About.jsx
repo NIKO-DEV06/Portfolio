@@ -4,7 +4,7 @@ import myLogo from "../images/IMG_5969.jpeg";
 
 const About = () => {
   return (
-    <section className="text-white bg-black-gradient h-screen" id="about">
+    <section className="text-white bg-black-gradient h-screen " id="about">
       <div className="relative md:ml-[13rem]">
         <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
@@ -31,7 +31,7 @@ const About = () => {
           of my professional life i enjoy playing video games and
           watching/playing football.
         </p>
-        <div className="relative w-[18rem] mx-auto lg:mx-auto md:mx-[23rem] lg:scale-90 md:scale-[.4] lg:my-auto group cursor-pointer md:translate-y-[-6.5rem]">
+        <div className="lg:translate-y-[-0.6rem] relative w-[18rem] mx-auto lg:mx-auto md:mx-[23rem] lg:scale-90 md:scale-[.4] lg:my-auto group cursor-pointer md:translate-y-[-6.5rem]">
           <img
             src={myLogo}
             alt=""

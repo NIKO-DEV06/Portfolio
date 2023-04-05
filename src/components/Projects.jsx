@@ -70,7 +70,7 @@ const Projects = () => {
         </div>
         {/* projects list */}
 
-        <div className="overflo-x-hidden w-full flex flex-col justify-center scale-[0.86] translate-y-[-10rem] lg:mt-[7rem]">
+        <div className="w-full flex flex-col justify-center scale-[0.86] translate-y-[-10rem] lg:mt-[7rem]">
           <div className="w-[25rem] mx-auto flex flex-col gap-3 lg:w-[60rem]">
             {/* // */}
             {projects.map((project) => (
