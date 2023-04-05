@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const Footer = () => {
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
+    AOS.init({ duration: 1000, once: true });
   }, []);
   return (
     <section

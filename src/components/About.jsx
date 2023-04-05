@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -7,7 +6,7 @@ import myLogo from "../images/IMG_5969.jpeg";
 
 const About = () => {
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
+    AOS.init({ duration: 1000, once: true });
   }, []);
   return (
     <section

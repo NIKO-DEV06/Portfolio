@@ -45,13 +45,14 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
+    AOS.init({ duration: 1000, once: true });
   }, []);
+
   return (
     <section
-      data-aos="fade-up"
       className="text-white lg:mt-[3rem] overflow-hidden"
       id="contact"
+      data-aos="fade-up"
     >
       <ToastContainer
         className="w-[70%] md:w-[20rem] w-17rem] h-[rem] text-sm mt-4 mx-auto translate-x-[1rem] md:translate-x-0 mr-3 md:mr-0"

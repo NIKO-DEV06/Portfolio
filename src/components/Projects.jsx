@@ -1,7 +1,5 @@
 import React, { Fragment, useEffect } from "react";
 import { motion } from "framer-motion";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import sneakers from "../projectsImages/sneakers.jpg";
 import forkify from "../projectsImages/forkify.jpg";
@@ -9,6 +7,8 @@ import loops from "../projectsImages/loops.jpg";
 import todo from "../projectsImages/todo.jpg";
 import reactMeals from "../projectsImages/reactmeals.png";
 import easybank from "../projectsImages/easybank.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import linkSvg from "../images/link.svg";
 import githubSvg from "../images/github.svg";
@@ -64,6 +64,7 @@ const Projects = () => {
   return (
     <Fragment>
       <section
+        data-aos="fade-up"
         className="text-white mt-[5rem] lg:mt-[4rem] h-screen"
         id="projects"
       >
@@ -77,10 +78,7 @@ const Projects = () => {
         {/* projects list */}
 
         <div className="w-full flex flex-col justify-center scale-[0.86] translate-y-[-10rem] lg:mt-[7rem]">
-          <div
-            data-aos="fade-up"
-            className="w-[25rem] mx-auto flex flex-col gap-3 lg:w-[60rem]"
-          >
+          <div className="w-[25rem] mx-auto flex flex-col gap-3 lg:w-[60rem]">
             {/* // */}
             {projects.map((project) => (
               <div className="flex flex-col pb-8 md:translate-x-[9.5rem] lg:flex-row">

@@ -7,8 +7,9 @@ import { stack1, stack2 } from "../helpers/stacks";
 
 const TechStack = () => {
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
+    AOS.init({ duration: 1000, once: true });
   }, []);
+
   return (
     <section
       data-aos="fade-up"
