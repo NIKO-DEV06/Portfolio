@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
@@ -7,6 +7,8 @@ import * as yup from "yup";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import sendSvg from "../images/send.svg";
 
@@ -42,8 +44,15 @@ const Contact = () => {
     }
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
   return (
-    <section className="text-white lg:mt-[3rem] overflow-hidden" id="contact">
+    <section
+      data-aos="fade-up"
+      className="text-white lg:mt-[3rem] overflow-hidden"
+      id="contact"
+    >
       <ToastContainer
         className="w-[70%] md:w-[20rem] w-17rem] h-[rem] text-sm mt-4 mx-auto translate-x-[1rem] md:translate-x-0 mr-3 md:mr-0"
         position="top-right"
@@ -83,7 +92,7 @@ const Contact = () => {
               name="name"
               {...register("name")}
               autoComplete="off"
-              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-[3px]"
+              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[2px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-[3px]"
             />
             <p className="text-[#ff0000] font-[500] text-sm text-left pt-1">
               {errors.name?.message}
@@ -97,7 +106,7 @@ const Contact = () => {
               name="email"
               {...register("email")}
               autoComplete="off"
-              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-[3px]"
+              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[2px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-[3px]"
             />
             <p className="text-[#ff0000] font-[500] text-sm text-left pt-1">
               {errors.email?.message}
@@ -111,7 +120,7 @@ const Contact = () => {
             {...register("message")}
             cols="30"
             rows="10"
-            className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[15rem] border-[1px] outline-none border-[#747474] bg-black-gradient focus:border-white p-3 rounded-[3px] resize-none"
+            className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[15rem] border-[2px] outline-none border-[#747474] bg-black-gradient focus:border-white p-3 rounded-[3px] resize-none"
           />
           <p className="text-[#ff0000] font-[500] text-sm text-center">
             {errors.message?.message}

@@ -7,6 +7,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Projects />
         <TechStack />
         <Contact />
+        <Footer />
       </main>
     </Fragment>
   );

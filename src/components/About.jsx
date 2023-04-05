@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import myLogo from "../images/IMG_5969.jpeg";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
   return (
-    <section className="text-white bg-black-gradient h-screen " id="about">
+    <section
+      className="text-white bg-black-gradient h-screen"
+      id="about"
+      data-aos="fade-up"
+    >
       <div className="relative md:ml-[13rem]">
         <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />

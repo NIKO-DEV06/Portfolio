@@ -1,5 +1,9 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // import nikoBlack from "../images/nikocodes-b.svg";
 import nikoWhite from "../images/nikocodes-w.svg";
 import myLogo from "../images/IMG_5969.jpeg";
@@ -13,6 +17,9 @@ import githubSvg from "../images/github.svg";
 import femSvg from "../images/frontendmentor.svg";
 
 const SideBar = ({ isNav, backdropClose }) => {
+  useEffect(() => {
+    AOS.init({ duration: 100, once: true });
+  }, []);
   return (
     <AnimatePresence onExitComplete={backdropClose} mode="wait">
       <Fragment>
@@ -29,6 +36,7 @@ const SideBar = ({ isNav, backdropClose }) => {
         )}
 
         <motion.div
+          data-aos="fade-right"
           key="sdb"
           initial={{ x: "-100%" }}
           // initial={{ x: !isNav ? "0%" : "-100%" }}
@@ -58,46 +66,86 @@ const SideBar = ({ isNav, backdropClose }) => {
               <span className="text-white opacity-50">Software Engineer</span>
             </p>
           </div>
-          <div className="text-[14px] flex flex-col gap-3 mt-3">
-            <div className="flex mx-6 text-left bg-[#2b2b2b] hover:opacity-100 cursor-pointer rounded-md border-[1px] border-[#393939]">
+          <div className="text-[14px] flex flex-col gap-2 mt-3">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={backdropClose}
+              className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              activeClass="w-[13rem] mx-auto rounded-md  bg-[#2b2b2b] border-[#393939] opacity-100"
+            >
               <img src={homeSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
-              <a href="#home" className="p-[6px]">
-                Home
-              </a>
-            </div>
-            <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
+              <p className="p-[8px]">Home</p>
+            </Link>
+
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={backdropClose}
+              className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+            >
               <img src={aboutSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
-              <a href="#about" className="p-[6px]">
-                About
-              </a>
-            </div>
-            <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
+              <p className="p-[8px]">About</p>
+            </Link>
+
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={backdropClose}
+              className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+            >
               <img
                 src={projectsSvg}
                 alt=""
                 className="h-[1.7rem] my-auto ml-2"
               />
-              <a href="#projects" className="p-[6px] active:text-green-500">
-                Projects
-              </a>
-            </div>
-            <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
+              <p className="p-[8px]">Projects</p>
+            </Link>
+
+            <Link
+              to="tech-stack"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={backdropClose}
+              className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+            >
               <img src={stackSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
-              <a href="#tech-stack" className="p-[6px]">
-                Tech Stack
-              </a>
-            </div>
-            <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
+              <p className="p-[8px]">Tech Stack</p>
+            </Link>
+
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={backdropClose}
+              className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+            >
               <img
                 src={contactSvg}
                 alt=""
-                className="h-[1.7rem] my-auto ml-2 scale-90"
+                className="h-[1.7rem] my-auto ml-2 scale-[0.85]"
               />
-              <a href="#contact" className="p-[6px]">
-                Contact
-              </a>
-            </div>
+              <p className="p-[8px]">Contact</p>
+            </Link>
           </div>
+
           <p className="mx-6 pl-2 text-[13px] opacity-80 mt-[3rem] font-light text-left tracking-[0.2em]">
             Socials
           </p>

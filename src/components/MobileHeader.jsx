@@ -1,5 +1,7 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import myLogo from "../images/IMG_5969.jpeg";
 import hamburgerSvg from "../images/hamburger.svg";
@@ -16,13 +18,19 @@ const MobileHeader = () => {
     setIsMobileNav(false);
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
   return (
     <Fragment>
       {isMobileNav && (
         <SideBar isNav={isMobileNav} backdropClose={close} onExit={close} />
       )}
 
-      <div className="md:hidden bg-[#1c1c1cf4] md:bg-[#1c1c1c] fixed w-full border-b border-[#424242] z-20">
+      <div
+        data-aos="fade-down"
+        className="md:hidden bg-[#1c1c1cf4] md:bg-[#1c1c1c] fixed w-full border-b border-[#424242] z-20"
+      >
         <div className="flex mx-7 py-5">
           <div className="flex w-full gap-3 h-auto">
             <img

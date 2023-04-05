@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Marquee from "react-fast-marquee";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { stack1, stack2 } from "../helpers/stacks";
 
 const TechStack = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
   return (
     <section
+      data-aos="fade-up"
       className="text-white mt-[2050px] md:mt-[2350px] lg:mt-[1150px] pb-6"
       id="tech-stack"
     >
