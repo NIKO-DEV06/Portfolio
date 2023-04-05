@@ -47,7 +47,7 @@ const Contact = () => {
   return (
     <section className="text-white lg:mt-[3rem] overflow-hidden" id="contact">
       <ToastContainer
-        className=" md:w-[20rem] w-[17rem] h-[rem] text-sm mt-4 mx-auto translate-x-[1rem] md:translate-x-0 mr-3 md:mr-0"
+        className="w-[70%] md:w-[20rem] w-17rem] h-[rem] text-sm mt-4 mx-auto translate-x-[1rem] md:translate-x-0 mr-3 md:mr-0"
         position="top-right"
         autoClose={2000}
         hideProgressBar={true}
