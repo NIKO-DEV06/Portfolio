@@ -36,16 +36,18 @@ const Contact = () => {
         "eCJX0n4ScdUABumdq"
       );
       reset();
-      toast.success("Message sent sucessfully!");
+      toast.success("Message sent successfully!");
     } catch (error) {
-      toast.error("Message failed to send!!.");
+      toast.error("Message failed to send!");
     }
   };
-
+  const toast1 = () => {
+    toast.success("Message sent successfully!");
+  };
   return (
     <section className="text-white lg:mt-[3rem] overflow-hidden" id="contact">
       <ToastContainer
-        className="w-[17rem] h-[rem] text-sm mt-4 mx-auto translate-x-[3.7rem] md:translate-x-0"
+        className=" md:w-[20rem] w-[17rem] h-[rem] text-sm mt-4 mx-auto translate-x-[1rem] md:translate-x-0 mr-3 md:mr-0"
         position="top-right"
         autoClose={2000}
         hideProgressBar={true}
@@ -60,7 +62,10 @@ const Contact = () => {
       <div className="relative md:ml-[13rem]">
         <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
-        <h1 className=" uppercase text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500]">
+        <h1
+          onClick={toast1}
+          className=" uppercase text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500]"
+        >
           CONTACT-ME
         </h1>
       </div>
