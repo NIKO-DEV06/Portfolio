@@ -18,7 +18,7 @@ import femSvg from "../images/frontendmentor.svg";
 
 const SideBar = ({ isNav, backdropClose }) => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 100, once: true });
   }, []);
   return (
     <AnimatePresence onExitComplete={backdropClose} mode="wait">
