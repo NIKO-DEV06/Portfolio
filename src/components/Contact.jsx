@@ -41,9 +41,7 @@ const Contact = () => {
       toast.error("Message failed to send!");
     }
   };
-  const toast1 = () => {
-    toast.success("Message sent successfully!");
-  };
+
   return (
     <section className="text-white lg:mt-[3rem] overflow-hidden" id="contact">
       <ToastContainer
@@ -57,15 +55,12 @@ const Contact = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="light"
+        theme="colored"
       />
       <div className="relative md:ml-[13rem]">
         <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
-        <h1
-          onClick={toast1}
-          className=" uppercase text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500]"
-        >
+        <h1 className=" uppercase text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500]">
           CONTACT-ME
         </h1>
       </div>
