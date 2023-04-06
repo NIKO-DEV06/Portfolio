@@ -32,10 +32,10 @@ const Contact = () => {
     console.log(data);
     try {
       const response = await emailjs.sendForm(
-        "service_8luawmu",
-        "template_tdbeii7",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         "#contact-form",
-        "eCJX0n4ScdUABumdq"
+        import.meta.env.VITE_PUBLIC_ID
       );
       reset();
       toast.success("Message sent successfully!");

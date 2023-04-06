@@ -6,7 +6,7 @@ import forkify from "../projectsImages/forkify.jpg";
 import loops from "../projectsImages/loops.jpg";
 import todo from "../projectsImages/todo.jpg";
 import reactMeals from "../projectsImages/reactmeals.png";
-import easybank from "../projectsImages/easybank.jpg";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -20,6 +20,7 @@ const Projects = () => {
 
   const projects = [
     {
+      id: "p1",
       name: "E-commerce product page",
       desc: " A responsive product page for an E-Commerce Website with a fully functional cart logic, an image slider and an image gallery modal.",
       tools: ["React.Js", "Redux/Redux Toolkit", "Tailwind Css"],
@@ -28,6 +29,7 @@ const Projects = () => {
       live: "https://e-commerce-sneaker-niko.netlify.app/",
     },
     {
+      id: "p2",
       name: "React Meals",
       desc: "A fully functional Food Ordering Web Application connected to a backend database to send POST requests of the orders to the database. It has fully fucntional cart logic.",
       tools: ["React.Js", "CSS Modules", "Firebase"],
@@ -36,6 +38,7 @@ const Projects = () => {
       live: "https://reactmeals-niko.netlify.app/",
     },
     {
+      id: "p3",
       name: "Forkify",
       desc: "A Food recipe web application with consumes data from an API to display large numbers of delicious recipes. Users can add recipes with a form which sends post requests to the API.",
       tools: ["HTML", "SCSS/SASS", "Javascript"],
@@ -44,6 +47,7 @@ const Projects = () => {
       live: "https://forkify-emmanuelayeniko.netlify.app/",
     },
     {
+      id: "p4",
       name: "Todo App",
       desc: "A very interactive todo appliction which can add and delete todos with drag and drop functionality to reorder the list. Todos are stored to local storage and has beautiful light and dark theme modes.",
       tools: ["React.Js", "TailwindCSS", "React Beautiful DND"],
@@ -52,6 +56,7 @@ const Projects = () => {
       live: "https://todo-app-niko.netlify.app/",
     },
     {
+      id: "p5",
       name: "Loop Studios",
       desc: "A fully responsive landing page for the Loop studios landing page.",
       tools: ["HTML", "TailwindCSS", "JavaScript"],
@@ -81,7 +86,10 @@ const Projects = () => {
           <div className="w-[25rem] mx-auto flex flex-col gap-3 lg:w-[60rem]">
             {/* // */}
             {projects.map((project) => (
-              <div className="flex flex-col pb-8 md:translate-x-[9.5rem] lg:flex-row">
+              <div
+                key={project.id}
+                className="flex flex-col pb-8 md:translate-x-[9.5rem] lg:flex-row"
+              >
                 <img
                   src={project.img}
                   alt={project.name}
@@ -95,7 +103,9 @@ const Projects = () => {
                     <p className="font-[500] pr-3">{project.desc}</p>
                     <div className="mt-5 flex text-[0.9rem] gap-2">
                       {project.tools.map((tool) => (
-                        <div className="border-2 p-1">{tool}</div>
+                        <div key={Math.random()} className="border-2 p-1">
+                          {tool}
+                        </div>
                       ))}
                     </div>
                   </div>

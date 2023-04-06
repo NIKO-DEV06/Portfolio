@@ -26,7 +26,10 @@ const TechStack = () => {
       <div className="pb-8 pt-10 flex  overflow-hidden">
         <Marquee gradient={false} direction="right" speed={70} pauseOnHover>
           {stack1.map((stack) => (
-            <div className="flex w-[15.5rem] lg:w-[21rem] lg:h-[8rem] h-[6rem] bg-[#363636] rounded-[0.275rem] mr-4 gap-4 border-[#5a5a5a] border-[1.5px]">
+            <div
+              key={stack.id}
+              className="flex w-[15.5rem] lg:w-[21rem] lg:h-[8rem] h-[6rem] bg-[#363636] rounded-[0.275rem] mr-4 gap-4 border-[#5a5a5a] border-[1.5px]"
+            >
               <img src={stack.img} alt="" className="w-[3rem] ml-2" />
               <div className="my-auto flex flex-col gap-1">
                 <h1 className="text-[0.9rem] lg:text-[1.1rem] font-[800] undeline tracking-[.09em] uppercase ">
@@ -44,7 +47,10 @@ const TechStack = () => {
       <div className="pb-8 flex  overflow-hidden">
         <Marquee gradient={false} direction="left" speed={70} pauseOnHover>
           {stack2.map((stack) => (
-            <div className="flex lg:w-[21rem] lg:h-[8rem] w-[15.5rem] h-[6rem] bg-[#363636] rounded-[0.275rem] mr-4 gap-4 border-[#5a5a5a] border-[1.5px]">
+            <div
+              key={stack.id}
+              className="flex lg:w-[21rem] lg:h-[8rem] w-[15.5rem] h-[6rem] bg-[#363636] rounded-[0.275rem] mr-4 gap-4 border-[#5a5a5a] border-[1.5px]"
+            >
               <img src={stack.img} alt="" className="w-[3rem] ml-2" />
               <div className="my-auto flex flex-col gap-1">
                 <h1 className="lg:text-[1.1rem] text-[0.9rem] font-[800] undeline tracking-[.09em] uppercase ">
