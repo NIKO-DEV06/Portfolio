@@ -8,11 +8,11 @@ const Footer = () => {
     AOS.init({ duration: 1000, once: true });
   }, []);
   return (
-    <section
-      data-aos="fade-up"
-      className="text-white border-t border-[#4c4c4c]"
-    >
-      <div className="flex flex-col py-10 text-[11px] tracking-[0.1em] font-[500] leading-[1rem] md:ml-[13rem] md:tracking-[0.13em] md:leading-[1.3rem]">
+    <section className="text-white border-t border-[#4c4c4c]">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col py-10 text-[11px] tracking-[0.1em] font-[500] leading-[1rem] md:ml-[13rem] md:tracking-[0.13em] md:leading-[1.3rem]"
+      >
         <p className="text-center">Designed and Built</p>
         <p className="text-center">By</p>
         <p className="text-center opacity-70">&copy; Emmanuel Ayeniko</p>
