@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
@@ -19,6 +19,8 @@ const schema = yup.object().shape({
 });
 
 const Contact = () => {
+  const [isSending, setIsSending] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -30,6 +32,7 @@ const Contact = () => {
 
   const formSubmitHandler = async (data) => {
     console.log(data);
+    setIsSending(true);
     try {
       const response = await emailjs.sendForm(
         "service_8luawmu",
@@ -37,7 +40,9 @@ const Contact = () => {
         "#contact-form",
         "eCJX0n4ScdUABumdq"
       );
+
       reset();
+      setIsSending(false);
       toast.success("Message sent successfully!");
     } catch (error) {
       toast.error("Message failed to send!");
@@ -129,14 +134,19 @@ const Contact = () => {
         </div>
 
         <motion.button
-          className="flex border-2 rounded-[3px] cursor-pointer bg-white duration-150  justify-center w-[22rem] mx-auto"
+          disabled={isSending}
+          className={`flex ${
+            isSending ? "border-0" : "border-2"
+          } rounded-[3px] cursor-pointer ${
+            isSending ? "bg-[#ffffff7d]" : "bg-white"
+          } duration-150  justify-center w-[22rem] mx-auto`}
           initial={{ scale: 0.8 }}
           whileHover={{ scale: 0.83 }}
           whileTap={{ scale: 0.65 }}
         >
           <img src={sendSvg} alt="" className="h-[1.9rem] my-auto ml-2" />
           <p className="p-3 font-semibold tracking-[0.25em] duration-150 text-black">
-            SEND MESSAGE
+            {isSending ? "SENDING..." : "SEND MESSAGE"}
           </p>
         </motion.button>
       </form>
