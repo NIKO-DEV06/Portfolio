@@ -34,10 +34,10 @@ const Contact = () => {
     setIsSending(true);
     try {
       const response = await emailjs.sendForm(
-        import.meta.env.VITE_SERVIE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
+        "service_8luawmu",
+        "template_tdbeii7",
         "#contact-form",
-        import.meta.env.VITE_PUBLIC_ID
+        "eCJX0n4ScdUABumdq"
       );
 
       reset();
