@@ -31,14 +31,13 @@ const Contact = () => {
   });
 
   const formSubmitHandler = async (data) => {
-    console.log(data);
     setIsSending(true);
     try {
       const response = await emailjs.sendForm(
-        "service_8luawmu",
-        "template_tdbeii7",
+        import.meta.env.VITE_SERVIE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         "#contact-form",
-        "eCJX0n4ScdUABumdq"
+        import.meta.env.VITE_PUBLIC_ID
       );
 
       reset();

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import sneakers from "../projectsImages/sneakers.jpg";
 import forkify from "../projectsImages/forkify.jpg";
-import loops from "../projectsImages/loops.jpg";
+import countries from "../projectsImages/countries.jpg";
 import todo from "../projectsImages/todo.jpg";
 import reactMeals from "../projectsImages/reactmeals.png";
 
@@ -20,10 +20,19 @@ const Projects = () => {
 
   const projects = [
     {
+      id: "p5",
+      name: "Rest Countries",
+      desc: "The project is designed to utilize the REST Countries API to showcase detailed information about countries worldwide, including names, flags, population, capital, and more. The user interface enables users to search, filter, and sort the data according to their preferences.",
+      tools: ["Next.JS", "TailwindCSS", "React.JS"],
+      img: countries,
+      github: "https://github.com/NIKO-DEV06/REST-Countries",
+      live: "https://rest-countries-niko.vercel.app/",
+    },
+    {
       id: "p1",
       name: "E-commerce product page",
       desc: " A responsive product page for an E-Commerce Website with a fully functional cart logic, an image slider and an image gallery modal.",
-      tools: ["React.Js", "Redux/Redux Toolkit", "Tailwind Css"],
+      tools: ["React.JS", "Redux/Redux Toolkit", "Tailwind Css"],
       img: sneakers,
       github: "https://github.com/NIKO-DEV06/e-commerce-sneaker-page",
       live: "https://e-commerce-sneaker-niko.netlify.app/",
@@ -32,7 +41,7 @@ const Projects = () => {
       id: "p2",
       name: "React Meals",
       desc: "A fully functional Food Ordering Web Application connected to a backend database to send POST requests of the orders to the database. It has fully fucntional cart logic.",
-      tools: ["React.Js", "CSS Modules", "Firebase"],
+      tools: ["React.JS", "CSS Modules", "Firebase"],
       img: reactMeals,
       github: "https://github.com/NIKO-DEV06/ReactMeal-Firebase",
       live: "https://reactmeals-niko.netlify.app/",
@@ -50,19 +59,10 @@ const Projects = () => {
       id: "p4",
       name: "Todo App",
       desc: "A very interactive todo appliction which can add and delete todos with drag and drop functionality to reorder the list. Todos are stored to local storage and has beautiful light and dark theme modes.",
-      tools: ["React.Js", "TailwindCSS", "React Beautiful DND"],
+      tools: ["React.JS", "TailwindCSS", "React Beautiful DND"],
       img: todo,
       github: "https://github.com/NIKO-DEV06/Todo-App",
       live: "https://todo-app-niko.netlify.app/",
-    },
-    {
-      id: "p5",
-      name: "Loop Studios",
-      desc: "A fully responsive landing page for the Loop studios landing page.",
-      tools: ["HTML", "TailwindCSS", "JavaScript"],
-      img: loops,
-      github: "https://github.com/NIKO-DEV06/Loops-Studio",
-      live: "https://loop-studios-niko.netlify.app/",
     },
   ];
 
