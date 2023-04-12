@@ -44,6 +44,7 @@ const Contact = () => {
       setIsSending(false);
       toast.success("Message sent successfully!");
     } catch (error) {
+      setIsSending(false);
       toast.error("Message failed to send!");
     }
   };
