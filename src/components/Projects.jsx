@@ -6,6 +6,7 @@ import forkify from "../projectsImages/forkify.jpg";
 import countries from "../projectsImages/countries.jpg";
 import todo from "../projectsImages/todo.jpg";
 import reactMeals from "../projectsImages/reactmeals.png";
+import felsunny from "../projectsImages/felsunny.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -36,6 +37,15 @@ const Projects = () => {
       img: sneakers,
       github: "https://github.com/NIKO-DEV06/e-commerce-sneaker-page",
       live: "https://e-commerce-sneaker-niko.netlify.app/",
+    },
+    {
+      id: "p6",
+      name: "Felsunny Technology",
+      desc: "A 10-Page Next Js Web Application for a multipurpose company containing the services, and a sepearte service page, company description with a fully functional contact-form. I fully Architected the frontend infrasture, web functionalities and implented performance optimization techniques.",
+      tools: ["Next.JS", "TailwindCSS", "Framer Motion"],
+      img: felsunny,
+      github: "https://github.com/NIKO-DEV06/Felsunny-Technology",
+      live: "https://www.felsunny.com/",
     },
     {
       id: "p2",
@@ -70,7 +80,7 @@ const Projects = () => {
     <Fragment>
       <section
         data-aos="fade-up"
-        className="text-white mt-[5rem] lg:mt-[4rem] h-screen"
+        className="text-white mt-[5rem] lg:mt-[4rem] h-screen pb-[95rem] md:pb-[75rem]"
         id="projects"
       >
         <div className="relative md:ml-[13rem]">
@@ -93,14 +103,18 @@ const Projects = () => {
                 <img
                   src={project.img}
                   alt={project.name}
-                  className=" w-[30rem] h-[16rem] mx-auto object-cover object-top lg:h-auto"
+                  className={` w-[30rem] h-[16rem] mx-auto ${
+                    project.id !== "p6" ? "object-cover" : ""
+                  } object-top lg:h-auto`}
                 />
                 <div className="border-[#8b8b8b] border-2">
                   <div className="ml-4 lg:mr-5">
                     <h2 className="my-5 font-[700] text-[1.55rem] underline">
                       {project.name}
                     </h2>
-                    <p className="font-[500] pr-3">{project.desc}</p>
+                    <p className="font-[500] pr-3 tracking-wide">
+                      {project.desc}
+                    </p>
                     <div className="mt-5 flex text-[0.9rem] gap-2">
                       {project.tools.map((tool) => (
                         <div key={Math.random()} className="border-2 p-1">
