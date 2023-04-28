@@ -156,7 +156,10 @@ const SideBar = ({ isNav, backdropClose }) => {
                 alt=""
                 className="h-[1.7rem] my-auto ml-2"
               />
-              <a href="" className="p-[6px]">
+              <a
+                href="https://www.linkedin.com/in/emmanuel-ayeniko-72a758258/"
+                className="p-[6px]"
+              >
                 Linkedin
               </a>
             </div>
