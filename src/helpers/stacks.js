@@ -16,6 +16,8 @@ import framerSvg from "../tech-stack-images/framer-motion.svg";
 import npmSvg from "../tech-stack-images/npm.svg";
 import reduxSvg from "../tech-stack-images/redux.svg";
 import viteSvg from "../tech-stack-images/vite.svg";
+import cySvg from "../tech-stack-images/cypress.svg";
+import nodeSvg from "../tech-stack-images/node.svg";
 
 export const stack1 = [
   {
@@ -71,6 +73,12 @@ export const stack1 = [
     name: "MongoDb",
     img: mongodbSvg,
     desc: "MongoDB is a popular NoSQL document database.",
+  },
+  {
+    id: "s19",
+    name: "Cypress",
+    img: cySvg,
+    desc: "Cypress is an open-source app that takes the pain out of front-end testing.",
   },
 ];
 
@@ -128,5 +136,11 @@ export const stack2 = [
     name: "react-router",
     img: reactrouterSvg,
     desc: "React Router is a library for routing in React applications.",
+  },
+  {
+    id: "s20",
+    name: "NodeoJS",
+    img: nodeSvg,
+    desc: "Node. js is an open-source JavaScript runtime environment for running web applications outside the client's browser.",
   },
 ];
