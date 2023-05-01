@@ -139,7 +139,7 @@ export const stack2 = [
   },
   {
     id: "s20",
-    name: "NodeoJS",
+    name: "Node.JS",
     img: nodeSvg,
     desc: "Node. js is an open-source JavaScript runtime environment for running web applications outside the client's browser.",
   },
