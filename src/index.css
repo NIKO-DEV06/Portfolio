@@ -5,3 +5,10 @@
 html {
   background: linear-gradient(to right, #161616 40%, black 190%);
 }
+
+body {
+  cursor: auto !important;
+}
+a:hover {
+  cursor: pointer !important;
+}
