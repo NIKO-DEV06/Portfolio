@@ -13,7 +13,7 @@ const TechStack = () => {
   return (
     <section
       data-aos="fade-up"
-      className="text-white mt-[2050px] md:mt-[2350px] lg:mt-[1150px] pb-6"
+      className="text-white mt-[2100px] md:mt-[2450px] lg:mt-[1150px] pb-6"
       id="tech-stack"
     >
       <div className="relative md:ml-[13rem]">

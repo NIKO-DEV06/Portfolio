@@ -7,6 +7,7 @@ import countries from "../projectsImages/countries.jpg";
 import todo from "../projectsImages/todo.jpg";
 import reactMeals from "../projectsImages/reactmeals.png";
 import felsunny from "../projectsImages/felsunny.png";
+import kanban from "../projectsImages/kanban.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,6 +21,15 @@ const Projects = () => {
   }, []);
 
   const projects = [
+    {
+      id: "p9",
+      name: "Kanban Task Management",
+      desc: "This project focuses on building a responsive and interactive task management application. It showcases a Kanban board where users can seamlessly add, edit, and delete tasks & boards, and effortlessly move them between stages using drag and drop, including state management using Redux-Toolkit.",
+      tools: ["React.JS", "Typescript", "TailwindCSS", "Redux-Toolkit"],
+      img: kanban,
+      github: "https://github.com/NIKO-DEV06/Kanban-Task-Management",
+      live: "https://nikokanban-task-manager.vercel.app/",
+    },
     {
       id: "p5",
       name: "Rest Countries",
@@ -40,7 +50,7 @@ const Projects = () => {
     },
     {
       id: "p6",
-      name: "Felsunny Technology",
+      name: "Felsunny Technology LTD",
       desc: "A 10-Page NextJS Web Application for a multipurpose company containing the services, and a sepearte service page, company description with a fully functional contact-form. I designed the frontend infrasture, web functionalities and implemented performance optimization techniques.",
       tools: ["Next.JS", "TailwindCSS", "Framer Motion"],
       img: felsunny,
@@ -55,15 +65,6 @@ const Projects = () => {
       img: reactMeals,
       github: "https://github.com/NIKO-DEV06/ReactMeal-Firebase",
       live: "https://reactmeals-niko.netlify.app/",
-    },
-    {
-      id: "p3",
-      name: "Forkify",
-      desc: "A Food recipe web application with consumes data from an API to display large numbers of delicious recipes. Users can add recipes with a form which sends post requests to the API.",
-      tools: ["HTML", "SCSS/SASS", "Javascript"],
-      img: forkify,
-      github: "https://github.com/NIKO-DEV06/forkify-project",
-      live: "https://forkify-emmanuelayeniko.netlify.app/",
     },
     {
       id: "p4",
@@ -92,7 +93,7 @@ const Projects = () => {
         </div>
         {/* projects list */}
 
-        <div className="w-full flex flex-col justify-center scale-[0.86] translate-y-[-10rem] lg:mt-[7rem]">
+        <div className="w-full flex flex-col justify-center scale-[0.86] translate-y-[-15rem] md:translate-y-[-11rem] lg:mt-[7rem]">
           <div className="w-[25rem] mx-auto flex flex-col gap-3 lg:w-[60rem]">
             {/* // */}
             {projects.map((project) => (
