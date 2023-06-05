@@ -23,8 +23,6 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
     AOS.init({ duration: 100, once: true });
   }, []);
 
-
-
   return (
     <AnimatePresence onExitComplete={backdropClose} mode="wait">
       <Fragment>
@@ -221,7 +219,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               </p>
             </motion.div>
           </a>
-          <div className="flex justify-center items-center gap-[1rem] bg-[#c1c1c1] dark:bg-[#2e2e2e] mx-[3rem] py-[0.5rem] rounded-md mt[18rem] cursor-pointer translate-y-[4rem]">
+          <div className="px-[1rem] flex justify-center items-center gap-[1rem] bg-[#c1c1c1] dark:bg-[#2e2e2e] mx-[3rem] py-[0.5rem] rounded-md mt-[1rem] cursor-pointer translatey-[4rem]">
             <img
               src={sun}
               alt="sun"
