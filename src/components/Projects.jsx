@@ -131,7 +131,7 @@ const Projects = () => {
                   <div className="flex justify-center gap-[1.5rem] translate-y-[-1.5rem]">
                     <motion.a
                       href={project.github}
-                      className="flex border-2 mt-[3rem] rounded-lg scale-75 cursor-pointer duration-150 mr-[-1.5rem]"
+                      className="flex border-2 border-black dark:border-white mt-[3rem] rounded-lg scale-75 cursor-pointer duration-150 mr-[-1.5rem]"
                       initial={{ scale: 0.75 }}
                       whileHover={{ scale: 0.77 }}
                       whileTap={{ scale: 0.5 }}
@@ -139,7 +139,7 @@ const Projects = () => {
                       <img
                         src={githubSvg}
                         alt=""
-                        className="h-[1.7rem] my-auto ml-2 scale-95 pl-1"
+                        className="h-[1.7rem] my-auto ml-2 scale-95 pl-1 filter invert dark:filter-none"
                       />
                       <p className="p-3 font-semibold tracking-[0.25em] duration-150">
                         GITHUB
@@ -147,7 +147,7 @@ const Projects = () => {
                     </motion.a>
                     <motion.a
                       href={project.live}
-                      className="flex border-2  mt-[3rem] rounded-lg scale-75 cursor-pointer bg-white duration-150 ml-[-1.5rem] w-[11rem]"
+                      className="flex border-2  mt-[3rem] rounded-lg scale-75 cursor-pointer dark:bg-white bg-black duration-150 ml-[-1.5rem] w-[11rem]"
                       initial={{ scale: 0.75 }}
                       whileHover={{ scale: 0.77 }}
                       whileTap={{ scale: 0.5 }}
@@ -155,9 +155,9 @@ const Projects = () => {
                       <img
                         src={linkSvg}
                         alt=""
-                        className="h-[1.9rem] my-auto ml-2"
+                        className="h-[1.9rem] my-auto ml-2 filter invert dark:filter-none"
                       />
-                      <p className="p-3 font-semibold tracking-[0.25em] duration-150 text-black">
+                      <p className="p-3 font-semibold tracking-[0.25em] duration-150 dark:text-black text-white">
                         LIVE SITE
                       </p>
                     </motion.a>
