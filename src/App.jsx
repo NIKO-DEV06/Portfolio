@@ -15,6 +15,39 @@ const App = () => {
     }, 3000);
   }, []);
 
+  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }, []);
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(storedTheme);
+    }
+  }, []);
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   return (
     <Fragment>
       <AnimatedCursor
@@ -41,8 +74,8 @@ const App = () => {
         ]}
       />
       {isLoading ? (
-        <section className="bg-black-gradient h-screen flex flex-col gap-2 justify-center lg:gap-4 md:gap-3">
-          <h1 className=" text-center lg:text-6xl md:text-5xl text-2xl w-full text-white opacity-80 italic font-light">
+        <section className="dark:bg-black-gradient bg-white-gradient dark:bg-red-500 h-screen flex flex-col gap-2 justify-center lg:gap-4 md:gap-3">
+          <h1 className=" text-center lg:text-6xl md:text-5xl text-2xl w-full dark:text-white text-black opacity-80 italic font-light">
             <Typewriter
               options={{
                 strings: ["< EMMANUEL />"],
@@ -55,14 +88,14 @@ const App = () => {
             <BarLoader
               loading={isLoading}
               size={50}
-              color="#ffffff"
+              color={`${theme === "dark" ? "#ffffff" : "#000000"}`}
               aria-label="Loading Spinner"
               data-testid="loader"
             />
           </div>
         </section>
       ) : (
-        <Components />
+        <Components theme={theme} handleThemeSwitch={handleThemeSwitch} />
       )}
     </Fragment>
   );

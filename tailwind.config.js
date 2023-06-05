@@ -35,6 +35,8 @@ module.exports = {
         "image-gradient":
           "linear-gradient(to top, #000000, rgba(255, 255, 255, 0.5))",
         "white-gradient": "linear-gradient(to right, #fdfbfb 0%, #ebedee 100%)",
+        "loader-gradient":
+          "linear-gradient(to right, #868f96 0%, #596164 100%)",
       },
 
       fontFamily: {
