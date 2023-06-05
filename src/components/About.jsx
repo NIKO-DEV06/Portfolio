@@ -10,7 +10,7 @@ const About = () => {
   }, []);
   return (
     <section
-      className="text-white bg-black-gradient h-screen"
+      className="dark:text-white text-black dark:bg-black-gradient bg-white-gradient h-screen"
       id="about"
       data-aos="fade-up"
     >
@@ -44,10 +44,10 @@ const About = () => {
           <img
             src={myLogo}
             alt=""
-            className="rounded-sm h-[18rem] mt-3 relative z-[2]"
+            className="rounded-sm dark:border-white border-black h-[18rem] mt-3 relative z-[2] border-2"
           />
 
-          <div className="w-[18rem] h-[18rem] border-2 absolute inset-0 left-[1rem] top-[1rem] lg:left-[1.1rem] lg:top-[1.8rem] group-hover:lg:left-0 group-hover:lg:top-3 group-hover:lg:scale-110 duration-300"></div>
+          <div className="w-[18rem] h-[18rem] border-2 dark:border-white border-black absolute inset-0 left-[1rem] top-[1rem] lg:left-[1.1rem] lg:top-[1.8rem] group-hover:lg:left-0 group-hover:lg:top-3 group-hover:lg:scale-110 duration-300"></div>
         </div>
       </div>
     </section>

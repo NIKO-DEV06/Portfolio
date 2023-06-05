@@ -13,7 +13,7 @@ const TechStack = () => {
   return (
     <section
       data-aos="fade-up"
-      className="text-white mt-[2100px] md:mt-[2450px] lg:mt-[1150px] pb-6"
+      className="dark:text-white text-black mt-[2100px] md:mt-[2450px] lg:mt-[1150px] pb-6"
       id="tech-stack"
     >
       <div className="relative md:ml-[13rem]">
@@ -28,7 +28,7 @@ const TechStack = () => {
           {stack1.map((stack) => (
             <div
               key={stack.id}
-              className="flex w-[15.5rem] lg:w-[21rem] lg:h-[8rem] h-[6rem] bg-[#363636] rounded-[0.275rem] mr-4 gap-4 border-[#5a5a5a] border-[1.5px]"
+              className="flex w-[15.5rem] lg:w-[21rem] lg:h-[8rem] h-[6rem] dark:bg-[#363636] bg-[#c9c9c9] rounded-[0.275rem] mr-4 gap-4 border-[#5a5a5a] border-[1.5px]"
             >
               <img src={stack.img} alt="" className="w-[3rem] ml-2" />
               <div className="my-auto flex flex-col gap-1">
@@ -49,7 +49,7 @@ const TechStack = () => {
           {stack2.map((stack) => (
             <div
               key={stack.id}
-              className="flex lg:w-[21rem] lg:h-[8rem] w-[15.5rem] h-[6rem] bg-[#363636] rounded-[0.275rem] mr-4 gap-4 border-[#5a5a5a] border-[1.5px]"
+              className="flex lg:w-[21rem] lg:h-[8rem] w-[15.5rem] h-[6rem] dark:bg-[#363636] bg-[#c9c9c9] rounded-[0.275rem] mr-4 gap-4 border-[#5a5a5a] border-[1.5px]"
             >
               <img src={stack.img} alt="" className="w-[3rem] ml-2" />
               <div className="my-auto flex flex-col gap-1">

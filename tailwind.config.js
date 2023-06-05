@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     screens: {
       // xl: { min: "1280px" },
@@ -33,7 +34,9 @@ module.exports = {
         "black-gradient": "linear-gradient(to right, #161616 40%, black 190%)",
         "image-gradient":
           "linear-gradient(to top, #000000, rgba(255, 255, 255, 0.5))",
+        "white-gradient": "linear-gradient(to right, #fdfbfb 0%, #ebedee 100%)",
       },
+
       fontFamily: {
         sans: ["Raleway", "sans-serif"],
       },

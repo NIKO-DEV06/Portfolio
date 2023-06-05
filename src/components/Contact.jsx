@@ -55,7 +55,7 @@ const Contact = () => {
 
   return (
     <section
-      className="text-white lg:mt-[3rem] overflow-hidden"
+      className="dark:text-white text-black lg:mt-[3rem] overflow-hidden"
       id="contact"
       data-aos="fade-up"
     >
@@ -98,7 +98,7 @@ const Contact = () => {
               name="name"
               {...register("name")}
               autoComplete="off"
-              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[2px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-[3px]"
+              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[2px] outline-none dark:border-[#747474] border-black dark:bg-black-gradient bg-white-gradient focus:border-white indent-3 rounded-[3px]"
             />
             <p className="text-[#ff0000] font-[500] text-sm text-left pt-1">
               {errors.name?.message}
@@ -112,7 +112,7 @@ const Contact = () => {
               name="email"
               {...register("email")}
               autoComplete="off"
-              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[2px] outline-none border-[#747474] bg-black-gradient focus:border-white indent-3 rounded-[3px]"
+              className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[2.5rem] border-[2px] outline-none dark:border-[#747474] border-black dark:bg-black-gradient bg-white-gradient focus:border-white indent-3 rounded-[3px]"
             />
             <p className="text-[#ff0000] font-[500] text-sm text-left pt-1">
               {errors.email?.message}
@@ -126,7 +126,7 @@ const Contact = () => {
             {...register("message")}
             cols="30"
             rows="10"
-            className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[15rem] border-[2px] outline-none border-[#747474] bg-black-gradient focus:border-white p-3 rounded-[3px] resize-none"
+            className="w-[22rem] md:w-[27.5rem] lg:w-[40rem] h-[15rem] border-[2px] outline-none dark:border-[#747474] border-black dark:bg-black-gradient bg-white-gradient focus:border-white p-3 rounded-[3px] resize-none"
           />
           <p className="text-[#ff0000] font-[500] text-sm text-center">
             {errors.message?.message}
@@ -137,15 +137,19 @@ const Contact = () => {
           disabled={isSending}
           className={`flex ${
             isSending ? "border-0" : "border-2"
-          } rounded-[3px] cursor-pointer ${
-            isSending ? "bg-[#ffffff7d]" : "bg-white"
+          } rounded-[7px] cursor-pointer ${
+            isSending ? "bg-[#ffffff7d]" : "dark:bg-white bg-black"
           } duration-150  justify-center w-[22rem] mx-auto`}
           initial={{ scale: 0.8 }}
           whileHover={{ scale: 0.83 }}
           whileTap={{ scale: 0.65 }}
         >
-          <img src={sendSvg} alt="" className="h-[1.9rem] my-auto ml-2" />
-          <p className="p-3 font-semibold tracking-[0.25em] duration-150 text-black">
+          <img
+            src={sendSvg}
+            alt=""
+            className="h-[1.9rem] my-auto ml-2 filter invert dark:filter-none"
+          />
+          <p className="p-3 font-semibold tracking-[0.25em] duration-150 dark:text-black text-white">
             {isSending ? "SENDING..." : "SEND MESSAGE"}
           </p>
         </motion.button>

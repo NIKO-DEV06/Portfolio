@@ -16,11 +16,13 @@ import contactSvg from "../images/mailbox.svg";
 import linkedinSvg from "../images/linkedin.svg";
 import githubSvg from "../images/github.svg";
 import femSvg from "../images/frontendmentor.svg";
+import sun from "../images/icon-light-theme.svg";
+import moon from "../images/icon-dark-theme.svg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const MobileHeader = () => {
+const MobileHeader = ({ theme, handleThemeSwitch }) => {
   const [isMobileNav, setIsMobileNav] = useState(false);
 
   const open = () => {
@@ -64,26 +66,28 @@ const MobileHeader = () => {
 
       <div
         data-aos="fade-down"
-        className="md:hidden bg-[#1c1c1cf4] md:bg-[#1c1c1c] fixed w-full border-b border-[#424242] z-20"
+        className="md:hidden dark:bg-[#1c1c1cf4] bg-[#eeededf4] fixed w-full border-b border-[#424242] z-20"
       >
         <div className="flex mx-7 py-5">
           <div className="flex w-full gap-3 h-auto">
             <img
               src={myLogo}
               alt=""
-              className="rounded-full w-[2.7rem] cursor-pointer border-[1px]"
+              className="rounded-full w-[2.7rem] cursor-pointer border-[1px] border-black dark:border-white"
             />
-            <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px] text-white">
+            <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px] dark:text-white text-black">
               Emmanuel Ayeniko
               <br />
-              <span className="text-white opacity-50">Software Engineer</span>
+              <span className="dark:text-white text-black opacity-50">
+                Software Engineer
+              </span>
             </p>
           </div>
           <div onClick={open}>
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="grid cursor-pointer bg-[#414040] h-[2.5rem] w-[2.5rem] rounded-lg"
+              className="grid cursor-pointer dark:bg-[#414040] bg-[#bebfbf] h-[2.5rem] w-[2.5rem] rounded-lg"
             >
               <img
                 src={hamburgerSvg}
@@ -120,13 +124,13 @@ const MobileHeader = () => {
               variants={navVariants}
               className={`${
                 !isMobileNav && "hidden"
-              } z-40 fixed top-0 bottom-0 left-0 w-[250px] overflow-y-auto text-center bg-[#1c1c1c] border-r-[1.5px] border-[#282828] md:flex flex-col text-white`}
+              } z-40 fixed top-0 bottom-0 left-0 w-[250px] overflow-y-auto text-center dark:bg-black-gradient bg-white-gradient border-r-[1.5px] border-[#282828] md:flex flex-col dark:text-white text-black`}
             >
               <div className="w-full cursor-pointer">
                 <img
                   src={nikoWhite}
                   alt=""
-                  className=" h-[5rem] mx-auto scale-[1.8] translate-y-[-0.6rem]"
+                  className=" h-[5rem] mx-auto scale-[1.8] translate-y-[-0.6rem] filter invert dark:filter-none"
                 />
               </div>
               <div className="flex w-full pl-[1.7rem] translate-y-[-1rem] gap-2 h-auto">
@@ -138,7 +142,7 @@ const MobileHeader = () => {
                 <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px] ">
                   Emmanuel Ayeniko
                   <br />
-                  <span className="text-white opacity-50">
+                  <span className="dark:text-white text-black opacity-50">
                     Software Engineer
                   </span>
                 </p>
@@ -152,12 +156,12 @@ const MobileHeader = () => {
                   duration={500}
                   onClick={close}
                   className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
-                  activeClass="w-[13rem] mx-auto rounded-md  bg-[#2b2b2b] border-[#393939] opacity-100"
+                  activeClass="w-[13rem] mx-auto rounded-md  bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
                 >
                   <img
                     src={homeSvg}
                     alt=""
-                    className="h-[1.7rem] my-auto ml-2"
+                    className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
                   <p className="p-[8px]">Home</p>
                 </Link>
@@ -170,12 +174,12 @@ const MobileHeader = () => {
                   duration={500}
                   onClick={close}
                   className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
-                  activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+                  activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
                 >
                   <img
                     src={aboutSvg}
                     alt=""
-                    className="h-[1.7rem] my-auto ml-2"
+                    className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
                   <p className="p-[8px]">About</p>
                 </Link>
@@ -188,12 +192,12 @@ const MobileHeader = () => {
                   duration={500}
                   onClick={close}
                   className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
-                  activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+                  activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
                 >
                   <img
                     src={projectsSvg}
                     alt=""
-                    className="h-[1.7rem] my-auto ml-2"
+                    className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
                   <p className="p-[8px]">Projects</p>
                 </Link>
@@ -206,12 +210,12 @@ const MobileHeader = () => {
                   duration={500}
                   onClick={close}
                   className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
-                  activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+                  activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
                 >
                   <img
                     src={stackSvg}
                     alt=""
-                    className="h-[1.7rem] my-auto ml-2"
+                    className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
                   <p className="p-[8px]">Tech Stack</p>
                 </Link>
@@ -224,12 +228,12 @@ const MobileHeader = () => {
                   duration={500}
                   onClick={close}
                   className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
-                  activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+                  activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
                 >
                   <img
                     src={contactSvg}
                     alt=""
-                    className="h-[1.7rem] my-auto ml-2 scale-[0.85]"
+                    className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none scale-[0.85]"
                   />
                   <p className="p-[8px]">Contact</p>
                 </Link>
@@ -243,7 +247,7 @@ const MobileHeader = () => {
                   <img
                     src={linkedinSvg}
                     alt=""
-                    className="h-[1.7rem] my-auto ml-2"
+                    className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
                   <a href="" className="p-[6px]">
                     Linkedin
@@ -253,7 +257,7 @@ const MobileHeader = () => {
                   <img
                     src={githubSvg}
                     alt=""
-                    className="h-[1.7rem] my-auto ml-2"
+                    className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
                   <a
                     href="https://github.com/NIKO-DEV06?tab=repositories"
@@ -266,7 +270,7 @@ const MobileHeader = () => {
                   <img
                     src={femSvg}
                     alt=""
-                    className="h-[1.7rem] my-auto ml-2"
+                    className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
                   <a
                     href="https://www.frontendmentor.io/profile/NIKO-DEV06"
@@ -278,7 +282,7 @@ const MobileHeader = () => {
               </div>
               <a href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing">
                 <motion.div
-                  className="border-2 mx-[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group hover:bg-white duration-150"
+                  className="border-2 border-black dark:border-white mx-[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group dark:hover:bg-white hover:bg-black duration-150"
                   initial={{ scale: 0.75 }}
                   whileHover={{ scale: 0.8 }}
                   whileTap={{ scale: 0.5 }}
@@ -288,6 +292,29 @@ const MobileHeader = () => {
                   </p>
                 </motion.div>
               </a>
+              <div className="flex justify-center items-center gap-[1rem] bg-[#c1c1c1] dark:bg-[#2e2e2e] mx-[3rem] py-[0.5rem] rounded-md mt[18rem] cursor-pointer translate-y-[1.8rem]">
+                <img
+                  src={sun}
+                  alt="sun"
+                  className="filter invert dark:filter-none"
+                />
+                <div
+                  onClick={handleThemeSwitch}
+                  className=" relative w-[3.3rem] h-[1.5rem] bg-[#1c1c1c] border-[#ffffff70] border-[1.5px] rounded-full"
+                >
+                  <div
+                    className={`absolute h-[1rem] w-[1rem] bg-white rounded-full top-[3px]
+                right-[3px] transition-all duration-200 ${
+                  theme === "light" ? "transform translate-x-[-180%]" : ""
+                } `}
+                  ></div>
+                </div>
+                <img
+                  src={moon}
+                  alt="moon"
+                  className="filter invert dark:filter-none"
+                />
+              </div>
             </motion.div>
           </Fragment>
         )}

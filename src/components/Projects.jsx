@@ -81,7 +81,7 @@ const Projects = () => {
     <Fragment>
       <section
         data-aos="fade-up"
-        className="text-white mt-[5rem] lg:mt-[4rem] h-screen pb-[95rem] md:pb-[75rem]"
+        className="dark:text-white text-black mt-[5rem] lg:mt-[4rem] h-screen pb-[95rem] md:pb-[75rem]"
         id="projects"
       >
         <div className="relative md:ml-[13rem]">
@@ -104,11 +104,11 @@ const Projects = () => {
                 <img
                   src={project.img}
                   alt={project.name}
-                  className={` w-[30rem] h-[16rem] mx-auto ${
+                  className={` w-[30rem] h-[16rem] mx-auto border-t-2 border-l-2 md:border-b-2 border-r-2 md:border-r-0 border-black dark:border-white ${
                     project.id !== "p6" ? "object-cover" : ""
                   } object-top lg:h-auto`}
                 />
-                <div className="border-[#8b8b8b] border-2">
+                <div className="dark:border-white border-2 border-black">
                   <div className="ml-4 lg:mr-5">
                     <h2 className="my-5 font-[700] text-[1.55rem] underline">
                       {project.name}
@@ -118,7 +118,10 @@ const Projects = () => {
                     </p>
                     <div className="mt-5 flex text-[0.9rem] gap-2">
                       {project.tools.map((tool) => (
-                        <div key={Math.random()} className="border-2 p-1">
+                        <div
+                          key={Math.random()}
+                          className="border-2 border-black dark:border-white p-1"
+                        >
                           {tool}
                         </div>
                       ))}

@@ -15,11 +15,16 @@ import contactSvg from "../images/mailbox.svg";
 import linkedinSvg from "../images/linkedin.svg";
 import githubSvg from "../images/github.svg";
 import femSvg from "../images/frontendmentor.svg";
+import sun from "../images/icon-light-theme.svg";
+import moon from "../images/icon-dark-theme.svg";
 
-const SideBar = ({ isNav, backdropClose }) => {
+const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
   useEffect(() => {
     AOS.init({ duration: 100, once: true });
   }, []);
+
+
+
   return (
     <AnimatePresence onExitComplete={backdropClose} mode="wait">
       <Fragment>
@@ -45,25 +50,27 @@ const SideBar = ({ isNav, backdropClose }) => {
           transition={{ duration: 0.3 }}
           className={`${
             !isNav && "hidden"
-          } z-40 fixed top-0 bottom-0 left-0 w-[250px] overflow-y-auto text-center bg-[#1c1c1c] border-r-[1.5px] border-[#282828] md:flex flex-col text-white`}
+          } z-40 fixed top-0 bottom-0 left-0 w-[250px] overflow-y-auto text-center dark:bg-black-gradient bg-white-gradient border-r-[1.5px] border-[#282828] md:flex flex-col dark:text-white text-black`}
         >
           <div className="w-full cursor-pointer">
             <img
               src={nikoWhite}
               alt=""
-              className=" h-[5rem] mx-auto scale-[1.8] translate-y-[-0.6rem]"
+              className=" h-[5rem] mx-auto scale-[1.8] translate-y-[-0.6rem] filter invert dark:invert-0"
             />
           </div>
           <div className="flex w-full pl-[1.7rem] translate-y-[-1rem] gap-2 h-auto">
             <img
               src={myLogo}
               alt=""
-              className="rounded-full w-[2.7rem] cursor-pointer border-[1px]"
+              className="rounded-full w-[2.7rem] cursor-pointer border-[1.5px] border-black dark:border-white"
             />
             <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px] ">
               Emmanuel Ayeniko
               <br />
-              <span className="text-white opacity-50">Software Engineer</span>
+              <span className="dark:text-white text-black opacity-50">
+                Software Engineer
+              </span>
             </p>
           </div>
           <div className="text-[14px] flex flex-col gap-2 mt-3">
@@ -74,10 +81,14 @@ const SideBar = ({ isNav, backdropClose }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
-              activeClass="w-[13rem] mx-auto rounded-md  bg-[#2b2b2b] border-[#393939] opacity-100"
+              className="flex mx-6 text-left opacity-80 dark:opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              activeClass="w-[13rem] mx-auto rounded-md bg-[#c0c0c0] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
-              <img src={homeSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
+              <img
+                src={homeSvg}
+                alt=""
+                className="h-[1.7rem] my-auto ml-2 filter invert dark:invert-0"
+              />
               <p className="p-[8px]">Home</p>
             </Link>
 
@@ -88,10 +99,14 @@ const SideBar = ({ isNav, backdropClose }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
-              activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+              className="flex mx-6 text-left opacity-80 dark:opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
-              <img src={aboutSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
+              <img
+                src={aboutSvg}
+                alt=""
+                className="h-[1.7rem] my-auto ml-2 filter invert dark:invert-0"
+              />
               <p className="p-[8px]">About</p>
             </Link>
 
@@ -102,13 +117,13 @@ const SideBar = ({ isNav, backdropClose }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
-              activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+              className="flex mx-6 text-left opacity-80 dark:opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
                 src={projectsSvg}
                 alt=""
-                className="h-[1.7rem] my-auto ml-2"
+                className="h-[1.7rem] my-auto ml-2 filter invert dark:invert-0"
               />
               <p className="p-[8px]">Projects</p>
             </Link>
@@ -120,10 +135,14 @@ const SideBar = ({ isNav, backdropClose }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
-              activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+              className="flex mx-6 text-left opacity-80 dark:opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
-              <img src={stackSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
+              <img
+                src={stackSvg}
+                alt=""
+                className="h-[1.7rem] my-auto ml-2 filter invert dark:invert-0"
+              />
               <p className="p-[8px]">Tech Stack</p>
             </Link>
 
@@ -134,27 +153,27 @@ const SideBar = ({ isNav, backdropClose }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-50 duration-300 hover:opacity-100 cursor-pointer"
-              activeClass="w-[13rem] mx-auto rounded-md bg-[#2b2b2b] border-[#393939] opacity-100"
+              className="flex mx-6 text-left opacity-80 dark:opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
                 src={contactSvg}
                 alt=""
-                className="h-[1.7rem] my-auto ml-2 scale-[0.85]"
+                className="h-[1.7rem] my-auto ml-2 scale-[0.85] filter invert dark:invert-0"
               />
               <p className="p-[8px]">Contact</p>
             </Link>
           </div>
 
-          <p className="mx-6 pl-2 text-[13px] opacity-80 mt-[3rem] font-light text-left tracking-[0.2em]">
+          <p className="mx-6 pl-2 text-[13px] mt-[3rem] font-light text-left tracking-[0.2em]">
             Socials
           </p>
           <div className="text-[14px] flex flex-col gap-3 mt-3">
-            <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
+            <div className="flex mx-6 text-left opacity-90 dark:opacity-50 hover:opacity-100 duration-300 cursor-pointer">
               <img
                 src={linkedinSvg}
                 alt=""
-                className="h-[1.7rem] my-auto ml-2"
+                className="h-[1.7rem] my-auto ml-2 filter invert dark:invert-0"
               />
               <a
                 href="https://www.linkedin.com/in/emmanuel-ayeniko-72a758258/"
@@ -163,8 +182,12 @@ const SideBar = ({ isNav, backdropClose }) => {
                 Linkedin
               </a>
             </div>
-            <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
-              <img src={githubSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
+            <div className="flex mx-6 text-left opacity-90 dark:opacity-50 hover:opacity-100 duration-300 cursor-pointer">
+              <img
+                src={githubSvg}
+                alt=""
+                className="h-[1.7rem] my-auto ml-2 filter invert dark:invert-0"
+              />
               <a
                 href="https://github.com/NIKO-DEV06?tab=repositories"
                 className="p-[6px]"
@@ -172,8 +195,12 @@ const SideBar = ({ isNav, backdropClose }) => {
                 GitHub
               </a>
             </div>
-            <div className="flex mx-6 text-left opacity-50 hover:opacity-100 duration-300 cursor-pointer">
-              <img src={femSvg} alt="" className="h-[1.7rem] my-auto ml-2" />
+            <div className="flex mx-6 text-left opacity-90 dark:opacity-50 hover:opacity-100 duration-300 cursor-pointer">
+              <img
+                src={femSvg}
+                alt=""
+                className="h-[1.7rem] my-auto ml-2 filter invert dark:invert-0"
+              />
               <a
                 href="https://www.frontendmentor.io/profile/NIKO-DEV06"
                 className="p-[6px]"
@@ -184,16 +211,39 @@ const SideBar = ({ isNav, backdropClose }) => {
           </div>
           <a href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing">
             <motion.div
-              className="border-2 mx-[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group hover:bg-white duration-150"
+              className="border-2 border-black dark:border-white mx-[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group dark:hover:bg-white hover:bg-black  duration-150"
               initial={{ scale: 0.75 }}
               whileHover={{ scale: 0.8 }}
               whileTap={{ scale: 0.5 }}
             >
-              <p className="p-3 font-semibold tracking-[0.25em] group-hover:text-black duration-150">
+              <p className="p-3 font-semibold tracking-[0.25em] dark:group-hover:text-black group-hover:text-white dark:text-white text-black duration-150">
                 RESUME
               </p>
             </motion.div>
           </a>
+          <div className="flex justify-center items-center gap-[1rem] bg-[#c1c1c1] dark:bg-[#2e2e2e] mx-[3rem] py-[0.5rem] rounded-md mt[18rem] cursor-pointer translate-y-[4rem]">
+            <img
+              src={sun}
+              alt="sun"
+              className="filter invert dark:filter-none"
+            />
+            <div
+              onClick={handleThemeSwitch}
+              className=" relative w-[3.3rem] h-[1.5rem] bg-[#1c1c1c] border-[#ffffff70] border-[1.5px] rounded-full"
+            >
+              <div
+                className={`absolute h-[1rem] w-[1rem] bg-white rounded-full top-[3px]
+                right-[3px] transition-all duration-200 ${
+                  theme === "light" ? "transform translate-x-[-180%]" : ""
+                } `}
+              ></div>
+            </div>
+            <img
+              src={moon}
+              alt="moon"
+              className="filter invert dark:filter-none"
+            />
+          </div>
         </motion.div>
       </Fragment>
     </AnimatePresence>
