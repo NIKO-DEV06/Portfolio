@@ -292,7 +292,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                   </p>
                 </motion.div>
               </a>
-              <div className="flex justify-center items-center gap-[1rem] bg-[#c1c1c1] dark:bg-[#2e2e2e] mx-[3rem] py-[0.5rem] rounded-md mt[18rem] cursor-pointer translate-y-[1.8rem]">
+              <div className="flex justify-center items-center gap-[1rem] bg-[#c1c1c1] dark:bg-[#2e2e2e] mx-[3rem] py-[0.5rem] rounded-md cursor-pointer translate-y-[1.3rem]">
                 <img
                   src={sun}
                   alt="sun"
