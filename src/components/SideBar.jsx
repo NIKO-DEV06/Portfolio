@@ -79,7 +79,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-80 dark:opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.3] hover:translate-x-[2rem] cursor-pointer"
               activeClass="w-[13rem] mx-auto rounded-md bg-[#c0c0c0] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
@@ -97,7 +97,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-80 dark:opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.3] hover:translate-x-[2rem] cursor-pointer"
               activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
@@ -115,7 +115,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-80 dark:opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.3] hover:translate-x-[2rem] cursor-pointer"
               activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
@@ -133,7 +133,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-80 dark:opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              className="flex mx-6 text-left opacity-80  duration-300 hover:opacity-100 hover:scale-[1.3] hover:translate-x-[2rem] cursor-pointer"
               activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
@@ -151,7 +151,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-80 dark:opacity-50 duration-300 hover:opacity-100 cursor-pointer"
+              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.3] hover:translate-x-[2rem] cursor-pointer"
               activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
@@ -167,7 +167,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
             Socials
           </p>
           <div className="text-[14px] flex flex-col gap-3 mt-3">
-            <div className="flex mx-6 text-left opacity-90 dark:opacity-50 hover:opacity-100 duration-300 cursor-pointer">
+            <div className="flex mx-6 text-left opacity-90 hover:scale-[1.3] hover:translate-x-[2rem] hover:opacity-100 duration-300 cursor-pointer">
               <img
                 src={linkedinSvg}
                 alt=""
@@ -180,7 +180,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
                 Linkedin
               </a>
             </div>
-            <div className="flex mx-6 text-left opacity-90 dark:opacity-50 hover:opacity-100 duration-300 cursor-pointer">
+            <div className="flex mx-6 text-left opacity-90 hover:scale-[1.3] hover:translate-x-[2rem] hover:opacity-100 duration-300 cursor-pointer">
               <img
                 src={githubSvg}
                 alt=""
@@ -193,7 +193,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
                 GitHub
               </a>
             </div>
-            <div className="flex mx-6 text-left opacity-90 dark:opacity-50 hover:opacity-100 duration-300 cursor-pointer">
+            <div className="flex mx-6 text-left opacity-90 hover:scale-[1.3] hover:translate-x-[2rem] hover:opacity-100 duration-300 cursor-pointer">
               <img
                 src={femSvg}
                 alt=""
