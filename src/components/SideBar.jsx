@@ -79,7 +79,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.3] hover:translate-x-[2rem] cursor-pointer"
+              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.1] hover:translate-x-[1rem] cursor-pointer"
               activeClass="w-[13rem] mx-auto rounded-md bg-[#c0c0c0] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
@@ -97,7 +97,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.3] hover:translate-x-[2rem] cursor-pointer"
+              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.1] hover:translate-x-[1rem] cursor-pointer"
               activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
@@ -115,7 +115,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.3] hover:translate-x-[2rem] cursor-pointer"
+              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.1] hover:translate-x-[1rem] cursor-pointer"
               activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
@@ -133,7 +133,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-80  duration-300 hover:opacity-100 hover:scale-[1.3] hover:translate-x-[2rem] cursor-pointer"
+              className="flex mx-6 text-left opacity-80  duration-300 hover:opacity-100 hover:scale-[1.1] hover:translate-x-[1rem] cursor-pointer"
               activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
@@ -151,7 +151,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               offset={-100}
               duration={500}
               onClick={backdropClose}
-              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.3] hover:translate-x-[2rem] cursor-pointer"
+              className="flex mx-6 text-left opacity-80 duration-300 hover:opacity-100 hover:scale-[1.1] hover:translate-x-[1rem] cursor-pointer"
               activeClass="w-[13rem] mx-auto rounded-md bg-[#d4d4d4] dark:bg-[#2b2b2b] border-[#393939] opacity-100"
             >
               <img
@@ -167,7 +167,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
             Socials
           </p>
           <div className="text-[14px] flex flex-col gap-3 mt-3">
-            <div className="flex mx-6 text-left opacity-90 hover:scale-[1.3] hover:translate-x-[2rem] hover:opacity-100 duration-300 cursor-pointer">
+            <div className="flex mx-6 text-left opacity-80 hover:scale-[1.1] hover:translate-x-[1rem] hover:opacity-100 duration-300 cursor-pointer">
               <img
                 src={linkedinSvg}
                 alt=""
@@ -180,7 +180,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
                 Linkedin
               </a>
             </div>
-            <div className="flex mx-6 text-left opacity-90 hover:scale-[1.3] hover:translate-x-[2rem] hover:opacity-100 duration-300 cursor-pointer">
+            <div className="flex mx-6 text-left opacity-80 hover:scale-[1.1] hover:translate-x-[1rem] hover:opacity-100 duration-300 cursor-pointer">
               <img
                 src={githubSvg}
                 alt=""
@@ -193,7 +193,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
                 GitHub
               </a>
             </div>
-            <div className="flex mx-6 text-left opacity-90 hover:scale-[1.3] hover:translate-x-[2rem] hover:opacity-100 duration-300 cursor-pointer">
+            <div className="flex mx-6 text-left opacity-80 hover:scale-[1.1] hover:translate-x-[1rem] hover:opacity-100 duration-300 cursor-pointer">
               <img
                 src={femSvg}
                 alt=""
@@ -207,18 +207,17 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               </a>
             </div>
           </div>
-          <a href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing">
-            <motion.div
-              className="border-2 border-black dark:border-white mx-[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group dark:hover:bg-white hover:bg-black  duration-150"
-              initial={{ scale: 0.75 }}
-              whileHover={{ scale: 0.8 }}
-              whileTap={{ scale: 0.5 }}
-            >
-              <p className="p-3 font-semibold tracking-[0.25em] dark:group-hover:text-black group-hover:text-white dark:text-white text-black duration-150">
-                RESUME
-              </p>
-            </motion.div>
-          </a>
+          <motion.a
+            href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing"
+            className="border-2 border-black dark:border-white mx-[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group dark:hover:bg-white hover:bg-black  duration-150"
+            initial={{ scale: 0.75 }}
+            whileHover={{ scale: 0.8 }}
+            whileTap={{ scale: 0.5 }}
+          >
+            <p className="p-3 font-semibold tracking-[0.25em] dark:group-hover:text-black group-hover:text-white dark:text-white text-black duration-150">
+              RESUME
+            </p>
+          </motion.a>
           <div className="px-[1rem] flex justify-center items-center gap-[1rem] bg-[#c1c1c1] dark:bg-[#2e2e2e] mx-[3rem] py-[0.5rem] rounded-md mt-[1rem] cursor-pointer translatey-[4rem]">
             <img
               src={sun}
