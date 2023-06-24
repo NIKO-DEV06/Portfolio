@@ -1,8 +1,7 @@
 import React, { Fragment, useEffect } from "react";
 import { motion } from "framer-motion";
 
-import sneakers from "../projectsImages/sneakers.jpg";
-import forkify from "../projectsImages/forkify.jpg";
+import audiophile from "../projectsImages/audiophile.jpg";
 import countries from "../projectsImages/countries.jpg";
 import todo from "../projectsImages/todo.jpg";
 import reactMeals from "../projectsImages/reactmeals.png";
@@ -22,6 +21,22 @@ const Projects = () => {
 
   const projects = [
     {
+      id: "p1",
+      name: "Audiophile",
+      desc: "The Audiophile project is a responsive e-commerce website built with Next.js, TypeScript, and Tailwind CSS. It showcases audio products, allows users to explore details, add to cart, and checkout. The project incorporates modern technologies for optimal performance and a seamless user experience.",
+      tools: [
+        "Next.JS",
+        "Typescript",
+        "Redux-Toolkit",
+        "Tailwind Css",
+        "Framer-Motion",
+        "React-Hook-Form",
+      ],
+      img: audiophile,
+      github: "https://github.com/NIKO-DEV06/audiophile",
+      live: "https://audiophile-niko-dev06.vercel.app/",
+    },
+    {
       id: "p9",
       name: "Kanban Task Management",
       desc: "This project focuses on building a responsive and interactive task management application. It showcases a Kanban board where users can seamlessly add, edit, and delete tasks & boards, and effortlessly move them between stages using drag and drop, including state management using Redux-Toolkit.",
@@ -40,19 +55,10 @@ const Projects = () => {
       live: "https://rest-countries-niko.vercel.app/",
     },
     {
-      id: "p1",
-      name: "E-commerce product page",
-      desc: " A responsive product page for an E-Commerce Website with a fully functional cart logic, an image slider and an image gallery modal.",
-      tools: ["React.JS", "Redux/Redux Toolkit", "Tailwind Css"],
-      img: sneakers,
-      github: "https://github.com/NIKO-DEV06/e-commerce-sneaker-page",
-      live: "https://e-commerce-sneaker-niko.netlify.app/",
-    },
-    {
       id: "p6",
       name: "Felsunny Technology LTD",
       desc: "A 10-Page NextJS Web Application for a multipurpose company containing the services, and a sepearte service page, company description with a fully functional contact-form. I designed the frontend infrasture, web functionalities and implemented performance optimization techniques.",
-      tools: ["Next.JS", "TailwindCSS", "Framer Motion"],
+      tools: ["Next.JS", "TailwindCSS", "Framer-Motion", "React-Hook-From"],
       img: felsunny,
       github: "https://github.com/NIKO-DEV06/Felsunny-Technology",
       live: "https://www.felsunny.com/",
@@ -116,7 +122,7 @@ const Projects = () => {
                     <p className="font-[500] pr-3 tracking-wide">
                       {project.desc}
                     </p>
-                    <div className="mt-5 flex text-[0.9rem] gap-2">
+                    <div className="mt-5 flex flex-wrap text-[0.9rem] gap-2">
                       {project.tools.map((tool) => (
                         <div
                           key={Math.random()}
