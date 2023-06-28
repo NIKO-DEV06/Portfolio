@@ -23,12 +23,13 @@ const Projects = () => {
     {
       id: "p1",
       name: "Audiophile",
-      desc: "The Audiophile project is a responsive e-commerce website built with Next.js, TypeScript, and Tailwind CSS. It showcases audio products, allows users to explore details, add to cart, and checkout. The project incorporates modern technologies for optimal performance and a seamless user experience.",
+      desc: "Audiophile is a responsive e-commerce website built with Next.js, TypeScript, Firebase and Tailwind CSS. It features audio products, user authentication, and a streamlined checkout process.",
       tools: [
         "Next.JS",
         "Typescript",
         "Redux-Toolkit",
-        "Tailwind Css",
+        "Firebase",
+        "Tailwind CSS",
         "Framer-Motion",
         "React-Hook-Form",
       ],
@@ -39,8 +40,8 @@ const Projects = () => {
     {
       id: "p9",
       name: "Kanban Task Management",
-      desc: "This project focuses on building a responsive and interactive task management application. It showcases a Kanban board where users can seamlessly add, edit, and delete tasks & boards, and effortlessly move them between stages using drag and drop, including state management using Redux-Toolkit.",
-      tools: ["React.JS", "Typescript", "TailwindCSS", "Redux-Toolkit"],
+      desc: "This project is a responsive task management application featuring a Kanban board. Users can easily add, edit, and delete tasks & boards, and utilize drag and drop functionality for seamless task movement. Redux-Toolkit is used for state management.",
+      tools: ["React.JS", "Typescript", "Tailwind CSS", "Redux-Toolkit"],
       img: kanban,
       github: "https://github.com/NIKO-DEV06/Kanban-Task-Management",
       live: "https://nikokanban-task-manager.vercel.app/",
@@ -49,7 +50,7 @@ const Projects = () => {
       id: "p5",
       name: "Rest Countries",
       desc: "The project is designed to utilize the REST Countries API to showcase detailed information about countries worldwide, including names, flags, population, capital, and more. The user interface enables users to search, filter, and sort the data according to their preferences.",
-      tools: ["Next.JS", "TailwindCSS", "React.JS"],
+      tools: ["Next.JS", "Tailwind CSS", "React.JS"],
       img: countries,
       github: "https://github.com/NIKO-DEV06/REST-Countries",
       live: "https://rest-countries-niko.vercel.app/",
@@ -57,8 +58,8 @@ const Projects = () => {
     {
       id: "p6",
       name: "Felsunny Technology LTD",
-      desc: "A 10-Page NextJS Web Application for a multipurpose company containing the services, and a sepearte service page, company description with a fully functional contact-form. I designed the frontend infrasture, web functionalities and implemented performance optimization techniques.",
-      tools: ["Next.JS", "TailwindCSS", "Framer-Motion", "React-Hook-From"],
+      desc: "I built a 10-page Next.js web app for a multipurpose company with services, a separate service page, company description, and a functional contact form. I handled frontend design, web functionalities, and optimized performance.",
+      tools: ["Next.JS", "Tailwind CSS", "Framer-Motion", "React-Hook-From"],
       img: felsunny,
       github: "https://github.com/NIKO-DEV06/Felsunny-Technology",
       live: "https://www.felsunny.com/",
@@ -76,7 +77,7 @@ const Projects = () => {
       id: "p4",
       name: "Todo App",
       desc: "A very interactive todo appliction which can add and delete todos with drag and drop functionality to reorder the list. Todos are stored to local storage and has beautiful light and dark theme modes.",
-      tools: ["React.JS", "TailwindCSS", "React Beautiful DND"],
+      tools: ["React.JS", "Tailwind CSS", "React Beautiful DND"],
       img: todo,
       github: "https://github.com/NIKO-DEV06/Todo-App",
       live: "https://todo-app-niko.netlify.app/",
@@ -116,7 +117,7 @@ const Projects = () => {
                 />
                 <div className="dark:border-white border-2 border-black">
                   <div className="ml-4 lg:mr-5">
-                    <h2 className="my-5 font-[700] text-[1.55rem] underline">
+                    <h2 className="my-5 font-[700] text-[1.55rem] underlin">
                       {project.name}
                     </h2>
                     <p className="font-[500] pr-3 tracking-wide">
