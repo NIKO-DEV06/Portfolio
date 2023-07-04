@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import audiophile from "../projectsImages/audiophile.jpg";
 import countries from "../projectsImages/countries.jpg";
 import todo from "../projectsImages/todo.jpg";
-import reactMeals from "../projectsImages/reactmeals.png";
+import planets from "../projectsImages/planets.jpg";
 import felsunny from "../projectsImages/felsunny.png";
 import kanban from "../projectsImages/kanban.jpg";
 
@@ -56,6 +56,15 @@ const Projects = () => {
       live: "https://rest-countries-niko.vercel.app/",
     },
     {
+      id: "p2",
+      name: "Planets Fact Site",
+      desc: "Planets Fact Site is a dynamic website that showcases fascinating planet facts. With its responsive design, animations, and transitions, it offers an engaging user experience. Explore the captivating world of planets on this interactive platform.",
+      tools: ["Next.JS", "Typescript", "Tailwind CSS", "Framer-Motion", "JSON"],
+      img: planets,
+      github: "https://github.com/NIKO-DEV06/Planets-Fact-Site",
+      live: "https://niko-planets.vercel.app/",
+    },
+    {
       id: "p6",
       name: "Felsunny Technology LTD",
       desc: "I built a 10-page Next.js web app for a multipurpose company with services, a separate service page, company description, and a functional contact form. I handled frontend design, web functionalities, and optimized performance.",
@@ -63,15 +72,6 @@ const Projects = () => {
       img: felsunny,
       github: "https://github.com/NIKO-DEV06/Felsunny-Technology",
       live: "https://www.felsunny.com/",
-    },
-    {
-      id: "p2",
-      name: "React Meals",
-      desc: "A fully functional Food Ordering Web Application connected to a backend database to send POST requests of the orders to the database. It has fully fucntional cart logic.",
-      tools: ["React.JS", "CSS Modules", "Firebase"],
-      img: reactMeals,
-      github: "https://github.com/NIKO-DEV06/ReactMeal-Firebase",
-      live: "https://reactmeals-niko.netlify.app/",
     },
     {
       id: "p4",
