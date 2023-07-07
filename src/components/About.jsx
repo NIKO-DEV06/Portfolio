@@ -23,22 +23,24 @@ const About = () => {
       </div>
       <div className="lg:flex lg:mx-auto lg:mt-[8rem]">
         <p className="font-[300] p-[1.35rem] md:ml-[16rem] md:mt-3 md:leading-[1.5rem] lg:mt-8 lg:ml-[19rem] lg:w-[43%] lg:scale-110 lg:leading-[1.7rem]">
-          I'm a code lover and motivated software developer with a passion for
-          creating innovative and impactful solutions. With a solid foundation
-          in
-          <span className="opacity-60"> computer science and programming.</span>
-          <br />
-          <br /> I have experience in developing web and mobile applications
-          using various technologies such as{" "}
+          I'm a coding enthusiast, a software magician who loves crafting
+          remarkable solutions. With my trusty keyboard, I create web and mobile
+          applications using technologies like{" "}
           <span className="opacity-50">
-            JavaScript, React Js, NextJs, Typescript, Redux, TailwindCSS and
-            other lastest technologies.
+            JavaScript, React Js, NextJs, Typescript, Firebase, MongoDB, Redux,
+            TailwindCSS, SCSS and other lastest technologies.
           </span>
           <br />
-          <br /> I am always eager to learn and stay updated with the latest
-          technologies by continuing to self teach and develop myself. Outside
-          of my professional life i enjoy playing video games and
-          watching/playing football.
+          <br />
+          But here's the secret ingredient to my success: I never stop learning.
+          I'm constantly exploring the latest trends and technologies to stay
+          ahead of the curve. When I'm not immersed in coding, you'll find me
+          cheering for my favorite football team (PSG🔴🔵).
+          <br />
+          <br /> If you're looking for a dedicated software developer who is
+          both skilled and eager to learn, look no further! Let's team up and
+          make something truly amazing. Together, we'll conquer the coding world
+          and transform your ideas into reality.
         </p>
         <div className="lg:translate-y-[-0.6rem] relative w-[18rem] mx-auto lg:mx-auto md:mx-[23rem] lg:scale-90 md:scale-[.4] lg:my-auto group cursor-pointer md:translate-y-[-6.5rem]">
           <img
