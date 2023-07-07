@@ -23,9 +23,11 @@ const About = () => {
       </div>
       <div className="lg:flex lg:mx-auto lg:mt-[8rem]">
         <p className="font-[300] p-[1.35rem] md:ml-[16rem] md:mt-3 md:leading-[1.5rem] lg:mt-8 lg:ml-[19rem] lg:w-[43%] lg:scale-110 lg:leading-[1.7rem]">
-          I'm a coding enthusiast, a software magician who loves crafting
-          remarkable solutions. With my trusty keyboard, I create web and mobile
-          applications using technologies like{" "}
+          I'm a coding enthusiast who loves crafting remarkable solutions. With
+          a solid foundation in{" "}
+          <span className="opacity-50"> computer science and programming</span>{" "}
+          and my trusty keyboard, I create web and mobile applications using
+          technologies like{" "}
           <span className="opacity-50">
             JavaScript, React Js, NextJs, Typescript, Firebase, MongoDB, Redux,
             TailwindCSS, SCSS and other lastest technologies.
