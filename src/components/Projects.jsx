@@ -65,16 +65,6 @@ const Projects = () => {
       github: "https://github.com/NIKO-DEV06/Krypt",
       live: "https://krypt-ebon-delta.vercel.app/",
     },
-
-    {
-      id: "p6",
-      name: "Felsunny Technology LTD",
-      desc: "I built a 10-page Next.js web app for a multipurpose company with services, a separate service page, company description, and a functional contact form. I handled frontend design, web functionalities, and optimized performance.",
-      tools: ["Next.JS", "Tailwind CSS", "Framer-Motion", "React-Hook-From"],
-      img: felsunny,
-      github: "https://github.com/NIKO-DEV06/Felsunny-Technology",
-      live: "https://www.felsunny.com/",
-    },
     {
       id: "p2",
       name: "Planets Fact Site",
@@ -83,6 +73,15 @@ const Projects = () => {
       img: planets,
       github: "https://github.com/NIKO-DEV06/Planets-Fact-Site",
       live: "https://niko-planets.vercel.app/",
+    },
+    {
+      id: "p6",
+      name: "Felsunny Technology LTD",
+      desc: "I built a 10-page Next.js web app for a multipurpose company with services, a separate service page, company description, and a functional contact form. I handled frontend design, web functionalities, and optimized performance.",
+      tools: ["Next.JS", "Tailwind CSS", "Framer-Motion", "React-Hook-From"],
+      img: felsunny,
+      github: "https://github.com/NIKO-DEV06/Felsunny-Technology",
+      live: "https://www.felsunny.com/",
     },
   ];
 
