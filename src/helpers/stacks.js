@@ -18,6 +18,10 @@ import reduxSvg from "../tech-stack-images/redux.svg";
 import viteSvg from "../tech-stack-images/vite.svg";
 import cySvg from "../tech-stack-images/cypress.svg";
 import nodeSvg from "../tech-stack-images/node.svg";
+import soliditySvg from "../tech-stack-images/solidity.svg";
+import webflowSvg from "../tech-stack-images/webflow.svg";
+import ethersSvg from "../tech-stack-images/ethers.svg";
+import hardhatSvg from "../tech-stack-images/hardhat.svg";
 
 export const stack1 = [
   {
@@ -74,11 +78,24 @@ export const stack1 = [
     img: mongodbSvg,
     desc: "MongoDB is a popular NoSQL document database.",
   },
+
   {
-    id: "s19",
-    name: "Cypress",
-    img: cySvg,
-    desc: "Cypress is an open-source app that takes the pain out of front-end testing.",
+    id: "s25",
+    name: "Solidity",
+    img: soliditySvg,
+    desc: "Solidity is a programming language for writing smart contracts on the Ethereum blockchain.",
+  },
+  {
+    id: "s27",
+    name: "Ethers.JS",
+    img: ethersSvg,
+    desc: " Ethers is a JavaScript library for simplified interaction with the Ethereum blockchain.",
+  },
+  {
+    id: "s28",
+    name: "HardHat",
+    img: hardhatSvg,
+    desc: "Hardhat is a development environment and testing framework for Ethereum smart contracts.",
   },
 ];
 
@@ -96,16 +113,29 @@ export const stack2 = [
     desc: "Git is a version control system used for tracking changes to code over time.",
   },
   {
+    id: "s13",
+    name: "github",
+    img: githubSvg,
+    desc: "GitHub is a web-based platform for hosting and collaborating on Git repositories.",
+  },
+  {
     id: "s12",
     name: "jest",
     img: jestSvg,
     desc: "Jest is a testing framework for JavaScript code.",
   },
   {
-    id: "s13",
-    name: "github",
-    img: githubSvg,
-    desc: "GitHub is a web-based platform for hosting and collaborating on Git repositories.",
+    id: "s19",
+    name: "Cypress",
+    img: cySvg,
+    desc: "Cypress is an open-source app that takes the pain out of front-end testing.",
+  },
+
+  {
+    id: "s26",
+    name: "Webflow",
+    img: webflowSvg,
+    desc: "Webflow is a visual web design tool that allows users to create websites without coding.",
   },
   {
     id: "s14",
@@ -114,17 +144,24 @@ export const stack2 = [
     desc: "Framer Motion is a motion library for creating interactive prototypes and animations in React.",
   },
   {
+    id: "s16",
+    name: "redux/redux-toolkit",
+    img: reduxSvg,
+    desc: "Redux is a state management library for React.",
+  },
+  {
+    id: "s20",
+    name: "Node.JS",
+    img: nodeSvg,
+    desc: "Node. js is an open-source JavaScript runtime environment for running web applications outside the client's browser.",
+  },
+  {
     id: "s15",
     name: "npm",
     img: npmSvg,
     desc: "NPM is a package manager for JavaScript.",
   },
-  {
-    id: "s16",
-    name: "redux",
-    img: reduxSvg,
-    desc: "Redux is a state management library for React.",
-  },
+
   {
     id: "s17",
     name: "vite",
@@ -137,10 +174,6 @@ export const stack2 = [
     img: reactrouterSvg,
     desc: "React Router is a library for routing in React applications.",
   },
-  {
-    id: "s20",
-    name: "Node.JS",
-    img: nodeSvg,
-    desc: "Node. js is an open-source JavaScript runtime environment for running web applications outside the client's browser.",
-  },
 ];
+
+console.log(stack1.length, stack2.length);

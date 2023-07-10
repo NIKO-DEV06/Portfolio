@@ -36,8 +36,10 @@ const About = () => {
           <br />
           But here's the secret ingredient to my success: I never stop learning.
           I'm constantly exploring the latest trends and technologies to stay
-          ahead of the curve. When I'm not immersed in coding, you'll find me
-          cheering for my favorite football team (PSG🔴🔵).
+          ahead of the curve{" "}
+          <span className="opacity-50">(Currently exploring blockchain♦)</span>.
+          When I'm not immersed in coding, you'll find me cheering for my
+          favorite football team (PSG🔴🔵).
           <br />
           <br /> If you're looking for a dedicated software developer who is
           both skilled and eager to learn, look no further! Let's team up and

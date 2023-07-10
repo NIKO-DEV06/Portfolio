@@ -7,6 +7,7 @@ import todo from "../projectsImages/todo.jpg";
 import planets from "../projectsImages/planets.jpg";
 import felsunny from "../projectsImages/felsunny.png";
 import kanban from "../projectsImages/kanban.jpg";
+import krypt from "../projectsImages/krypt.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -56,14 +57,15 @@ const Projects = () => {
       live: "https://rest-countries-niko.vercel.app/",
     },
     {
-      id: "p2",
-      name: "Planets Fact Site",
-      desc: "Planets Fact Site is a dynamic website that showcases fascinating planet facts. With its responsive design, animations, and transitions, it offers an engaging user experience. Explore the captivating world of planets on this interactive platform.",
-      tools: ["Next.JS", "Typescript", "Tailwind CSS", "Framer-Motion", "JSON"],
-      img: planets,
-      github: "https://github.com/NIKO-DEV06/Planets-Fact-Site",
-      live: "https://niko-planets.vercel.app/",
+      id: "p4",
+      name: "Krypt",
+      desc: "Krypt is a web app for securely transferring Ethereum, enabling users to send the cryptocurrency to recipients within the Ethereum network.",
+      tools: ["React.JS", "Solidity", "Ethers.JS", "HardHat", "Tailwind CSS"],
+      img: krypt,
+      github: "https://github.com/NIKO-DEV06/Krypt",
+      live: "https://krypt-ebon-delta.vercel.app/",
     },
+
     {
       id: "p6",
       name: "Felsunny Technology LTD",
@@ -74,13 +76,13 @@ const Projects = () => {
       live: "https://www.felsunny.com/",
     },
     {
-      id: "p4",
-      name: "Todo App",
-      desc: "A very interactive todo appliction which can add and delete todos with drag and drop functionality to reorder the list. Todos are stored to local storage and has beautiful light and dark theme modes.",
-      tools: ["React.JS", "Tailwind CSS", "React Beautiful DND"],
-      img: todo,
-      github: "https://github.com/NIKO-DEV06/Todo-App",
-      live: "https://todo-app-niko.netlify.app/",
+      id: "p2",
+      name: "Planets Fact Site",
+      desc: "Planets Fact Site is a dynamic website that showcases fascinating planet facts. With its responsive design, animations, and transitions, it offers an engaging user experience. Explore the captivating world of planets on this interactive platform.",
+      tools: ["Next.JS", "Typescript", "Tailwind CSS", "Framer-Motion", "JSON"],
+      img: planets,
+      github: "https://github.com/NIKO-DEV06/Planets-Fact-Site",
+      live: "https://niko-planets.vercel.app/",
     },
   ];
 
@@ -88,7 +90,7 @@ const Projects = () => {
     <Fragment>
       <section
         data-aos="fade-up"
-        className="dark:text-white text-black mt-[5rem] lg:mt-[4rem] h-screen pb-[95rem] md:pb-[75rem]"
+        className="dark:text-white text-black mt-[7rem] lg:mt-[4rem] h-screen pb-[95rem] md:pb-[75rem]"
         id="projects"
       >
         <div className="relative md:ml-[13rem]">

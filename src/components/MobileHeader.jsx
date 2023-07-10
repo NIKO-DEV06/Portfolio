@@ -249,7 +249,10 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                     alt=""
                     className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
-                  <a href="" className="p-[6px]">
+                  <a
+                    href="https://www.linkedin.com/in/emmanuel-ayeniko-72a758258/"
+                    className="p-[6px]"
+                  >
                     Linkedin
                   </a>
                 </div>
