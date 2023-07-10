@@ -10,7 +10,7 @@ const About = () => {
   }, []);
   return (
     <section
-      className="dark:text-white text-black dark:bg-black-gradient bg-white-gradient h-screen"
+      className="dark:text-white text-black dark:bg-black-gradient bg-white-gradient h-screen md:mb-[20rem] lg:mb-auto"
       id="about"
       data-aos="fade-up"
     >
@@ -33,20 +33,18 @@ const About = () => {
             TailwindCSS, SCSS and other lastest technologies.
           </span>
           <br />
-          <br />
-          But here's the secret ingredient to my success: I never stop learning.
-          I'm constantly exploring the latest trends and technologies to stay
-          ahead of the curve{" "}
+          <br />I never stop learning, I'm constantly exploring the latest
+          trends and technologies to stay ahead of the curve{" "}
           <span className="opacity-50">(Currently exploring blockchain♦)</span>.
           When I'm not immersed in coding, you'll find me cheering for my
           favorite football team (PSG🔴🔵).
           <br />
           <br /> If you're looking for a dedicated software developer who is
           both skilled and eager to learn, look no further! Let's team up and
-          make something truly amazing. Together, we'll conquer the coding world
-          and transform your ideas into reality.
+          make something truly amazing. Together, we'll transform your ideas
+          into reality.
         </p>
-        <div className="lg:translate-y-[-0.6rem] relative w-[18rem] mx-auto lg:mx-auto md:mx-[23rem] lg:scale-90 md:scale-[.4] lg:my-auto group cursor-pointer md:translate-y-[-6.5rem]">
+        <div className="lg:translate-y-[-0.6rem] relative w-[18rem] mx-auto lg:mx-auto md:mx-[23rem]  lg:scale-90 md:scale[0.5] lg:my-auto group cursor-pointer mdmt-[6.5rem]">
           <img
             src={myLogo}
             alt=""

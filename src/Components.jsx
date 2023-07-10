@@ -16,7 +16,9 @@ const Components = ({ theme, handleThemeSwitch }) => {
       <MobileHeader theme={theme} handleThemeSwitch={handleThemeSwitch} />
       <Home />
       <About />
+
       <Projects />
+
       <TechStack />
       <Contact />
       <Footer />

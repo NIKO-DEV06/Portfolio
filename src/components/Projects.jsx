@@ -89,7 +89,7 @@ const Projects = () => {
     <Fragment>
       <section
         data-aos="fade-up"
-        className="dark:text-white text-black mt-[7rem] lg:mt-[4rem] h-screen pb-[95rem] md:pb-[75rem]"
+        className="dark:text-white text-black mt-[7rem] lg:mt-[4rem] h-screen pb-[100rem] md:pb-[83rem]"
         id="projects"
       >
         <div className="relative md:ml-[13rem]">
@@ -101,7 +101,7 @@ const Projects = () => {
         </div>
         {/* projects list */}
 
-        <div className="w-full flex flex-col justify-center scale-[0.86] translate-y-[-15rem] md:translate-y-[-11rem] lg:mt-[7rem]">
+        <div className="w-full flex flex-col justify-center scale-[0.86] translate-y-[-14rem] md:translate-y-[-14rem] lg:mt-[7rem]">
           <div className="w-[25rem] mx-auto flex flex-col gap-3 lg:w-[60rem]">
             {/* // */}
             {projects.map((project) => (
