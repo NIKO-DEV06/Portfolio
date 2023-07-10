@@ -112,7 +112,7 @@ const Projects = () => {
                 <img
                   src={project.img}
                   alt={project.name}
-                  className={` w-[30rem] h-[16rem] mx-auto border-t-2 border-l-2 md:border-b-2 border-r-2 md:border-r-0 border-black dark:border-white ${
+                  className={` w-[30rem] h-[16rem] mx-auto border-t-2 border-l-2 lg:border-b-2 border-r-2 lg:border-r-0 border-black dark:border-white ${
                     project.id !== "p6" ? "object-cover" : ""
                   } object-top lg:h-auto`}
                 />
