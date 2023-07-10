@@ -59,7 +59,7 @@ const Projects = () => {
     {
       id: "p4",
       name: "Krypt",
-      desc: "Krypt is a web app for securely transferring Ethereum, enabling users to send the cryptocurrency to recipients within the Ethereum network.",
+      desc: "Krypt is a web3.0 app for securely transferring Ethereum, enabling users to send the cryptocurrency to recipients within the Ethereum network.",
       tools: ["React.JS", "Solidity", "Ethers.JS", "HardHat", "Tailwind CSS"],
       img: krypt,
       github: "https://github.com/NIKO-DEV06/Krypt",
