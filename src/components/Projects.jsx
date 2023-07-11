@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import audiophile from "../projectsImages/audiophile.jpg";
 import countries from "../projectsImages/countries.jpg";
-import todo from "../projectsImages/todo.jpg";
 import planets from "../projectsImages/planets.jpg";
 import felsunny from "../projectsImages/felsunny.png";
 import kanban from "../projectsImages/kanban.jpg";
