@@ -76,10 +76,16 @@ const Projects = () => {
     {
       id: "p6",
       name: "Felsunny Technology LTD",
-      desc: "I built a 10-page Next.js web app for a multipurpose company with services, a separate service page, company description, and a functional contact form. I handled frontend design, web functionalities, and optimized performance.",
-      tools: ["Next.JS", "Tailwind CSS", "Framer-Motion", "React-Hook-From"],
+      desc: "I built a multipage website for the multipurpose company Felsunny Technology LTD. I handled the frontend design, web functionalities, and optimized performance.",
+      tools: [
+        "Next.JS",
+        "Typescript",
+        "Tailwind CSS",
+        "Framer-Motion",
+        "React-Hook-From",
+      ],
       img: felsunny,
-      github: "https://github.com/NIKO-DEV06/Felsunny-Technology",
+      github: "https://github.com/NIKO-DEV06/Felsunny-v2",
       live: "https://www.felsunny.com/",
     },
   ];
