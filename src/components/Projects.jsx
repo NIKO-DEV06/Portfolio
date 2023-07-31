@@ -56,6 +56,21 @@ const Projects = () => {
       live: "https://rest-countries-niko.vercel.app/",
     },
     {
+      id: "p6",
+      name: "Felsunny Technology LTD",
+      desc: "I built a multipage website for the multipurpose company Felsunny Technology LTD. I handled the frontend design, web functionalities, and optimized performance.",
+      tools: [
+        "Next.JS",
+        "Typescript",
+        "Tailwind CSS",
+        "Framer-Motion",
+        "React-Hook-From",
+      ],
+      img: felsunny,
+      github: "https://github.com/NIKO-DEV06/Felsunny-v2",
+      live: "https://www.felsunny.com/",
+    },
+    {
       id: "p4",
       name: "Krypt",
       desc: "Krypt is a web3.0 app for securely transferring Ethereum, enabling users to send the cryptocurrency to recipients within the Ethereum network.",
@@ -72,21 +87,6 @@ const Projects = () => {
       img: planets,
       github: "https://github.com/NIKO-DEV06/Planets-Fact-Site",
       live: "https://niko-planets.vercel.app/",
-    },
-    {
-      id: "p6",
-      name: "Felsunny Technology LTD",
-      desc: "I built a multipage website for the multipurpose company Felsunny Technology LTD. I handled the frontend design, web functionalities, and optimized performance.",
-      tools: [
-        "Next.JS",
-        "Typescript",
-        "Tailwind CSS",
-        "Framer-Motion",
-        "React-Hook-From",
-      ],
-      img: felsunny,
-      github: "https://github.com/NIKO-DEV06/Felsunny-v2",
-      live: "https://www.felsunny.com/",
     },
   ];
 
