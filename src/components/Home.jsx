@@ -19,7 +19,7 @@ const Home = () => {
       id="home"
     >
       <h1 className="pt-[280px] text-[1.6rem] leading-[2.5rem] text-center md:text-[2rem] md:leading-[2.5rem] md:ml-[15rem] lg:pt-[270px] lg:text-[3.7rem] lg:leading-[4.5rem] lg:ml-[16rem] uppercase font-cereal-normal md:font-cereal-light">
-        Welcome, I'm Emmanuel.
+        Hello, I'm Emmanuel.
         <br />
         <div className="text-[1.3rem] font-[500] lg:text-[2.7rem] lg:font-[300]">
           <h2 className="flex gap-3 justify-center">
