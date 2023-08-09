@@ -19,7 +19,7 @@ const TechStack = () => {
       <div className="relative md:ml-[13rem]">
         <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
-        <h1 className=" uppercase text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500]">
+        <h1 className=" uppercase text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500] font-cereal-medium">
           Tech-Stack
         </h1>
       </div>
@@ -32,10 +32,10 @@ const TechStack = () => {
             >
               <img src={stack.img} alt="" className="w-[3rem] ml-2" />
               <div className="my-auto flex flex-col gap-1">
-                <h1 className="text-[0.9rem] lg:text-[1.1rem] font-[800] undeline tracking-[.09em] uppercase ">
+                <h1 className="text-[0.9rem] lg:text-[1.1rem] font[800] undeline tracking-[.09em] uppercase font-cereal-bold">
                   .{stack.name}.
                 </h1>
-                <p className="text-[0.65rem] lg:text-[0.8rem] font-[500] pr-2 lg:opacity-75">
+                <p className="text-[0.65rem] lg:text-[0.8rem] font[500] pr-2 lg:opacity-75 font-cereal-normal">
                   {stack.desc}
                 </p>
               </div>

@@ -75,7 +75,7 @@ const App = () => {
       />
       {isLoading ? (
         <section className="dark:bg-black-gradient bg-white-gradient dark:bg-red-500 h-screen flex flex-col gap-2 justify-center lg:gap-4 md:gap-3">
-          <h1 className=" text-center lg:text-6xl md:text-5xl text-2xl w-full dark:text-white text-black opacity-80 italic font-light">
+          <h1 className=" text-center lg:text-6xl md:text-5xl text-2xl w-full dark:text-white text-black opacity-80 italic font-light font-cereal-light">
             <Typewriter
               options={{
                 strings: ["< EMMANUEL />"],

@@ -75,7 +75,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
               alt=""
               className="rounded-full w-[2.7rem] cursor-pointer border-[1px] border-black dark:border-white"
             />
-            <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px] dark:text-white text-black">
+            <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px] dark:text-white text-black font-cereal-normal">
               Emmanuel Ayeniko
               <br />
               <span className="dark:text-white text-black opacity-50">
@@ -139,7 +139,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                   alt=""
                   className="rounded-full w-[2.7rem] cursor-pointer border-[1px]"
                 />
-                <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px] ">
+                <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px] font-cereal-normal">
                   Emmanuel Ayeniko
                   <br />
                   <span className="dark:text-white text-black opacity-50">
@@ -147,7 +147,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                   </span>
                 </p>
               </div>
-              <div className="text-[14px] flex flex-col gap-2 mt-3">
+              <div className="text-[14px] flex flex-col gap-2 mt-3 font-cereal-normal">
                 <Link
                   to="home"
                   spy={true}

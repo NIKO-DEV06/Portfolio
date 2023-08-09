@@ -100,7 +100,7 @@ const Projects = () => {
         <div className="relative md:ml-[13rem]">
           <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
           <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
-          <h1 className="text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500]">
+          <h1 className="text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500] font-cereal-medium">
             PROJECTS
           </h1>
         </div>
@@ -123,17 +123,17 @@ const Projects = () => {
                 />
                 <div className="dark:border-white border-2 border-black">
                   <div className="ml-4 lg:mr-5">
-                    <h2 className="my-5 font-[700] text-[1.55rem] underlin">
+                    <h2 className="my-5 font-cereal-bold text-[1.55rem] underlin">
                       {project.name}
                     </h2>
-                    <p className="font-[500] pr-3 tracking-wide">
+                    <p className="font-cereal-light pr-3 tracking-wide">
                       {project.desc}
                     </p>
                     <div className="mt-5 flex flex-wrap text-[0.9rem] gap-2">
                       {project.tools.map((tool) => (
                         <div
                           key={Math.random()}
-                          className="border-2 border-black dark:border-white p-1"
+                          className="border-2 font-cereal-medium border-black dark:border-white p-1"
                         >
                           {tool}
                         </div>
@@ -154,7 +154,7 @@ const Projects = () => {
                         alt=""
                         className="h-[1.7rem] my-auto ml-2 scale-95 pl-1 filter invert dark:filter-none"
                       />
-                      <p className="p-3 font-semibold tracking-[0.25em] duration-150">
+                      <p className="p-3 font-semibold tracking-[0.25em] duration-150 ">
                         GITHUB
                       </p>
                     </motion.a>

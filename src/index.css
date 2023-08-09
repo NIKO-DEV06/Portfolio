@@ -12,3 +12,28 @@ body {
 a:hover {
   cursor: pointer !important;
 }
+
+@font-face {
+  font-family: "Cereal-Light";
+  src: url("/fonts/AirbnbCereal-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cereal-Normal";
+  src: url("/fonts/AirbnbCereal-Normal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cereal-Medium";
+  src: url("/fonts/AirbnbCereal-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cereal-Bold";
+  src: url("/fonts/AirbnbCereal-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cereal-ExtraBold";
+  src: url("/fonts/AirbnbCereal-ExtraBold.ttf") format("truetype");
+}

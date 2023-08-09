@@ -48,7 +48,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
           transition={{ duration: 0.3 }}
           className={`${
             !isNav && "hidden"
-          } z-40 fixed top-0 bottom-0 left-0 w-[250px] overflow-y-auto text-center dark:bg-black-gradient bg-white-gradient border-r-[1.5px] border-[#282828] md:flex flex-col dark:text-white text-black`}
+          } z-40 fixed top-0 bottom-0 font-cereal-normal left-0 w-[250px] overflow-y-auto text-center dark:bg-black-gradient bg-white-gradient border-r-[1.5px] border-[#282828] md:flex flex-col dark:text-white text-black`}
         >
           <div className="w-full cursor-pointer">
             <img

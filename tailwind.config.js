@@ -41,6 +41,11 @@ module.exports = {
 
       fontFamily: {
         sans: ["Raleway", "sans-serif"],
+        "cereal-light": ["Cereal-Light", "sans-serif"],
+        "cereal-normal": ["Cereal-Normal", "sans-serif"],
+        "cereal-medium": ["Cereal-Medium", "sans-serif"],
+        "cereal-bold": ["Cereal-Bold", "sans-serif"],
+        "cereal-extrabold": ["Cereal-ExtraBold", "sans-serif"],
       },
       letterSpacing: {
         widest: ".3em",

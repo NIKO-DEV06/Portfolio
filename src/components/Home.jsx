@@ -18,7 +18,7 @@ const Home = () => {
       className="dark:text-white text-black dark:bg-black-gradient bg-white-gradient pb-[280px]"
       id="home"
     >
-      <h1 className="pt-[280px] text-[1.6rem] font-[600] leading-[2.5rem] text-center md:text-[2rem] md:leading-[2.5rem] md:ml-[15rem] lg:pt-[270px] lg:text-[3.7rem] lg:leading-[4.5rem] lg:ml-[16rem] lg:font-[500] uppercase">
+      <h1 className="pt-[280px] text-[1.6rem] leading-[2.5rem] text-center md:text-[2rem] md:leading-[2.5rem] md:ml-[15rem] lg:pt-[270px] lg:text-[3.7rem] lg:leading-[4.5rem] lg:ml-[16rem] uppercase font-cereal-normal md:font-cereal-light">
         Welcome, I'm Emmanuel.
         <br />
         <div className="text-[1.3rem] font-[500] lg:text-[2.7rem] lg:font-[300]">
@@ -36,7 +36,7 @@ const Home = () => {
           </h2>
         </div>
       </h1>
-      <div className="flex justify-center translate-y-[-1.5rem] gap-[1.5rem] md:ml-[15rem]">
+      <div className="flex justify-center translate-y-[-1.5rem] gap-[1.5rem] md:ml-[15rem] font-cereal-normal">
         <Link
           to="contact"
           spy={true}
@@ -55,7 +55,7 @@ const Home = () => {
               alt=""
               className="h-[1.7rem] my-auto ml-2 scale-95 pl-1 filter invert dark:filter-none"
             />
-            <p className="p-3 font-semibold tracking-[0.25em] duration-150">
+            <p className="p-3 font-semibold tracking-[0.2em] duration-150">
               CONTACT
             </p>
           </motion.div>
