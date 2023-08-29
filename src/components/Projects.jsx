@@ -47,15 +47,6 @@ const Projects = () => {
       live: "https://nikokanban-task-manager.vercel.app/",
     },
     {
-      id: "p5",
-      name: "Rest Countries",
-      desc: "The project is designed to utilize the REST Countries API to showcase detailed information about countries worldwide, including names, flags, population, capital, and more. The user interface enables users to search, filter, and sort the data according to their preferences.",
-      tools: ["Next.JS", "Tailwind CSS", "React.JS"],
-      img: countries,
-      github: "https://github.com/NIKO-DEV06/REST-Countries",
-      live: "https://rest-countries-niko.vercel.app/",
-    },
-    {
       id: "p6",
       name: "Felsunny Technology LTD",
       desc: "I built a multipage website for the multipurpose company Felsunny Technology LTD. I handled the frontend design, web functionalities, and optimized performance.",
@@ -70,6 +61,16 @@ const Projects = () => {
       github: "https://github.com/NIKO-DEV06/Felsunny-v2",
       live: "https://www.felsunny.com/",
     },
+    {
+      id: "p5",
+      name: "Rest Countries",
+      desc: "The project is designed to utilize the REST Countries API to showcase detailed information about countries worldwide, including names, flags, population, capital, and more. The user interface enables users to search, filter, and sort the data according to their preferences.",
+      tools: ["Next.JS", "Tailwind CSS", "React.JS"],
+      img: countries,
+      github: "https://github.com/NIKO-DEV06/REST-Countries",
+      live: "https://rest-countries-niko.vercel.app/",
+    },
+
     {
       id: "p4",
       name: "Krypt",
