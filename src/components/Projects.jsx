@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 import audiophile from "../projectsImages/audiophile.jpg";
 import countries from "../projectsImages/countries.jpg";
-import planets from "../projectsImages/planets.jpg";
+import gowfo from "../projectsImages/gowfo.png";
 import felsunny from "../projectsImages/felsunny.png";
 import kanban from "../projectsImages/kanban.jpg";
-import krypt from "../projectsImages/krypt.png";
+import krypt from "../projectsImages/basedsolar.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,6 +20,30 @@ const Projects = () => {
   }, []);
 
   const projects = [
+    {
+      id: "gowfo",
+      name: "GO WFO Website & WebApp",
+      desc: "GO WFO : Extreme Sports Community Network of Athletes, Fans, and Creators ⛷",
+      tools: ["Next.JS", "Typescript", "Node.JS", "PHP", "MySQL", "API"],
+      img: gowfo,
+      github: "",
+      live: "https://gowfo.com/",
+    },
+    {
+      id: "felsunny",
+      name: "Felsunny Technology LTD",
+      desc: "I built a multipage website for the multipurpose company Felsunny Technology LTD. I handled the frontend design, web functionalities, and optimized performance.",
+      tools: [
+        "Next.JS",
+        "Typescript",
+        "Tailwind CSS",
+        "Framer-Motion",
+        "React-Hook-From",
+      ],
+      img: felsunny,
+      github: "https://github.com/NIKO-DEV06/Felsunny-v2",
+      live: "https://www.felsunny.com/",
+    },
     {
       id: "p1",
       name: "Audiophile",
@@ -47,47 +71,23 @@ const Projects = () => {
       live: "https://nikokanban-task-manager.vercel.app/",
     },
     {
-      id: "p6",
-      name: "Felsunny Technology LTD",
-      desc: "I built a multipage website for the multipurpose company Felsunny Technology LTD. I handled the frontend design, web functionalities, and optimized performance.",
-      tools: [
-        "Next.JS",
-        "Typescript",
-        "Tailwind CSS",
-        "Framer-Motion",
-        "React-Hook-From",
-      ],
-      img: felsunny,
-      github: "https://github.com/NIKO-DEV06/Felsunny-v2",
-      live: "https://www.felsunny.com/",
+      id: "basedsolar",
+      name: "Based Solar",
+      desc: "Based Solar: Your Gateway to Clean, Cost-Efficient Energy Solutions. Empower your future with our premier photovoltaic systems.",
+      tools: ["Next.JS", "Typescript", "Tailwind CSS"],
+      img: krypt,
+      github: "https://github.com/NIKO-DEV06/Krypt",
+      live: "https://basedsolar.com/",
     },
+
     {
       id: "p5",
       name: "Rest Countries",
       desc: "The project is designed to utilize the REST Countries API to showcase detailed information about countries worldwide, including names, flags, population, capital, and more. The user interface enables users to search, filter, and sort the data according to their preferences.",
-      tools: ["Next.JS", "Tailwind CSS", "React.JS"],
+      tools: ["Next.JS", "Javascript", "Tailwind CSS", "REST-API"],
       img: countries,
       github: "https://github.com/NIKO-DEV06/REST-Countries",
       live: "https://rest-countries-niko.vercel.app/",
-    },
-
-    {
-      id: "p4",
-      name: "Krypt",
-      desc: "Krypt is a web3.0 app for securely transferring Ethereum, enabling users to send the cryptocurrency to recipients within the Ethereum network.",
-      tools: ["React.JS", "Solidity", "Ethers.JS", "HardHat", "Tailwind CSS"],
-      img: krypt,
-      github: "https://github.com/NIKO-DEV06/Krypt",
-      live: "https://krypt-ebon-delta.vercel.app/",
-    },
-    {
-      id: "p2",
-      name: "Planets Fact Site",
-      desc: "Planets Fact Site is a dynamic website that showcases fascinating planet facts. With its responsive design, animations, and transitions, it offers an engaging user experience. Explore the captivating world of planets on this interactive platform.",
-      tools: ["Next.JS", "Typescript", "Tailwind CSS", "Framer-Motion", "JSON"],
-      img: planets,
-      github: "https://github.com/NIKO-DEV06/Planets-Fact-Site",
-      live: "https://niko-planets.vercel.app/",
     },
   ];
 
@@ -102,7 +102,7 @@ const Projects = () => {
           <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
           <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
           <h1 className="text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500] font-cereal-medium">
-            PROJECTS
+            PROJECTS 📁
           </h1>
         </div>
         {/* projects list */}
@@ -119,7 +119,9 @@ const Projects = () => {
                   src={project.img}
                   alt={project.name}
                   className={` w-[30rem] h-[16rem] mx-auto border-t-2 border-l-2 lg:border-b-2 border-r-2 lg:border-r-0 border-black dark:border-white ${
-                    project.id !== "p6" ? "object-cover" : ""
+                    project.id !== "felsunny" && project.id !== "basedsolar"
+                      ? "object-cover"
+                      : ""
                   } object-top lg:h-auto`}
                 />
                 <div className="dark:border-white border-2 border-black">
@@ -145,7 +147,13 @@ const Projects = () => {
                   <div className="flex justify-center gap-[1.5rem] translate-y-[-1.5rem]">
                     <motion.a
                       href={project.github}
-                      className="flex border-2 border-black dark:border-white mt-[3rem] rounded-lg scale-75 cursor-pointer duration-150 mr-[-1.5rem]"
+                      className={`flex border-2 border-black dark:border-white mt-[3rem] rounded-lg scale-75 cursor-pointer duration-150 mr-[-1.5rem] ${
+                        project.id === "gowfo" ||
+                        project.id === "basedsolar" ||
+                        project.id === "felsunny"
+                          ? "hidden"
+                          : ""
+                      }`}
                       initial={{ scale: 0.75 }}
                       whileHover={{ scale: 0.77 }}
                       whileTap={{ scale: 0.5 }}
@@ -161,7 +169,7 @@ const Projects = () => {
                     </motion.a>
                     <motion.a
                       href={project.live}
-                      className="flex border-2  mt-[3rem] rounded-lg scale-75 cursor-pointer dark:bg-white bg-black duration-150 ml-[-1.5rem] w-[11rem]"
+                      className={`flex border-2 mt-[3rem] rounded-lg scale-75 cursor-pointer dark:bg-white bg-black duration-150 ml-[-1.5rem] w-[11rem]`}
                       initial={{ scale: 0.75 }}
                       whileHover={{ scale: 0.77 }}
                       whileTap={{ scale: 0.5 }}

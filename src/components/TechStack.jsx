@@ -20,11 +20,11 @@ const TechStack = () => {
         <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <h1 className=" uppercase text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500] font-cereal-medium">
-          Tech-Stack
+          Tech-Stack 🛠️
         </h1>
       </div>
       <div className="pb-8 pt-10 flex  overflow-hidden">
-        <Marquee gradient={false} direction="right" speed={70} pauseOnHover>
+        <Marquee gradient={false} direction="left" speed={70} pauseOnHover>
           {stack1.map((stack) => (
             <div
               key={stack.id}
@@ -45,7 +45,7 @@ const TechStack = () => {
       </div>
 
       <div className="pb-8 flex  overflow-hidden">
-        <Marquee gradient={false} direction="left" speed={70} pauseOnHover>
+        <Marquee gradient={false} direction="right" speed={70} pauseOnHover>
           {stack2.map((stack) => (
             <div
               key={stack.id}

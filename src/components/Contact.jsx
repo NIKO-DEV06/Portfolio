@@ -76,7 +76,7 @@ const Contact = () => {
         <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <h1 className="font-cereal-medium uppercase text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font[500]">
-          CONTACT-ME
+          CONTACT-ME 📪
         </h1>
       </div>
       <h2 className="font-cereal-light font-[500] text-center text-[1rem] mx-4 scale-90 leading-[1.2rem] pt-1 md:text-[1.1rem] md:ml-[18rem] lg:mt-8 lg:text-[1.4rem] lg:leading-[1.7rem]  lg:font-[300]">

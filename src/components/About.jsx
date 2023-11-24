@@ -18,7 +18,7 @@ const About = () => {
         <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
         <h1 className="text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500] uppercase font-cereal-medium">
-          About Me
+          About Me 👨‍🔧
         </h1>
       </div>
       <div className="lg:flex lg:mx-auto lg:mt-[8rem]">
@@ -30,7 +30,7 @@ const About = () => {
           technologies like{" "}
           <span className="opacity-50">
             JavaScript, React Js, NextJs, Typescript, Firebase, MongoDB, Redux,
-            TailwindCSS, SCSS and other lastest technologies.
+            TailwindCSS, SCSS and other lastest technologies.🛠️
           </span>
           <br />
           <br />I never stop learning, I'm constantly exploring the latest

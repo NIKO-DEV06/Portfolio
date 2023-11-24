@@ -22,6 +22,8 @@ import soliditySvg from "../tech-stack-images/solidity.svg";
 import webflowSvg from "../tech-stack-images/webflow.svg";
 import ethersSvg from "../tech-stack-images/ethers.svg";
 import hardhatSvg from "../tech-stack-images/hardhat.svg";
+import phpSvg from "../tech-stack-images/php.svg";
+import mysqlSvg from "../tech-stack-images/mysql.svg";
 
 export const stack1 = [
   {
@@ -67,16 +69,22 @@ export const stack1 = [
     desc: "Tailwind is a utility-first CSS framework for rapidly building custom user interfaces.",
   },
   {
-    id: "s8",
-    name: "Firebase",
-    img: firebaseSvg,
-    desc: "Firebase is a platform with tools for authentication and database management.",
+    id: "s20",
+    name: "Node.JS",
+    img: nodeSvg,
+    desc: "Node. js is an open-source JavaScript runtime environment for running web applications outside the client's browser.",
   },
   {
     id: "s9",
     name: "MongoDb",
     img: mongodbSvg,
     desc: "MongoDB is a popular NoSQL document database.",
+  },
+  {
+    id: "s8",
+    name: "Firebase",
+    img: firebaseSvg,
+    desc: "Firebase is a platform with tools for authentication and database management.",
   },
 
   {
@@ -105,6 +113,18 @@ export const stack2 = [
     name: "Scss/Sass",
     img: scssSvg,
     desc: "SCSS/SASS is a preprocessor that adds additional functionality to CSS.",
+  },
+  {
+    id: "s50",
+    name: "PHP",
+    img: phpSvg,
+    desc: "Server-side scripting language for dynamic web pages.",
+  },
+  {
+    id: "s60",
+    name: "MySQL",
+    img: mysqlSvg,
+    desc: "MySQL is an open-source relational database management system for web applications.",
   },
   {
     id: "s11",
@@ -149,12 +169,7 @@ export const stack2 = [
     img: reduxSvg,
     desc: "Redux is a state management library for React.",
   },
-  {
-    id: "s20",
-    name: "Node.JS",
-    img: nodeSvg,
-    desc: "Node. js is an open-source JavaScript runtime environment for running web applications outside the client's browser.",
-  },
+
   {
     id: "s15",
     name: "npm",
