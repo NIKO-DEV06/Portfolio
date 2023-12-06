@@ -6,7 +6,7 @@ import countries from "../projectsImages/countries.jpg";
 import gowfo from "../projectsImages/gowfo.png";
 import felsunny from "../projectsImages/felsunny.png";
 import kanban from "../projectsImages/kanban.jpg";
-import krypt from "../projectsImages/basedsolar.jpg";
+import planets from "../projectsImages/planets.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -70,15 +70,6 @@ const Projects = () => {
       github: "https://github.com/NIKO-DEV06/Kanban-Task-Management",
       live: "https://nikokanban-task-manager.vercel.app/",
     },
-    {
-      id: "basedsolar",
-      name: "Based Solar",
-      desc: "Based Solar: Your Gateway to Clean, Cost-Efficient Energy Solutions. Empower your future with our premier photovoltaic systems.",
-      tools: ["Next.JS", "Typescript", "Tailwind CSS"],
-      img: krypt,
-      github: "https://github.com/NIKO-DEV06/Krypt",
-      live: "https://basedsolar.com/",
-    },
 
     {
       id: "p5",
@@ -88,6 +79,15 @@ const Projects = () => {
       img: countries,
       github: "https://github.com/NIKO-DEV06/REST-Countries",
       live: "https://rest-countries-niko.vercel.app/",
+    },
+    {
+      id: "planets",
+      name: "Planets Fact Site",
+      desc: "Planets Fact Site is a dynamic website that showcases fascinating planet facts. With its responsive design, animations, and transitions, it offers an engaging user experience. Explore the captivating world of planets on this interactive platform.",
+      tools: ["Next.JS", "Typescript", "Tailwind CSS", "Framer-Motion", "JSON"],
+      img: planets,
+      github: "https://github.com/NIKO-DEV06/Planets-Fact-Site",
+      live: "https://niko-planets.vercel.app/",
     },
   ];
 
