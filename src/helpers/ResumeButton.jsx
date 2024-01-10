@@ -46,7 +46,7 @@ const Drip = ({ left, height, delay }) => {
     >
       <div
         style={{ height }}
-        className="w-2 rounded-b-full bg-white transition-colors group-hover:bg-violet-600"
+        className="w-2 rounded-b-full bg-black dark:bg-white transition-colors "
       />
       <svg
         width="6"
@@ -61,13 +61,13 @@ const Drip = ({ left, height, delay }) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z"
-            className="fill-white transition-colors group-hover:fill-violet-600"
+            className="fill-white transition-colors"
           />
           <path
             fillRule="evenodd"
             clipRule="evenodd"
             d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z"
-            className="fill-white transition-colors group-hover:fill-violet-600"
+            className="fill-white transition-colors"
           />
         </g>
         <defs>
@@ -89,13 +89,13 @@ const Drip = ({ left, height, delay }) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z"
-            className="fill-white transition-colors group-hover:fill-violet-600"
+            className="fill-white transition-colors"
           />
           <path
             fillRule="evenodd"
             clipRule="evenodd"
             d="M5.4 0H0V5.4C0 2.41765 2.41766 0 5.4 0Z"
-            className="fill-white transition-colors group-hover:fill-violet-600"
+            className="fill-white transition-colors"
           />
         </g>
         <defs>
@@ -116,7 +116,7 @@ const Drip = ({ left, height, delay }) => {
           repeat: Infinity,
           repeatDelay: 2,
         }}
-        className="absolute top-full h-2 w-2 rounded-full bg-white transition-colors group-hover:bg-violet-600"
+        className="absolute top-full h-2 w-2 rounded-full bg-black dark:bg-white transition-colors group-hover:bg-violet-600"
       />
     </motion.div>
   );
