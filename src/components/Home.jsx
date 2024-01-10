@@ -4,9 +4,9 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import resumeSvg from "../images/resume.svg";
 import contactSvg from "../images/mailbox.svg";
+import ResumeButton from "../helpers/ResumeButton";
 
 const Home = () => {
   useEffect(() => {
@@ -64,8 +64,8 @@ const Home = () => {
             </p>
           </motion.div>
         </Link>
-
-        <motion.a
+        <ResumeButton />
+        {/* <motion.a
           href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing"
           className="flex border-2  mt-[3rem] rounded-lg scale-75 cursor-pointer bg-black dark:bg-white duration-150 ml-[-1.5rem]"
           initial={{ scale: 0.75 }}
@@ -80,7 +80,7 @@ const Home = () => {
           <p className="p-3 font-semibold tracking-[0.25em] duration-150 dark:text-black text-white">
             RESUME
           </p>
-        </motion.a>
+        </motion.a> */}
       </div>
     </section>
   );
