@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import myLogo from "../images/IMG_5969.jpeg";
+import myLogo from "../images/photo.jpg";
 
 const About = () => {
   useEffect(() => {
@@ -47,7 +47,7 @@ const About = () => {
           <img
             src={myLogo}
             alt=""
-            className="rounded-sm dark:border-white border-black h-[18rem] mt-3 relative z-[2] border-2"
+            className="rounded-sm dark:border-white border-black w-[18rem] h-[18rem] mt-3 relative z-[2] border-2 object-cover"
           />
 
           <div className="w-[18rem] h-[18rem] border-2 dark:border-white border-black absolute inset-0 left-[1rem] top-[1rem] lg:left-[1.1rem] lg:top-[1.8rem] group-hover:lg:left-0 group-hover:lg:top-3 group-hover:lg:scale-110 duration-300"></div>

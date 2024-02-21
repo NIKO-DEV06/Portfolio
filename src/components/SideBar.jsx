@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 // import nikoBlack from "../images/nikocodes-b.svg";
 import nikoWhite from "../images/nikocodes-w.svg";
-import myLogo from "../images/IMG_5969.jpeg";
+import myLogo from "../images/photo.jpg";
 import homeSvg from "../images/home.svg";
 import aboutSvg from "../images/about.svg";
 import projectsSvg from "../images/projects.svg";
@@ -54,14 +54,14 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
             <img
               src={nikoWhite}
               alt=""
-              className=" h-[5rem] mx-auto scale-[1.8] translate-y-[-0.6rem] filter invert dark:invert-0"
+              className="h-[5rem] mx-auto scale-[1.8] translate-y-[-0.6rem] filter invert dark:invert-0"
             />
           </div>
           <div className="flex w-full pl-[1.7rem] translate-y-[-1rem] gap-2 h-auto">
             <img
               src={myLogo}
               alt=""
-              className="rounded-full w-[2.7rem] cursor-pointer border-[1.5px] border-black dark:border-white"
+              className="rounded-full w-[2.8rem] h-[2.8rem] object-cover cursor-pointer border-[1.5px] border-black dark:border-white"
             />
             <p className="text-[12.5px] my-auto font-[500] tracking-[1.1px] ">
               Emmanuel Ayeniko
