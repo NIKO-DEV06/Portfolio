@@ -10,7 +10,7 @@ const About = () => {
   }, []);
   return (
     <section
-      className="dark:text-white text-black dark:bg-black-gradient bg-white-gradient h-screen md:mb-[20rem] lg:mb-auto"
+      className="dark:text-white text-black dark:bg-black-gradient bg-white-gradient h-screen md:mb-[20rem] lg:mb-auto 2xl:max-w-[1500px] 2xl:m-auto"
       id="about"
       data-aos="fade-up"
     >

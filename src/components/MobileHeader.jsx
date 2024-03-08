@@ -262,10 +262,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                     alt=""
                     className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
-                  <a
-                    href="https://github.com/NIKO-DEV06?tab=repositories"
-                    className="p-[6px]"
-                  >
+                  <a href="https://github.com/NIKO-DEV06" className="p-[6px]">
                     GitHub
                   </a>
                 </div>
@@ -285,7 +282,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
               </div>
               <a href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing">
                 <motion.div
-                  className="border-2 border-black dark:border-white mx-[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group dark:hover:bg-white hover:bg-black duration-150"
+                  className="border-2 border-black dark:border-white mx[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group dark:hover:bg-white hover:bg-black duration-150"
                   initial={{ scale: 0.75 }}
                   whileHover={{ scale: 0.8 }}
                   whileTap={{ scale: 0.5 }}
@@ -295,7 +292,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                   </p>
                 </motion.div>
               </a>
-              <div className="flex justify-center items-center gap-[1rem] bg-[#c1c1c1] dark:bg-[#2e2e2e] mx-[3rem] py-[0.5rem] rounded-md cursor-pointer translate-y-[1.3rem]">
+              <div className="flex justify-center items-center gap-[1rem] bg-[#c1c1c1] dark:bg-[#2e2e2e] mx-[1.5rem] py-[0.5rem] rounded-md cursor-pointer translate-y-[1.3rem]">
                 <img
                   src={sun}
                   alt="sun"

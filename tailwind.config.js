@@ -27,6 +27,9 @@ module.exports = {
       padding: {
         safe: "env(safe-area-inset-top)",
       },
+      screens: {
+        "2xl": "1600px",
+      },
       colors: {
         veryDarkBlue: "hsl(220, 13%, 13%)",
       },

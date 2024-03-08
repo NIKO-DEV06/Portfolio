@@ -29,8 +29,9 @@ const Home = () => {
                 options={{
                   strings: [
                     "Software Engineer.",
-                    "Frontend Developer.",
+                    "Next JS Developer.",
                     "React(JS/TS) Developer",
+                    "Frontend Developer.",
                   ],
                   autoStart: true,
                   loop: true,
