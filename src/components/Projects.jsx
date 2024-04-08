@@ -24,7 +24,7 @@ const Projects = () => {
     {
       id: "veevents",
       name: "Veevents",
-      desc: "Veevents is a modern, responsive events management app powered by Next.js, TypeScript, and Tailwind CSS. It simplifies event creation, ticketing, and promotion with seamless Stripe integration, offering organizers a streamlined solution.",
+      desc: "Veevents is a modern, responsive fullstack events management app powered by Next.js, TypeScript, and Tailwind CSS. It simplifies event creation, ticketing, and promotion with seamless Stripe integration, offering organizers a streamlined solution.",
       tools: [
         "Next.JS",
         "Typescript",
