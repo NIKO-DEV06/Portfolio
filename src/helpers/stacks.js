@@ -24,6 +24,9 @@ import ethersSvg from "../tech-stack-images/ethers.svg";
 import hardhatSvg from "../tech-stack-images/hardhat.svg";
 import phpSvg from "../tech-stack-images/php.svg";
 import mysqlSvg from "../tech-stack-images/mysql.svg";
+import stripeSvg from "../tech-stack-images/stripe.svg";
+import reactnSvg from "../tech-stack-images/react-native.svg";
+import gsapSvg from "../tech-stack-images/gsap.png";
 
 export const stack1 = [
   {
@@ -86,25 +89,24 @@ export const stack1 = [
     img: firebaseSvg,
     desc: "Firebase is a platform with tools for authentication and database management.",
   },
-
   {
-    id: "s25",
-    name: "Solidity",
-    img: soliditySvg,
-    desc: "Solidity is a programming language for writing smart contracts on the Ethereum blockchain.",
+    id: "200s",
+    name: "Stripe",
+    img: stripeSvg,
+    desc: "Stripe is a payment processing platform that enables businesses to accept online payments securely and efficiently.",
   },
   {
-    id: "s27",
-    name: "Ethers.JS",
-    img: ethersSvg,
-    desc: " Ethers is a JavaScript library for simplified interaction with the Ethereum blockchain.",
+    id: "2001s",
+    name: "React Native",
+    img: reactnSvg,
+    desc: "React Native: Build cross-platform mobile apps with JavaScript and React.",
   },
-  {
-    id: "s28",
-    name: "HardHat",
-    img: hardhatSvg,
-    desc: "Hardhat is a development environment and testing framework for Ethereum smart contracts.",
-  },
+  // {
+  //   id: "2002s",
+  //   name: "GSAP",
+  //   img: gsapSvg,
+  //   desc: "GSAP (GreenSock Animation Platform) is a JavaScript library for creating high-performance animations on the web.",
+  // },
 ];
 
 export const stack2 = [
@@ -188,6 +190,24 @@ export const stack2 = [
     name: "react-router",
     img: reactrouterSvg,
     desc: "React Router is a library for routing in React applications.",
+  },
+  {
+    id: "s25",
+    name: "Solidity",
+    img: soliditySvg,
+    desc: "Solidity is a programming language for writing smart contracts on the Ethereum blockchain.",
+  },
+  {
+    id: "s27",
+    name: "Ethers.JS",
+    img: ethersSvg,
+    desc: " Ethers is a JavaScript library for simplified interaction with the Ethereum blockchain.",
+  },
+  {
+    id: "s28",
+    name: "HardHat",
+    img: hardhatSvg,
+    desc: "Hardhat is a development environment and testing framework for Ethereum smart contracts.",
   },
 ];
 

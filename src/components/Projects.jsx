@@ -7,6 +7,7 @@ import gowfo from "../projectsImages/gowfo.png";
 import felsunny from "../projectsImages/felsunny.png";
 import kanban from "../projectsImages/kanban.jpg";
 import planets from "../projectsImages/planets.jpg";
+import veevents from "../projectsImages/veevents.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,6 +21,24 @@ const Projects = () => {
   }, []);
 
   const projects = [
+    {
+      id: "veevents",
+      name: "Veevents",
+      desc: "Veevents is a modern, responsive events management app powered by Next.js, TypeScript, and Tailwind CSS. It simplifies event creation, ticketing, and promotion with seamless Stripe integration, offering organizers a streamlined solution.",
+      tools: [
+        "Next.JS",
+        "Typescript",
+        "MongoDB",
+        "Tailwind CSS",
+        "Stripe",
+        "Clerk",
+        "GSAP",
+        "ZOD",
+      ],
+      img: veevents,
+      github: "https://github.com/NIKO-DEV06/Veevents",
+      live: "https://veevents.vercel.app/",
+    },
     {
       id: "gowfo",
       name: "GO WFO Website & WebApp",
@@ -80,15 +99,6 @@ const Projects = () => {
       github: "https://github.com/NIKO-DEV06/REST-Countries",
       live: "https://rest-countries-niko.vercel.app/",
     },
-    {
-      id: "planets",
-      name: "Planets Fact Site",
-      desc: "Planets Fact Site is a dynamic website that showcases fascinating planet facts. With its responsive design, animations, and transitions, it offers an engaging user experience. Explore the captivating world of planets on this interactive platform.",
-      tools: ["Next.JS", "Typescript", "Tailwind CSS", "Framer-Motion", "JSON"],
-      img: planets,
-      github: "https://github.com/NIKO-DEV06/Planets-Fact-Site",
-      live: "https://niko-planets.vercel.app/",
-    },
   ];
 
   return (
@@ -119,7 +129,7 @@ const Projects = () => {
                   src={project.img}
                   alt={project.name}
                   className={` w-[30rem] h-[16rem] mx-auto border-t-2 border-l-2 lg:border-b-2 border-r-2 lg:border-r-0 border-black dark:border-white ${
-                    project.id !== "felsunny" && project.id !== "basedsolar"
+                    project.id !== "felsunny" && project.id !== "veevents"
                       ? "object-cover"
                       : ""
                   } object-top lg:h-auto`}
