@@ -7,6 +7,7 @@ import nextjsSvg from "../tech-stack-images/nextjs.svg";
 import tailwindSvg from "../tech-stack-images/tailwind.svg";
 import firebaseSvg from "../tech-stack-images/firebase.svg";
 import mongodbSvg from "../tech-stack-images/mongo.svg";
+import expressSvg from "../tech-stack-images/express.svg";
 import scssSvg from "../tech-stack-images/scss.svg";
 import gitSvg from "../tech-stack-images/git.svg";
 import githubSvg from "../tech-stack-images/github.svg";
@@ -24,9 +25,11 @@ import ethersSvg from "../tech-stack-images/ethers.svg";
 import hardhatSvg from "../tech-stack-images/hardhat.svg";
 import phpSvg from "../tech-stack-images/php.svg";
 import mysqlSvg from "../tech-stack-images/mysql.svg";
+import graphqlSvg from "../tech-stack-images/graphql.svg";
 import stripeSvg from "../tech-stack-images/stripe.svg";
 import reactnSvg from "../tech-stack-images/react-native.svg";
 import gsapSvg from "../tech-stack-images/gsap.png";
+import clerkSvg from "../tech-stack-images/clerk.avif";
 
 export const stack1 = [
   {
@@ -84,6 +87,12 @@ export const stack1 = [
     desc: "MongoDB is a popular NoSQL document database.",
   },
   {
+    id: "s9wdefde",
+    name: "Express.JS",
+    img: expressSvg,
+    desc: "Express.js is a minimalist web framework for Node.js, facilitating the creation of web servers and APIs.",
+  },
+  {
     id: "s8",
     name: "Firebase",
     img: firebaseSvg,
@@ -96,25 +105,16 @@ export const stack1 = [
     desc: "Stripe is a payment processing platform that enables businesses to accept online payments securely and efficiently.",
   },
   {
+    id: "200mnbvcs",
+    name: "GraphQL",
+    img: graphqlSvg,
+    desc: "GraphQL is an API query language and runtime that optimizes data retrieval for clients.",
+  },
+  {
     id: "2001s",
     name: "React Native",
     img: reactnSvg,
     desc: "React Native: Build cross-platform mobile apps with JavaScript and React.",
-  },
-  // {
-  //   id: "2002s",
-  //   name: "GSAP",
-  //   img: gsapSvg,
-  //   desc: "GSAP (GreenSock Animation Platform) is a JavaScript library for creating high-performance animations on the web.",
-  // },
-];
-
-export const stack2 = [
-  {
-    id: "s10",
-    name: "Scss/Sass",
-    img: scssSvg,
-    desc: "SCSS/SASS is a preprocessor that adds additional functionality to CSS.",
   },
   {
     id: "s50",
@@ -128,6 +128,33 @@ export const stack2 = [
     img: mysqlSvg,
     desc: "MySQL is an open-source relational database management system for web applications.",
   },
+];
+
+export const stack2 = [
+  {
+    id: "s10",
+    name: "Scss/Sass",
+    img: scssSvg,
+    desc: "SCSS/SASS is a preprocessor that adds additional functionality to CSS.",
+  },
+  {
+    id: "s14",
+    name: "framer-motion",
+    img: framerSvg,
+    desc: "Framer Motion is a motion library for creating interactive prototypes and animations in React.",
+  },
+  {
+    id: "2002s",
+    name: "GSAP",
+    img: gsapSvg,
+    desc: "GSAP (GreenSock Animation Platform) is a JavaScript library for creating high-performance animations on the web.",
+  },
+  {
+    id: "s16",
+    name: "redux/redux-toolkit",
+    img: reduxSvg,
+    desc: "Redux is a state management library for React.",
+  },
   {
     id: "s11",
     name: "Git",
@@ -140,6 +167,14 @@ export const stack2 = [
     img: githubSvg,
     desc: "GitHub is a web-based platform for hosting and collaborating on Git repositories.",
   },
+
+  {
+    id: "200swde2s",
+    name: "Clerk",
+    img: clerkSvg,
+    desc: "Clerk is a user authentication platform for web applications.",
+  },
+
   {
     id: "s12",
     name: "jest",
@@ -151,25 +186,6 @@ export const stack2 = [
     name: "Cypress",
     img: cySvg,
     desc: "Cypress is an open-source app that takes the pain out of front-end testing.",
-  },
-
-  {
-    id: "s26",
-    name: "Webflow",
-    img: webflowSvg,
-    desc: "Webflow is a visual web design tool that allows users to create websites without coding.",
-  },
-  {
-    id: "s14",
-    name: "framer-motion",
-    img: framerSvg,
-    desc: "Framer Motion is a motion library for creating interactive prototypes and animations in React.",
-  },
-  {
-    id: "s16",
-    name: "redux/redux-toolkit",
-    img: reduxSvg,
-    desc: "Redux is a state management library for React.",
   },
 
   {
@@ -208,6 +224,12 @@ export const stack2 = [
     name: "HardHat",
     img: hardhatSvg,
     desc: "Hardhat is a development environment and testing framework for Ethereum smart contracts.",
+  },
+  {
+    id: "s26",
+    name: "Webflow",
+    img: webflowSvg,
+    desc: "Webflow is a visual web design tool that allows users to create websites without coding.",
   },
 ];
 
