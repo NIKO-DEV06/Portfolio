@@ -1,19 +1,18 @@
-import React, { Fragment, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { Fragment, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
-import audiophile from "../projectsImages/audiophile.jpg";
-import countries from "../projectsImages/countries.jpg";
-import gowfo from "../projectsImages/gowfo.png";
-import felsunny from "../projectsImages/felsunny.png";
-import kanban from "../projectsImages/kanban.jpg";
-import planets from "../projectsImages/planets.jpg";
-import veevents from "../projectsImages/veevents.png";
+import audiophile from '../projectsImages/audiophile.jpg';
+import countries from '../projectsImages/countries.jpg';
+import gowfo from '../projectsImages/gowfo.png';
+import felsunny from '../projectsImages/felsunny.png';
+import kanban from '../projectsImages/kanban.jpg';
+import veevents from '../projectsImages/veevents.png';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-import linkSvg from "../images/link.svg";
-import githubSvg from "../images/github.svg";
+import linkSvg from '../images/link.svg';
+import githubSvg from '../images/github.svg';
 
 const Projects = () => {
   useEffect(() => {
@@ -22,82 +21,82 @@ const Projects = () => {
 
   const projects = [
     {
-      id: "veevents",
-      name: "Veevents",
-      desc: "Veevents is a modern, responsive fullstack events management app powered by Next.js, TypeScript, and Tailwind CSS. It simplifies event creation, ticketing, and promotion with seamless Stripe integration, offering organizers a streamlined solution.",
+      id: 'veevents',
+      name: 'Veevents',
+      desc: 'Veevents is a modern, responsive fullstack events management app powered by Next.js, TypeScript, and Tailwind CSS. It simplifies event creation, ticketing, and promotion with seamless Stripe integration, offering organizers a streamlined solution.',
       tools: [
-        "Next.JS",
-        "Typescript",
-        "MongoDB",
-        "Tailwind CSS",
-        "Stripe",
-        "Clerk",
-        "GSAP",
-        "ZOD",
+        'Next.JS',
+        'Typescript',
+        'MongoDB',
+        'Tailwind CSS',
+        'Stripe',
+        'Clerk',
+        'GSAP',
+        'ZOD',
       ],
       img: veevents,
-      github: "https://github.com/NIKO-DEV06/Veevents",
-      live: "https://veevents.vercel.app/",
+      github: 'https://github.com/NIKO-DEV06/Veevents',
+      live: 'https://veevents.vercel.app/',
     },
     {
-      id: "gowfo",
-      name: "GO WFO Website & WebApp",
-      desc: "GO WFO : Extreme Sports Community Network of Athletes, Fans, and Creators ⛷",
-      tools: ["Next.JS", "Typescript", "Node.JS", "PHP", "MySQL", "API"],
+      id: 'gowfo',
+      name: 'GO WFO Website & WebApp',
+      desc: 'GO WFO : Extreme Sports Community Network of Athletes, Fans, and Creators ⛷',
+      tools: ['Next.JS', 'Typescript', 'Node.JS', 'PHP', 'MySQL', 'API'],
       img: gowfo,
-      github: "",
-      live: "https://gowfo.com/",
+      github: '',
+      live: 'https://gowfo.com/',
     },
     {
-      id: "felsunny",
-      name: "Felsunny Technology LTD",
-      desc: "I built a multipage website for the multipurpose company Felsunny Technology LTD. I handled the frontend design, web functionalities, and optimized performance.",
+      id: 'felsunny',
+      name: 'Felsunny Technology LTD',
+      desc: 'I built a multipage website for the multipurpose company Felsunny Technology LTD. I handled the frontend design, web functionalities, and optimized performance.',
       tools: [
-        "Next.JS",
-        "Typescript",
-        "Tailwind CSS",
-        "Framer-Motion",
-        "React-Hook-From",
+        'Next.JS',
+        'Typescript',
+        'Tailwind CSS',
+        'Framer-Motion',
+        'React-Hook-From',
       ],
       img: felsunny,
-      github: "https://github.com/NIKO-DEV06/Felsunny-v2",
-      live: "https://www.felsunny.com/",
+      github: 'https://github.com/NIKO-DEV06/Felsunny-v2',
+      live: 'https://www.felsunny.com/',
     },
     {
-      id: "p1",
-      name: "Audiophile",
-      desc: "Audiophile is a responsive e-commerce website built with Next.js, TypeScript, Firebase and Tailwind CSS. It features audio products, user authentication, and a streamlined checkout process.",
+      id: 'p1',
+      name: 'Audiophile',
+      desc: 'Audiophile is a responsive e-commerce website built with Next.js, TypeScript, Firebase and Tailwind CSS. It features audio products, user authentication, and a streamlined checkout process.',
       tools: [
-        "Next.JS",
-        "Typescript",
-        "Redux-Toolkit",
-        "Firebase",
-        "Tailwind CSS",
-        "Framer-Motion",
-        "React-Hook-Form",
+        'Next.JS',
+        'Typescript',
+        'Redux-Toolkit',
+        'Firebase',
+        'Tailwind CSS',
+        'Framer-Motion',
+        'React-Hook-Form',
       ],
       img: audiophile,
-      github: "https://github.com/NIKO-DEV06/audiophile",
-      live: "https://audiophile-niko-dev06.vercel.app/",
+      github: 'https://github.com/NIKO-DEV06/audiophile',
+      live: 'https://audiophile-niko-dev06.vercel.app/',
     },
     {
-      id: "p9",
-      name: "Kanban Task Management",
-      desc: "This project is a responsive task management application featuring a Kanban board. Users can easily add, edit, and delete tasks & boards, and utilize drag and drop functionality for seamless task movement. Redux-Toolkit is used for state management.",
-      tools: ["React.JS", "Typescript", "Tailwind CSS", "Redux-Toolkit"],
+      id: 'p9',
+      name: 'Kanban Task Management',
+      desc: 'This project is a responsive task management application featuring a Kanban board. Users can easily add, edit, and delete tasks & boards, and utilize drag and drop functionality for seamless task movement. Redux-Toolkit is used for state management.',
+      tools: ['React.JS', 'Typescript', 'Tailwind CSS', 'Redux-Toolkit'],
       img: kanban,
-      github: "https://github.com/NIKO-DEV06/Kanban-Task-Management",
-      live: "https://nikokanban-task-manager.vercel.app/",
+      github: 'https://github.com/NIKO-DEV06/Kanban-Task-Management',
+      live: 'https://nikokanban-task-manager.vercel.app/',
     },
 
     {
-      id: "p5",
-      name: "Rest Countries",
-      desc: "The project is designed to utilize the REST Countries API to showcase detailed information about countries worldwide, including names, flags, population, capital, and more. The user interface enables users to search, filter, and sort the data according to their preferences.",
-      tools: ["Next.JS", "Javascript", "Tailwind CSS", "REST-API"],
+      id: 'p5',
+      name: 'Rest Countries',
+      desc: 'The project is designed to utilize the REST Countries API to showcase detailed information about countries worldwide, including names, flags, population, capital, and more. The user interface enables users to search, filter, and sort the data according to their preferences.',
+      tools: ['Next.JS', 'Javascript', 'Tailwind CSS', 'REST-API'],
       img: countries,
-      github: "https://github.com/NIKO-DEV06/REST-Countries",
-      live: "https://rest-countries-niko.vercel.app/",
+      github: 'https://github.com/NIKO-DEV06/REST-Countries',
+      live: 'https://rest-countries-niko.vercel.app/',
     },
   ];
 
@@ -129,9 +128,9 @@ const Projects = () => {
                   src={project.img}
                   alt={project.name}
                   className={` w-[30rem] h-[16rem] mx-auto border-t-2 border-l-2 lg:border-b-2 border-r-2 lg:border-r-0 border-black dark:border-white ${
-                    project.id !== "felsunny" && project.id !== "veevents"
-                      ? "object-cover"
-                      : ""
+                    project.id !== 'felsunny' && project.id !== 'veevents'
+                      ? 'object-cover'
+                      : ''
                   } object-top lg:h-auto`}
                 />
                 <div className="dark:border-white border-2 border-black">
@@ -158,11 +157,11 @@ const Projects = () => {
                     <motion.a
                       href={project.github}
                       className={`flex border-2 border-black dark:border-white mt-[3rem] rounded-lg scale-75 cursor-pointer duration-150 mr-[-1.5rem] ${
-                        project.id === "gowfo" ||
-                        project.id === "basedsolar" ||
-                        project.id === "felsunny"
-                          ? "hidden"
-                          : ""
+                        project.id === 'gowfo' ||
+                        project.id === 'basedsolar' ||
+                        project.id === 'felsunny'
+                          ? 'hidden'
+                          : ''
                       }`}
                       initial={{ scale: 0.75 }}
                       whileHover={{ scale: 0.77 }}
