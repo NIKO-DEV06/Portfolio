@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-import myLogo from "../images/photo.jpg";
+import myLogo from '../images/photo.jpg';
 
 const About = () => {
   useEffect(() => {
@@ -10,38 +10,43 @@ const About = () => {
   }, []);
   return (
     <section
-      className="dark:text-white text-black dark:bg-black-gradient bg-white-gradient h-screen md:mb-[20rem] lg:mb-auto 2xl:max-w-[1500px] 2xl:m-auto"
+      className="dark:text-white text-black dark:bg-black-gradient bg-white-gradient md:mb-[10rem] lg:mb-[7rem] 2xl:max-w-[1500px] 2xl:m-auto"
       id="about"
       data-aos="fade-up"
     >
       <div className="relative md:ml-[13rem]">
-        <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
-        <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#424242]" />
-        <h1 className="text-[1.5rem] font-[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font-[500] uppercase font-cereal-medium">
+        <hr className="absolute left-0 bottom-1/2 w-[32%] md:w-[38%] border-[#212121]" />
+        <hr className="absolute right-0 bottom-1/2 w-[32%] md:w-[38%] border-[#212121]" />
+        <h1 className="text-[1.5rem] font[800] leading-[2.5rem] text-center tracking-[0.1em] relative lg:text-[3rem] lg:tracking-[0.11rem] lg:font[500] uppercase font-cereal-normal">
           About Me 👨‍🔧
         </h1>
       </div>
-      <div className="lg:flex lg:mx-auto lg:mt-[8rem]">
+      <div className="lg:flex lg:mx-auto lg:mt-[4rem]">
         <p className="font[300] p-[1.35rem] md:ml-[16rem] md:mt-3 md:leading-[1.5rem] lg:mt-8 lg:ml-[19rem] lg:w-[43%] lg:scale-110 lg:leading-[1.7rem] font-cereal-light">
-          I'm a coding enthusiast who loves crafting remarkable solutions. With
-          a solid foundation in{" "}
-          <span className="opacity-50"> computer science and programming</span>{" "}
-          and my trusty keyboard, I create web and mobile applications using
-          technologies like{" "}
-          <span className="opacity-50">
-            JavaScript, React Js, NextJs, Typescript, Firebase, MongoDB, Redux,
-            TailwindCSS, SCSS and other lastest technologies.🛠️
+          I'm a passionate Fullstack Developer with 4+ years of experience who
+          builds impactful, end-to-end solutions. With a strong computer science
+          background, I create scalable apps using tools like{' '}
+          <span className="opacity-60 italic">
+            Next.js, ReactJS, TypeScript, Tailwind CSS, Nest.js, and Node.js,
+          </span>{' '}
+          and manage databases like{' '}
+          <span className="opacity-60 italic pr-0.5">
+            PostgreSQL and MongoDB{' '}
           </span>
+          for smooth frontend-backend integration.
           <br />
-          <br />I never stop learning, I'm constantly exploring the latest
-          trends and technologies to stay ahead of the curve. When I'm not
-          immersed in coding, you'll find me cheering for my favorite football
-          team (PSG🔴🔵).
           <br />
-          <br /> If you're looking for a dedicated software developer who is
-          both skilled and eager to learn, look no further! Let's team up and
-          make something truly amazing. Together, we'll transform your ideas
-          into reality.
+          I'm always learning and exploring the latest trends in frontend and
+          backend development, as well as cloud technologies like{' '}
+          <span className="opacity-60 italic">AWS, Google Cloud</span>, and
+          containerization tools like{' '}
+          <span className="opacity-60 italic pr-0.5">
+            Docker and Kubernetes
+          </span>{' '}
+          to stay ahead of the curve.
+          <br />
+          <br /> If you need a versatile developer to bring ideas to life and
+          build high-performing fullstack applications, let's connect!
         </p>
         <div className="lg:translate-y-[-0.6rem] relative w-[18rem] mx-auto lg:mx-auto md:mx-[23rem]  lg:scale-90 md:scale[0.5] lg:my-auto group cursor-pointer mdmt-[6.5rem]">
           <img

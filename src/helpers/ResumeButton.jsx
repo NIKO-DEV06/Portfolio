@@ -1,9 +1,10 @@
-import { motion } from "framer-motion";
-import resumeSvg from "../images/resume.svg";
+import { motion } from 'framer-motion';
+import resumeSvg from '../images/resume.svg';
 
 const ResumeButton = () => {
   return (
     <motion.a
+      target="_blank"
       className="flex border-2 border-white  mt-[3rem] rounded-lg scale-75 cursor-pointer bg-black dark:bg-white duration-150 ml-[-1.5rem] text-black"
       href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing"
       initial={{ scale: 0.75 }}
@@ -39,7 +40,7 @@ const Drip = ({ left, height, delay }) => {
         duration: 2,
         times: [0, 0.25, 1],
         delay,
-        ease: "easeIn",
+        ease: 'easeIn',
         repeat: Infinity,
         repeatDelay: 2,
       }}
@@ -112,7 +113,7 @@ const Drip = ({ left, height, delay }) => {
           duration: 2,
           times: [0, 1],
           delay,
-          ease: "easeIn",
+          ease: 'easeIn',
           repeat: Infinity,
           repeatDelay: 2,
         }}

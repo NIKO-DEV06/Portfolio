@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
-import { motion } from "framer-motion";
-import Typewriter from "typewriter-effect";
-import { Link } from "react-scroll";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import resumeSvg from "../images/resume.svg";
-import contactSvg from "../images/mailbox.svg";
-import ResumeButton from "../helpers/ResumeButton";
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import Typewriter from 'typewriter-effect';
+import { Link } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import contactSvg from '../images/mailbox.svg';
+import ResumeButton from '../helpers/ResumeButton';
 
 const Home = () => {
   useEffect(() => {
@@ -28,10 +28,10 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "Software Engineer.",
-                    "Next JS Developer.",
-                    "React(JS/TS) Developer",
-                    "Frontend Developer.",
+                    'Software Engineer.',
+                    'Fullstack Developer.',
+                    'React(JS/TS) Developer',
+                    'Next JS Developer.',
                   ],
                   autoStart: true,
                   loop: true,
