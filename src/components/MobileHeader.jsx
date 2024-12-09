@@ -1,26 +1,26 @@
-import React, { Fragment, useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-scroll";
+import React, { Fragment, useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-scroll';
 
-import myLogo from "../images/photo.jpg";
-import hamburgerSvg from "../images/hamburger.svg";
-import SideBar from "./SideBar";
+import myLogo from '../images/photo.jpg';
+import hamburgerSvg from '../images/hamburger.svg';
+import SideBar from './SideBar';
 
-import nikoWhite from "../images/nikocodes-w.svg";
+import nikoWhite from '../images/nikocodes-w.svg';
 
-import homeSvg from "../images/home.svg";
-import aboutSvg from "../images/about.svg";
-import projectsSvg from "../images/projects.svg";
-import stackSvg from "../images/stack.svg";
-import contactSvg from "../images/mailbox.svg";
-import linkedinSvg from "../images/linkedin.svg";
-import githubSvg from "../images/github.svg";
-import femSvg from "../images/frontendmentor.svg";
-import sun from "../images/icon-light-theme.svg";
-import moon from "../images/icon-dark-theme.svg";
+import homeSvg from '../images/home.svg';
+import aboutSvg from '../images/about.svg';
+import projectsSvg from '../images/projects.svg';
+import stackSvg from '../images/stack.svg';
+import contactSvg from '../images/mailbox.svg';
+import linkedinSvg from '../images/linkedin.svg';
+import githubSvg from '../images/github.svg';
+import femSvg from '../images/frontendmentor.svg';
+import sun from '../images/icon-light-theme.svg';
+import moon from '../images/icon-dark-theme.svg';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const MobileHeader = ({ theme, handleThemeSwitch }) => {
   const [isMobileNav, setIsMobileNav] = useState(false);
@@ -38,23 +38,23 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
   }, []);
   const navVariants = {
     hidden: {
-      x: "-100%",
+      x: '-100%',
     },
     visible: {
-      x: "0%",
+      x: '0%',
       transition: {
         duration: 0.3,
-        ease: "easeInOut",
-        type: "spring",
+        ease: 'easeInOut',
+        type: 'spring',
         damping: 25,
         stiffness: 400,
       },
     },
     exit: {
-      x: "-100%",
+      x: '-100%',
       transition: {
         duration: 0.3,
-        ease: "easeInOut",
+        ease: 'easeInOut',
       },
     },
   };
@@ -108,7 +108,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                 animate={{ opacity: 0.8 }}
                 exit={{ opacity: 0 }}
                 transition={{
-                  ease: "easeOut",
+                  ease: 'easeOut',
                   duration: 0.25,
                 }}
                 onClick={close}
@@ -123,7 +123,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
               exit="exit"
               variants={navVariants}
               className={`${
-                !isMobileNav && "hidden"
+                !isMobileNav && 'hidden'
               } z-40 fixed top-0 bottom-0 left-0 w-[250px] overflow-y-auto text-center dark:bg-black-gradient bg-white-gradient border-r-[1.5px] border-[#282828] md:flex flex-col dark:text-white text-black`}
             >
               <div className="w-full cursor-pointer">
@@ -250,6 +250,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                     className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
                   <a
+                    target="_blank"
                     href="https://www.linkedin.com/in/emmanuel-ayeniko-72a758258/"
                     className="p-[6px]"
                   >
@@ -262,7 +263,11 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                     alt=""
                     className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
-                  <a href="https://github.com/NIKO-DEV06" className="p-[6px]">
+                  <a
+                    target="_blank"
+                    href="https://github.com/NIKO-DEV06"
+                    className="p-[6px]"
+                  >
                     GitHub
                   </a>
                 </div>
@@ -273,6 +278,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                     className="h-[1.7rem] my-auto ml-2 filter invert dark:filter-none"
                   />
                   <a
+                    target="_blank"
                     href="https://www.frontendmentor.io/profile/NIKO-DEV06"
                     className="p-[6px]"
                   >
@@ -305,7 +311,7 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                   <div
                     className={`absolute h-[1rem] w-[1rem] bg-white rounded-full top-[3px]
                 right-[3px] transition-all duration-200 ${
-                  theme === "light" ? "transform translate-x-[-180%]" : ""
+                  theme === 'light' ? 'transform translate-x-[-180%]' : ''
                 } `}
                   ></div>
                 </div>

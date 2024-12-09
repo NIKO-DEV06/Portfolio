@@ -1,22 +1,22 @@
-import React, { Fragment, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-scroll";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { Fragment, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // import nikoBlack from "../images/nikocodes-b.svg";
-import nikoWhite from "../images/nikocodes-w.svg";
-import myLogo from "../images/photo.jpg";
-import homeSvg from "../images/home.svg";
-import aboutSvg from "../images/about.svg";
-import projectsSvg from "../images/projects.svg";
-import stackSvg from "../images/stack.svg";
-import contactSvg from "../images/mailbox.svg";
-import linkedinSvg from "../images/linkedin.svg";
-import githubSvg from "../images/github.svg";
-import femSvg from "../images/frontendmentor.svg";
-import sun from "../images/icon-light-theme.svg";
-import moon from "../images/icon-dark-theme.svg";
+import nikoWhite from '../images/nikocodes-w.svg';
+import myLogo from '../images/photo.jpg';
+import homeSvg from '../images/home.svg';
+import aboutSvg from '../images/about.svg';
+import projectsSvg from '../images/projects.svg';
+import stackSvg from '../images/stack.svg';
+import contactSvg from '../images/mailbox.svg';
+import linkedinSvg from '../images/linkedin.svg';
+import githubSvg from '../images/github.svg';
+import femSvg from '../images/frontendmentor.svg';
+import sun from '../images/icon-light-theme.svg';
+import moon from '../images/icon-dark-theme.svg';
 
 const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
   useEffect(() => {
@@ -32,7 +32,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.8 }}
             exit={{ opacity: 0 }}
-            transition={{ ease: "easeOut", duration: 0.25 }}
+            transition={{ ease: 'easeOut', duration: 0.25 }}
             onClick={backdropClose}
             className="top-0 bottom-0 right-0 left-0 fixed z-30 bg-[#1c1c1c] md:hidden"
           ></motion.div>
@@ -41,13 +41,13 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
         <motion.div
           data-aos="fade-right"
           key="sdb"
-          initial={{ x: "-100%" }}
+          initial={{ x: '-100%' }}
           // initial={{ x: !isNav ? "0%" : "-100%" }}
           animate={{ x: 0 }}
-          exit={{ x: "-100%" }}
+          exit={{ x: '-100%' }}
           transition={{ duration: 0.3 }}
           className={`${
-            !isNav && "hidden"
+            !isNav && 'hidden'
           } z-40 fixed top-0 bottom-0 font-cereal-normal left-0 w-[250px] overflow-y-auto text-center dark:bg-black-gradient bg-white-gradient border-r-[1.5px] border-[#282828] md:flex flex-col dark:text-white text-black`}
         >
           <div className="w-full cursor-pointer">
@@ -174,6 +174,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
                 className="h-[1.7rem] my-auto ml-2 filter invert dark:invert-0"
               />
               <a
+                target="_blank"
                 href="https://www.linkedin.com/in/emmanuel-ayeniko-72a758258/"
                 className="p-[6px]"
               >
@@ -186,7 +187,12 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
                 alt=""
                 className="h-[1.7rem] my-auto ml-2 filter invert dark:invert-0"
               />
-              <a href="https://github.com/NIKO-DEV06" className="p-[6px]">
+
+              <a
+                target="_blank"
+                href="https://github.com/NIKO-DEV06"
+                className="p-[6px]"
+              >
                 GitHub
               </a>
             </div>
@@ -197,6 +203,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
                 className="h-[1.7rem] my-auto ml-2 filter invert dark:invert-0"
               />
               <a
+                target="_blank"
                 href="https://www.frontendmentor.io/profile/NIKO-DEV06"
                 className="p-[6px]"
               >
@@ -228,7 +235,7 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
               <div
                 className={`absolute h-[1rem] w-[1rem] bg-white rounded-full top-[3px]
                 right-[3px] transition-all duration-200 ${
-                  theme === "light" ? "transform translate-x-[-180%]" : ""
+                  theme === 'light' ? 'transform translate-x-[-180%]' : ''
                 } `}
               ></div>
             </div>
