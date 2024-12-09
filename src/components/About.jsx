@@ -27,7 +27,8 @@ const About = () => {
           builds impactful, end-to-end solutions. With a strong computer science
           background, I create scalable apps using tools like{' '}
           <span className="opacity-60 italic">
-            Next.js, ReactJS, TypeScript, Tailwind CSS, Nest.js, and Node.js,
+            Next.js, ReactJS, TypeScript, Tailwind CSS, Nest.js, Express.js, and
+            Node.js,
           </span>{' '}
           and manage databases like{' '}
           <span className="opacity-60 italic pr-0.5">

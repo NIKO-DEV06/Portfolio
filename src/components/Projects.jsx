@@ -198,8 +198,8 @@ const Projects = () => {
         </div>
         {/* projects list */}
 
-        <div className="w-full flex flex-col justify-center lg:scale-[0.86] xl:scale-[0.9] my-12 lg:my-0 lg:-translate-y-[12rem] xl:-translate-y-[7rem]">
-          <div className="w-[25rem] mx-auto flex flex-col gap-3 lg:w-[60rem]">
+        <div className="w-full flex flex-col justify-center scale[0.99] lg:scale-[0.86] xl:scale-[0.9] my-12 lg:my-0 lg:-translate-y-[12rem] xl:-translate-y-[7rem]">
+          <div className="w-full px-5 md:px-0 md:w-[25rem] mx-auto flex flex-col gap-3 lg:w-[60rem]">
             {/* // */}
             {projects.map((project) => (
               <div
@@ -220,7 +220,7 @@ const Projects = () => {
                     <p className="font-cereal-light pr-3 tracking-wide text-sm lg:text-base">
                       {project.desc}
                     </p>
-                    <div className="mt-5 flex flex-wrap text-[0.9rem] gap-2">
+                    <div className="mt-5 flex flex-wrap text-[0.9rem] gap-2 pr-1.5 md:pr-0">
                       {project.tools.map((tool) => (
                         <div
                           key={Math.random()}
