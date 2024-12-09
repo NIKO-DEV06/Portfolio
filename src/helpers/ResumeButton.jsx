@@ -16,8 +16,8 @@ const ResumeButton = () => {
         alt=""
         className="h-[1.9rem] my-auto ml-2 filter invert dark:filter-none"
       />
-      <p className="p-3 font-semibold tracking-[0.25em] duration-150 dark:text-black text-white">
-        RESUME
+      <p className="p-3 uppercase font-semibold tracking-[0.25em] duration-150 dark:text-black text-white">
+        Resumé
       </p>
       <Drip left="10%" height={24} delay={0.5} />
       <Drip left="30%" height={20} delay={3} />

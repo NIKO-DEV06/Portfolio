@@ -286,15 +286,18 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
                   </a>
                 </div>
               </div>
-              <a href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing">
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing"
+              >
                 <motion.div
                   className="border-2 border-black dark:border-white mx[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group dark:hover:bg-white hover:bg-black duration-150"
                   initial={{ scale: 0.75 }}
                   whileHover={{ scale: 0.8 }}
                   whileTap={{ scale: 0.5 }}
                 >
-                  <p className="p-3 font-semibold tracking-[0.25em] group-hover:text-black duration-150">
-                    RESUME
+                  <p className="p-3 font-semibold tracking-[0.25em] group-hover:text-black duration-150 uppercase">
+                    Resumé
                   </p>
                 </motion.div>
               </a>

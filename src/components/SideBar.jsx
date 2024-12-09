@@ -212,14 +212,15 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
             </div>
           </div>
           <motion.a
+            target="_blank"
             href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing"
             className="border-2 border-black dark:border-white mx[3rem] mt-[3rem] rounded-lg scale-75 cursor-pointer group dark:hover:bg-white hover:bg-black  duration-150"
             initial={{ scale: 0.75 }}
             // whileHover={{ scale: 0.8 }}
             whileTap={{ scale: 0.5 }}
           >
-            <p className="p-3 font-semibold tracking-[0.25em] dark:group-hover:text-black group-hover:text-white dark:text-white text-black duration-150">
-              RESUME
+            <p className="p-3 uppercase font-semibold tracking-[0.25em] dark:group-hover:text-black group-hover:text-white dark:text-white text-black duration-150">
+              Resumé
             </p>
           </motion.a>
           <div className="px-[1rem] flex justify-center items-center gap-[1rem] bg-[#c1c1c1] dark:bg-[#2e2e2e] mx-[1.5rem] py-[0.5rem] rounded-md mt-[1rem] cursor-pointer translatey-[4rem]">
