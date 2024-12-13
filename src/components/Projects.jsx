@@ -10,7 +10,7 @@ import wingstop from '../projectsImages/wingstop.png';
 import naitram from '../projectsImages/naitram.png';
 import hessian from '../projectsImages/hessian.png';
 import mediaBeast from '../projectsImages/mb.png';
-import pengame from '../projectsImages/pengame.png';
+import pengame from '../projectsImages/pengame-new.png';
 import felsunny from '../projectsImages/felsunny.png';
 
 import AOS from 'aos';
@@ -45,12 +45,13 @@ const Projects = () => {
     {
       id: 'ddddud',
       name: 'Pengame Rap Battle',
-      desc: "The official home of PenGame Rap Battle. Dive into the world of lyrical warfare and witness the world's best lyricists competing in rap battles.",
+      desc: "Developed the official home of PenGame Rap Battle. Dive into the world of lyrical warfare and witness the world's best lyricists competing in rap battles.",
       tools: [
         'Next.JS',
         'Typescript',
         'Sanity',
         'GROQ',
+        'API',
         'Shopify',
         'ShadCN',
         'Tailwind CSS',
