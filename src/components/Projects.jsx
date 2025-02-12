@@ -59,7 +59,7 @@ const Projects = () => {
       ],
       img: pengame,
       github: '',
-      live: 'https://pengame-website.vercel.app/',
+      live: 'https://www.pengame.co.uk/',
     },
     {
       id: 'p5',
