@@ -6,7 +6,7 @@ const ResumeButton = () => {
     <motion.a
       target="_blank"
       className="flex border-2 border-white  mt-[3rem] rounded-lg scale-75 cursor-pointer bg-black dark:bg-white duration-150 ml-[-1.5rem] text-black"
-      href="https://drive.google.com/file/d/1emWWLUIi33wif7iWwBX-NlYYUEib2u4E/view?usp=sharing"
+      href="https://drive.google.com/file/d/17Uv_QVmugUmsfoHLnfa6ZAfX_dFZ4JDx/view?usp=sharing"
       initial={{ scale: 0.75 }}
       whileHover={{ scale: 0.77 }}
       whileTap={{ scale: 0.5 }}
