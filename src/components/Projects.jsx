@@ -18,6 +18,7 @@ import 'aos/dist/aos.css';
 
 import linkSvg from '../images/link.svg';
 import githubSvg from '../images/github.svg';
+import { shimmer, toBase64 } from '../util';
 
 const Projects = () => {
   useEffect(() => {
@@ -208,6 +209,9 @@ const Projects = () => {
                 className="flex flex-col pb-8 md:translate-x-[9.5rem] lg:flex-row [25rem]"
               >
                 <img
+                  placeholder={`data:image/svg+xml;base64,${toBase64(
+                    shimmer(1200, 1800),
+                  )}`}
                   src={project.img}
                   alt={project.name}
                   className={` w-[30rem] h[16rem] mx-auto border-t-2 border-l-2 lg:border-b-2 border-r-2 lg:border-r-0 border-black dark:border-white lg:h-auto`}
