@@ -63,6 +63,15 @@ const Projects = () => {
       live: 'https://www.pengame.co.uk/',
     },
     {
+      id: 'mediaBeast',
+      name: 'Media Beast LTD',
+      desc: 'Developed the website for Digital Agency - Media Beast LTD',
+      tools: ['Next.JS', 'Typescript', 'Tailwind CSS', 'Framer-Motion'],
+      img: mediaBeast,
+      github: '',
+      live: 'https://www.mediabeast.co.uk/',
+    },
+    {
       id: 'p5',
       name: 'Rareboots Marketplace',
       desc: 'Worked on frontend development and API integration for RareBoots, a football boots marketplace.',
@@ -77,15 +86,7 @@ const Projects = () => {
       github: '',
       live: 'https://www.rarebootsmarketplace.com/',
     },
-    {
-      id: 'mediaBeast',
-      name: 'Media Beast LTD',
-      desc: 'Developed the website for Digital Agency - Media Beast LTD',
-      tools: ['Next.JS', 'Typescript', 'Tailwind CSS', 'Framer-Motion'],
-      img: mediaBeast,
-      github: '',
-      live: 'https://mediabeast-v2.vercel.app/',
-    },
+
     {
       id: 'p1',
       name: 'Sweet RNB',
