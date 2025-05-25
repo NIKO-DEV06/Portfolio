@@ -1,19 +1,6 @@
 import React, { Fragment, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-import rnb from '../projectsImages/rnb.png';
-import rbm from '../projectsImages/rbm.png';
-import autograph from '../projectsImages/auto.png';
-import kanban from '../projectsImages/kanban.jpg';
-import veevents from '../projectsImages/veevents.png';
-import wingstop from '../projectsImages/wingstop.png';
-import wemove from '../projectsImages/wemove.png';
-import hessian from '../projectsImages/hessian.png';
-import mediaBeast from '../projectsImages/mb.png';
-import pengame from '../projectsImages/pengame-new.png';
-import felsunny from '../projectsImages/felsunny.png';
-import originals from '../projectsImages/originals.png';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -41,7 +28,7 @@ const Projects = () => {
         'ShadCN',
         'Framer Motion',
       ],
-      img: wemove,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167949/wemove_yhctuf.png',
       github: '',
       live: 'https://staging-web.thewemoveproject.co.uk/',
     },
@@ -60,7 +47,7 @@ const Projects = () => {
         'Tailwind CSS',
         'Framer-Motion',
       ],
-      img: pengame,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167947/pengame-new_lcpc15.png',
       github: '',
       live: 'https://www.pengame.co.uk/',
     },
@@ -76,7 +63,7 @@ const Projects = () => {
         'ShadCN',
         'Tailwind CSS',
       ],
-      img: rbm,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167947/rbm_oc6jlx.png',
       github: '',
       live: 'https://www.rarebootsmarketplace.com/',
     },
@@ -86,7 +73,7 @@ const Projects = () => {
       name: 'Media Beast LTD',
       desc: "A modern, interactive website designed to showcase Media Beast's digital expertise with smooth animations and intuitive navigation, delivering a compelling user experience.",
       tools: ['Next.JS', 'Typescript', 'Tailwind CSS', 'Framer-Motion'],
-      img: mediaBeast,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167943/mb_wpc3ei.png',
       github: '',
       live: 'https://www.mediabeast.co.uk/',
     },
@@ -95,7 +82,7 @@ const Projects = () => {
       name: 'Hessian',
       desc: 'Deveoped a sleek, animated website showcasing a premium UK event catering service, focused on elegance and delivering an engaging user experience.',
       tools: ['NextJs', 'Typescript', 'Tailwind CSS', 'Framer Motion'],
-      img: hessian,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167942/hessian_sdif9o.png',
       github: '',
       live: 'https://www.hessianevents.com/',
     },
@@ -112,7 +99,7 @@ const Projects = () => {
         'ShadCN',
         'Framer-Motion',
       ],
-      img: originals,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167950/originals_bfyvn6.png',
       github: '',
       live: 'https://dubai.originalsworld.co.uk/',
     },
@@ -130,7 +117,7 @@ const Projects = () => {
         'Node.JS',
         'Express.JS',
       ],
-      img: rnb,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167948/rnb_szickq.png',
       github: '',
       live: 'https://www.sweetrnb.com/',
     },
@@ -147,7 +134,7 @@ const Projects = () => {
         'Tailwind CSS',
         'Framer-Motion',
       ],
-      img: wingstop,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167949/wingstop_zyxu46.png',
       github: '',
       live: 'https://www.only-flavours.com/',
     },
@@ -157,7 +144,7 @@ const Projects = () => {
       name: 'Felsunny Technology LTD',
       desc: 'Led the Frontend Development for Felsunny, who empower businesses by offering innovative and reliable solutions that drive growth and success.',
       tools: ['Next.JS', 'Typescript', 'Tailwind CSS', 'Framer-Motion'],
-      img: felsunny,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748168019/felsunny_umnbkb.png',
       github: '',
       live: 'https://www.felsunny.com/',
     },
@@ -176,7 +163,7 @@ const Projects = () => {
         'GSAP',
         'ZOD',
       ],
-      img: veevents,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167942/veevents_bnp9mp.png',
       github: 'https://github.com/NIKO-DEV06/Veevents',
       live: 'https://veevents.vercel.app/',
     },
@@ -186,7 +173,7 @@ const Projects = () => {
       name: 'Kanban Task Management',
       desc: 'This project is a responsive task management application featuring a Kanban board. Users can easily add, edit, and delete tasks & boards, and utilize drag and drop functionality for seamless task movement. Redux-Toolkit is used for state management.',
       tools: ['React.JS', 'Typescript', 'Tailwind CSS', 'Redux-Toolkit'],
-      img: kanban,
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167941/kanban_osiv30.jpg',
       github: 'https://github.com/NIKO-DEV06/Kanban-Task-Management',
       live: 'https://nikokanban-task-manager.vercel.app/',
     },
