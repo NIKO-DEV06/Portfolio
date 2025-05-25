@@ -59,7 +59,9 @@ const SideBar = ({ isNav, backdropClose, theme, handleThemeSwitch }) => {
           </div>
           <div className="flex w-full pl-[1.7rem] translate-y-[-1rem] gap-2 h-auto">
             <img
-              src={myLogo}
+              src={
+                'https://res.cloudinary.com/djabkdvek/image/upload/v1748168288/photo_yvb19n.jpg'
+              }
               alt=""
               className="rounded-full w-[2.8rem] h-[2.8rem] object-cover cursor-pointer border-[1.5px] border-black dark:border-white"
             />

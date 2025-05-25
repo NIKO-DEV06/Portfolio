@@ -51,7 +51,9 @@ const About = () => {
         </p>
         <div className="lg:translate-y-[-0.6rem] relative w-[18rem] mx-auto lg:mx-auto md:mx-[23rem]  lg:scale-90 md:scale[0.5] lg:my-auto group cursor-pointer mdmt-[6.5rem]">
           <img
-            src={myLogo}
+            src={
+              'https://res.cloudinary.com/djabkdvek/image/upload/v1748168288/photo_yvb19n.jpg'
+            }
             alt=""
             className="rounded-sm dark:border-white border-black w-[18rem] h-[18rem] mt-3 relative z-[2] border-2 object-cover"
           />

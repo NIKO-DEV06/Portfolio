@@ -71,7 +71,9 @@ const MobileHeader = ({ theme, handleThemeSwitch }) => {
         <div className="flex mx-7 py-5">
           <div className="flex w-full gap-3 h-auto">
             <img
-              src={myLogo}
+              src={
+                'https://res.cloudinary.com/djabkdvek/image/upload/v1748168288/photo_yvb19n.jpg'
+              }
               alt=""
               className="rounded-full w-[2.8rem] h-[2.8rem] object-cover cursor-pointer border-[1.5px] border-black dark:border-white"
             />
