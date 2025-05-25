@@ -7,11 +7,12 @@ import autograph from '../projectsImages/auto.png';
 import kanban from '../projectsImages/kanban.jpg';
 import veevents from '../projectsImages/veevents.png';
 import wingstop from '../projectsImages/wingstop.png';
-import naitram from '../projectsImages/naitram.png';
+import wemove from '../projectsImages/wemove.png';
 import hessian from '../projectsImages/hessian.png';
 import mediaBeast from '../projectsImages/mb.png';
 import pengame from '../projectsImages/pengame-new.png';
 import felsunny from '../projectsImages/felsunny.png';
+import originals from '../projectsImages/originals.png';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -27,26 +28,27 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 'ddud',
-      name: 'Only Flavours - Wingstop',
-      desc: 'Ticketing Web Application for Wingstop UK.',
+      id: 'wemove',
+      name: 'We Move Website & Admin',
+      desc: 'Led frontend development for the We Move website and contributed significantly in full-stack development of the admin dashboard.',
       tools: [
-        'Next.JS',
-        'Typescript',
-        'Node.JS',
-        'Express.JS',
-        'ShadCN',
+        'Next.js',
+        'TypeScript',
+        'Nest.js',
+        'GraphQL',
+        'TypeORM',
         'Tailwind CSS',
-        'Framer-Motion',
+        'ShadCN',
+        'Framer Motion',
       ],
-      img: wingstop,
+      img: wemove,
       github: '',
-      live: 'https://www.only-flavours.com/',
+      live: 'https://staging-web.thewemoveproject.co.uk/',
     },
     {
       id: 'ddddud',
       name: 'Pengame Rap Battle',
-      desc: "Developed the official home of PenGame Rap Battle. Dive into the world of lyrical warfare and witness the world's best lyricists competing in rap battles.",
+      desc: 'Developed the official PenGame Rap Battle platform with Next.js, Sanity, and Shopify, focusing on performance, CMS integration, e-commerce, and ticket sales implementation.',
       tools: [
         'Next.JS',
         'Typescript',
@@ -63,15 +65,6 @@ const Projects = () => {
       live: 'https://www.pengame.co.uk/',
     },
     {
-      id: 'mediaBeast',
-      name: 'Media Beast LTD',
-      desc: 'Developed the website for Digital Agency - Media Beast LTD',
-      tools: ['Next.JS', 'Typescript', 'Tailwind CSS', 'Framer-Motion'],
-      img: mediaBeast,
-      github: '',
-      live: 'https://www.mediabeast.co.uk/',
-    },
-    {
       id: 'p5',
       name: 'Rareboots Marketplace',
       desc: 'Worked on frontend development and API integration for RareBoots, a football boots marketplace.',
@@ -79,12 +72,49 @@ const Projects = () => {
         'Next.JS',
         'Typescript',
         'MedusaJs REST-API',
+        'GraphQL',
         'ShadCN',
         'Tailwind CSS',
       ],
       img: rbm,
       github: '',
       live: 'https://www.rarebootsmarketplace.com/',
+    },
+
+    {
+      id: 'mediaBeast',
+      name: 'Media Beast LTD',
+      desc: "A modern, interactive website designed to showcase Media Beast's digital expertise with smooth animations and intuitive navigation, delivering a compelling user experience.",
+      tools: ['Next.JS', 'Typescript', 'Tailwind CSS', 'Framer-Motion'],
+      img: mediaBeast,
+      github: '',
+      live: 'https://www.mediabeast.co.uk/',
+    },
+    {
+      id: 'psdfw9',
+      name: 'Hessian',
+      desc: 'Deveoped a sleek, animated website showcasing a premium UK event catering service, focused on elegance and delivering an engaging user experience.',
+      tools: ['NextJs', 'Typescript', 'Tailwind CSS', 'Framer Motion'],
+      img: hessian,
+      github: '',
+      live: 'https://www.hessianevents.com/',
+    },
+
+    {
+      id: 'originals',
+      name: 'The Originals Dubai',
+      desc: 'Developed a responsive promotional site for Originals Island Dubai 2025 with a smooth booking flow, interactive UI, and polished animations for a premium user experience.',
+      tools: [
+        'Next.JS',
+        'Typescript',
+        'Tailwind CSS',
+        'Firebase',
+        'ShadCN',
+        'Framer-Motion',
+      ],
+      img: originals,
+      github: '',
+      live: 'https://dubai.originalsworld.co.uk/',
     },
 
     {
@@ -105,46 +135,23 @@ const Projects = () => {
       live: 'https://www.sweetrnb.com/',
     },
     {
-      id: 'psdfw9',
-      name: 'Hessian',
-      desc: 'Led the frontend development for Hessian, a restaurant and events brand focused on delivering care and quality in every experience.',
-      tools: ['NextJs', 'Typescript', 'Tailwind CSS', 'Framer Motion'],
-      img: hessian,
+      id: 'ddud',
+      name: 'Only Flavours - Wingstop',
+      desc: 'Ticketing Web Application for Wingstop UK.',
+      tools: [
+        'Next.JS',
+        'Typescript',
+        'Node.JS',
+        'Express.JS',
+        'ShadCN',
+        'Tailwind CSS',
+        'Framer-Motion',
+      ],
+      img: wingstop,
       github: '',
-      live: 'https://www.hessianevents.com/',
+      live: 'https://www.only-flavours.com/',
     },
 
-    {
-      id: 'autograph',
-      name: 'Autograh Lifestyle',
-      desc: 'Developed the website for Autograph Lifestyle who simplify lives as well as providing a honest and trusted luxury service.',
-      tools: [
-        'Next.JS',
-        'Typescript',
-        'Tailwind CSS',
-        'Firebase',
-        'ShadCN',
-        'Framer-Motion',
-      ],
-      img: autograph,
-      github: '',
-      live: 'https://www.autographlifestyle.co.uk/',
-    },
-    {
-      id: 'naitam',
-      name: 'Naitram',
-      desc: 'Led the Frontend Development for a pioneering ticketing platform @naitram.',
-      tools: [
-        'Next.JS',
-        'Typescript',
-        'Tailwind CSS',
-        'ShadCN',
-        'Framer-Motion',
-      ],
-      img: naitram,
-      github: '',
-      live: 'https://naitram.live/',
-    },
     {
       id: 'felsunny',
       name: 'Felsunny Technology LTD',
