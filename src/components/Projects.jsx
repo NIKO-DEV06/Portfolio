@@ -52,20 +52,20 @@ const Projects = () => {
       live: 'https://www.pengame.co.uk/',
     },
     {
-      id: 'p5',
-      name: 'Rareboots Marketplace',
-      desc: 'Worked on frontend development and API integration for RareBoots, a football boots marketplace.',
+      id: 'p9',
+      name: 'The Shuts',
+      desc: 'Led and fully developed a modern Next.js website for UK professional eater Leah Shutkever, integrating a Shopify storefront for seamless merch sales. Built with TypeScript, Tailwind CSS, and Framer Motion.',
       tools: [
         'Next.JS',
         'Typescript',
-        'MedusaJs REST-API',
-        'GraphQL',
-        'ShadCN',
+        'Shopify',
         'Tailwind CSS',
+        'ShadCN',
+        'Framer Motion',
       ],
-      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167947/rbm_oc6jlx.png',
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1751361412/Screenshot_2025-06-27_at_19.13.42_jf6aqj.png',
       github: '',
-      live: 'https://www.rarebootsmarketplace.com/',
+      live: 'https://the-shuts-website.vercel.app/',
     },
 
     {
@@ -85,6 +85,22 @@ const Projects = () => {
       img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167942/hessian_sdif9o.png',
       github: '',
       live: 'https://www.hessianevents.com/',
+    },
+    {
+      id: 'p5',
+      name: 'Rareboots Marketplace',
+      desc: 'Worked on frontend development and API integration for RareBoots, a football boots marketplace.',
+      tools: [
+        'Next.JS',
+        'Typescript',
+        'MedusaJs REST-API',
+        'GraphQL',
+        'ShadCN',
+        'Tailwind CSS',
+      ],
+      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167947/rbm_oc6jlx.png',
+      github: '',
+      live: 'https://www.rarebootsmarketplace.com/',
     },
 
     {
@@ -166,16 +182,6 @@ const Projects = () => {
       img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167942/veevents_bnp9mp.png',
       github: 'https://github.com/NIKO-DEV06/Veevents',
       live: 'https://veevents.vercel.app/',
-    },
-
-    {
-      id: 'p9',
-      name: 'Kanban Task Management',
-      desc: 'This project is a responsive task management application featuring a Kanban board. Users can easily add, edit, and delete tasks & boards, and utilize drag and drop functionality for seamless task movement. Redux-Toolkit is used for state management.',
-      tools: ['React.JS', 'Typescript', 'Tailwind CSS', 'Redux-Toolkit'],
-      img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167941/kanban_osiv30.jpg',
-      github: 'https://github.com/NIKO-DEV06/Kanban-Task-Management',
-      live: 'https://nikokanban-task-manager.vercel.app/',
     },
   ];
 
