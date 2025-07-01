@@ -30,7 +30,7 @@ const Projects = () => {
       ],
       img: 'https://res.cloudinary.com/djabkdvek/image/upload/v1748167949/wemove_yhctuf.png',
       github: '',
-      live: 'https://staging-web.thewemoveproject.co.uk/',
+      live: 'https://www.thewemoveproject.co.uk/',
     },
     {
       id: 'ddddud',
